@@ -1,7 +1,11 @@
 .venv/
+.venv-sglang/
 .hf-cache/
 .uv-cache/
+.cargo-cache/
 __pycache__/
 *.py[cod]
 .DS_Store
 runs/
+model/
+models/

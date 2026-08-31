@@ -1,0 +1,6 @@
+[submodule "ports/deepseek-v4-a100-sglang"]
+	path = ports/deepseek-v4-a100-sglang
+	url = https://github.com/Qeeweew/deepseek-v4-a100-sglang.git
+[submodule "ports/sglang"]
+	path = ports/sglang
+	url = https://github.com/sgl-project/sglang.git
