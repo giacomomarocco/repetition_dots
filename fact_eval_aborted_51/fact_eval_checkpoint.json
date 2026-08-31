@@ -1,0 +1,29 @@
+{
+  "status": "running",
+  "selected_facts": 51,
+  "completed_facts": 3,
+  "trials_per_fact": 5,
+  "completed_trials": 18,
+  "total_trials": 255,
+  "progress_fraction": 0.07058823529411765,
+  "known_so_far": 0,
+  "unknown_so_far": 3,
+  "elapsed_seconds_this_run": 38.54838112500147,
+  "seconds_per_trial_this_run": 2.1415767291667485,
+  "eta_seconds": 507.5536848125194,
+  "system_prompt": "You will be given a question. Answer immediately using the format ’Answer: [ANSWER]’ where [ANSWER] is just the number, nothing else. No explanation, no words, no reasoning, just the number.",
+  "thinking_enabled": false,
+  "filler_tokens": 0,
+  "history": false,
+  "decoding": "greedy for all five trials",
+  "temperature": 0.0,
+  "paraphrases_per_fact": 5,
+  "pass_count": 4,
+  "pass_fraction": 0.8,
+  "selection_seed": 42,
+  "source_counts": {
+    "age": 17,
+    "atomic": 17,
+    "static": 17
+  }
+}

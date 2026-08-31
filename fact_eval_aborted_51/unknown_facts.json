@@ -1,0 +1,101 @@
+[
+  {
+    "question": "At what age did Greta Garbo die?",
+    "answer": 84,
+    "category": "Age at death",
+    "name": "Greta Garbo",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 6,
+    "paraphrases": [
+      "At what age did Greta Garbo die?",
+      "How old was Greta Garbo when they died?",
+      "What was Greta Garbo's age at death?",
+      "How many years old was Greta Garbo at the time of their death?",
+      "At the time of death, what age was Greta Garbo?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      63,
+      69,
+      80,
+      69
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 69",
+      "Answer: 80",
+      "Answer: 69"
+    ]
+  },
+  {
+    "question": "At what age did Pietro Mennea die?",
+    "answer": 60,
+    "category": "Age at death",
+    "name": "Pietro Mennea",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 7,
+    "paraphrases": [
+      "At what age did Pietro Mennea die?",
+      "How old was Pietro Mennea when they died?",
+      "What was Pietro Mennea's age at death?",
+      "How many years old was Pietro Mennea at the time of their death?",
+      "At the time of death, what age was Pietro Mennea?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      59,
+      62,
+      60,
+      0,
+      50
+    ],
+    "trial_responses": [
+      "Answer: 59",
+      "Answer: 62",
+      "Answer: 60",
+      "Answer: 0",
+      "Answer: 50"
+    ]
+  },
+  {
+    "question": "At what age did Antonio Canova die?",
+    "answer": 64,
+    "category": "Age at death",
+    "name": "Antonio Canova",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 8,
+    "paraphrases": [
+      "At what age did Antonio Canova die?",
+      "How old was Antonio Canova when they died?",
+      "What was Antonio Canova's age at death?",
+      "How many years old was Antonio Canova at the time of their death?",
+      "At the time of death, what age was Antonio Canova?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      70,
+      71,
+      71,
+      71,
+      71
+    ],
+    "trial_responses": [
+      "Answer: 70",
+      "Answer: 71",
+      "Answer: 71",
+      "Answer: 71",
+      "Answer: 71"
+    ]
+  }
+]

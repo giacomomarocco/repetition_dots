@@ -1,0 +1,3306 @@
+[
+  {
+    "question": "At what age did Mustafa Kemal Atatürk die?",
+    "answer": 57,
+    "category": "Age at death",
+    "name": "Mustafa Kemal Atatürk",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 1,
+    "paraphrases": [
+      "At what age did Mustafa Kemal Atatürk die?",
+      "How old was Mustafa Kemal Atatürk when they died?",
+      "What was Mustafa Kemal Atatürk's age at death?",
+      "How many years old was Mustafa Kemal Atatürk at the time of their death?",
+      "At the time of death, what age was Mustafa Kemal Atatürk?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      79,
+      79,
+      79,
+      79,
+      79
+    ],
+    "trial_responses": [
+      "Answer: 79",
+      "Answer: 79",
+      "Answer: 79",
+      "Answer: 79",
+      "Answer: 79"
+    ]
+  },
+  {
+    "question": "At what age did Charles Lyell die?",
+    "answer": 77,
+    "category": "Age at death",
+    "name": "Charles Lyell",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 2,
+    "paraphrases": [
+      "At what age did Charles Lyell die?",
+      "How old was Charles Lyell when they died?",
+      "What was Charles Lyell's age at death?",
+      "How many years old was Charles Lyell at the time of their death?",
+      "At the time of death, what age was Charles Lyell?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      83,
+      83,
+      83,
+      83,
+      83
+    ],
+    "trial_responses": [
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83"
+    ]
+  },
+  {
+    "question": "At what age did Louis Blériot die?",
+    "answer": 64,
+    "category": "Age at death",
+    "name": "Louis Blériot",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 4,
+    "paraphrases": [
+      "At what age did Louis Blériot die?",
+      "How old was Louis Blériot when they died?",
+      "What was Louis Blériot's age at death?",
+      "How many years old was Louis Blériot at the time of their death?",
+      "At the time of death, what age was Louis Blériot?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      79,
+      70,
+      67,
+      70,
+      70
+    ],
+    "trial_responses": [
+      "Answer: 79",
+      "Answer: 70",
+      "Answer: 67",
+      "Answer: 70",
+      "Answer: 70"
+    ]
+  },
+  {
+    "question": "At what age did Francisco Goya die?",
+    "answer": 82,
+    "category": "Age at death",
+    "name": "Francisco Goya",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 5,
+    "paraphrases": [
+      "At what age did Francisco Goya die?",
+      "How old was Francisco Goya when they died?",
+      "What was Francisco Goya's age at death?",
+      "How many years old was Francisco Goya at the time of their death?",
+      "At the time of death, what age was Francisco Goya?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      84,
+      84,
+      84,
+      84
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84"
+    ]
+  },
+  {
+    "question": "At what age did Greta Garbo die?",
+    "answer": 84,
+    "category": "Age at death",
+    "name": "Greta Garbo",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 6,
+    "paraphrases": [
+      "At what age did Greta Garbo die?",
+      "How old was Greta Garbo when they died?",
+      "What was Greta Garbo's age at death?",
+      "How many years old was Greta Garbo at the time of their death?",
+      "At the time of death, what age was Greta Garbo?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      63,
+      69,
+      80,
+      69
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 69",
+      "Answer: 80",
+      "Answer: 69"
+    ]
+  },
+  {
+    "question": "At what age did Pietro Mennea die?",
+    "answer": 60,
+    "category": "Age at death",
+    "name": "Pietro Mennea",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 7,
+    "paraphrases": [
+      "At what age did Pietro Mennea die?",
+      "How old was Pietro Mennea when they died?",
+      "What was Pietro Mennea's age at death?",
+      "How many years old was Pietro Mennea at the time of their death?",
+      "At the time of death, what age was Pietro Mennea?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      59,
+      62,
+      60,
+      0,
+      50
+    ],
+    "trial_responses": [
+      "Answer: 59",
+      "Answer: 62",
+      "Answer: 60",
+      "Answer: 0",
+      "Answer: 50"
+    ]
+  },
+  {
+    "question": "At what age did Antonio Canova die?",
+    "answer": 64,
+    "category": "Age at death",
+    "name": "Antonio Canova",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 8,
+    "paraphrases": [
+      "At what age did Antonio Canova die?",
+      "How old was Antonio Canova when they died?",
+      "What was Antonio Canova's age at death?",
+      "How many years old was Antonio Canova at the time of their death?",
+      "At the time of death, what age was Antonio Canova?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      70,
+      71,
+      71,
+      71,
+      71
+    ],
+    "trial_responses": [
+      "Answer: 70",
+      "Answer: 71",
+      "Answer: 71",
+      "Answer: 71",
+      "Answer: 71"
+    ]
+  },
+  {
+    "question": "At what age did Salvador Dalí die?",
+    "answer": 84,
+    "category": "Age at death",
+    "name": "Salvador Dalí",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 9,
+    "paraphrases": [
+      "At what age did Salvador Dalí die?",
+      "How old was Salvador Dalí when they died?",
+      "What was Salvador Dalí's age at death?",
+      "How many years old was Salvador Dalí at the time of their death?",
+      "At the time of death, what age was Salvador Dalí?"
+    ],
+    "correct_fraction": 0.6,
+    "correct_count": 3,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      84,
+      81,
+      84,
+      81
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 81",
+      "Answer: 84",
+      "Answer: 81"
+    ]
+  },
+  {
+    "question": "At what age did Henri Matisse die?",
+    "answer": 84,
+    "category": "Age at death",
+    "name": "Henri Matisse",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 12,
+    "paraphrases": [
+      "At what age did Henri Matisse die?",
+      "How old was Henri Matisse when they died?",
+      "What was Henri Matisse's age at death?",
+      "How many years old was Henri Matisse at the time of their death?",
+      "At the time of death, what age was Henri Matisse?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      81,
+      82,
+      81,
+      81,
+      81
+    ],
+    "trial_responses": [
+      "Answer: 81",
+      "Answer: 82",
+      "Answer: 81",
+      "Answer: 81",
+      "Answer: 81"
+    ]
+  },
+  {
+    "question": "At what age did Peter Paul Rubens die?",
+    "answer": 62,
+    "category": "Age at death",
+    "name": "Peter Paul Rubens",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 15,
+    "paraphrases": [
+      "At what age did Peter Paul Rubens die?",
+      "How old was Peter Paul Rubens when they died?",
+      "What was Peter Paul Rubens's age at death?",
+      "How many years old was Peter Paul Rubens at the time of their death?",
+      "At the time of death, what age was Peter Paul Rubens?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      56,
+      56,
+      56,
+      56,
+      57
+    ],
+    "trial_responses": [
+      "Answer: 56",
+      "Answer: 56",
+      "Answer: 56",
+      "Answer: 56",
+      "Answer: 57"
+    ]
+  },
+  {
+    "question": "At what age did Matsuo Bashō die?",
+    "answer": 50,
+    "category": "Age at death",
+    "name": "Matsuo Bashō",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 19,
+    "paraphrases": [
+      "At what age did Matsuo Bashō die?",
+      "How old was Matsuo Bashō when they died?",
+      "What was Matsuo Bashō's age at death?",
+      "How many years old was Matsuo Bashō at the time of their death?",
+      "At the time of death, what age was Matsuo Bashō?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      74,
+      74,
+      74,
+      74,
+      74
+    ],
+    "trial_responses": [
+      "Answer: 74",
+      "Answer: 74",
+      "Answer: 74",
+      "Answer: 74",
+      "Answer: 74"
+    ]
+  },
+  {
+    "question": "At what age did Miguel de Cervantes die?",
+    "answer": 68,
+    "category": "Age at death",
+    "name": "Miguel de Cervantes",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 21,
+    "paraphrases": [
+      "At what age did Miguel de Cervantes die?",
+      "How old was Miguel de Cervantes when they died?",
+      "What was Miguel de Cervantes's age at death?",
+      "How many years old was Miguel de Cervantes at the time of their death?",
+      "At the time of death, what age was Miguel de Cervantes?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      69,
+      69,
+      69,
+      69,
+      69
+    ],
+    "trial_responses": [
+      "Answer: 69",
+      "Answer: 69",
+      "Answer: 69",
+      "Answer: 69",
+      "Answer: 69"
+    ]
+  },
+  {
+    "question": "At what age did Philippe Pétain die?",
+    "answer": 95,
+    "category": "Age at death",
+    "name": "Philippe Pétain",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 24,
+    "paraphrases": [
+      "At what age did Philippe Pétain die?",
+      "How old was Philippe Pétain when they died?",
+      "What was Philippe Pétain's age at death?",
+      "How many years old was Philippe Pétain at the time of their death?",
+      "At the time of death, what age was Philippe Pétain?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      81,
+      86,
+      86,
+      85,
+      86
+    ],
+    "trial_responses": [
+      "Answer: 81",
+      "Answer: 86",
+      "Answer: 86",
+      "Answer: 85",
+      "Answer: 86"
+    ]
+  },
+  {
+    "question": "At what age did Peter Kropotkin die?",
+    "answer": 78,
+    "category": "Age at death",
+    "name": "Peter Kropotkin",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 25,
+    "paraphrases": [
+      "At what age did Peter Kropotkin die?",
+      "How old was Peter Kropotkin when they died?",
+      "What was Peter Kropotkin's age at death?",
+      "How many years old was Peter Kropotkin at the time of their death?",
+      "At the time of death, what age was Peter Kropotkin?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      62,
+      62,
+      70,
+      62,
+      65
+    ],
+    "trial_responses": [
+      "Answer: 62",
+      "Answer: 62",
+      "Answer: 70",
+      "Answer: 62",
+      "Answer: 65"
+    ]
+  },
+  {
+    "question": "At what age did Gabriel García Márquez die?",
+    "answer": 87,
+    "category": "Age at death",
+    "name": "Gabriel García Márquez",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 27,
+    "paraphrases": [
+      "At what age did Gabriel García Márquez die?",
+      "How old was Gabriel García Márquez when they died?",
+      "What was Gabriel García Márquez's age at death?",
+      "How many years old was Gabriel García Márquez at the time of their death?",
+      "At the time of death, what age was Gabriel García Márquez?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      89,
+      85,
+      87,
+      85,
+      85
+    ],
+    "trial_responses": [
+      "Answer: 89",
+      "Answer: 85",
+      "Answer: 87",
+      "Answer: 85",
+      "Answer: 85"
+    ]
+  },
+  {
+    "question": "At what age did Marcel Duchamp die?",
+    "answer": 81,
+    "category": "Age at death",
+    "name": "Marcel Duchamp",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 28,
+    "paraphrases": [
+      "At what age did Marcel Duchamp die?",
+      "How old was Marcel Duchamp when they died?",
+      "What was Marcel Duchamp's age at death?",
+      "How many years old was Marcel Duchamp at the time of their death?",
+      "At the time of death, what age was Marcel Duchamp?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      79,
+      91,
+      79,
+      91
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 79",
+      "Answer: 91",
+      "Answer: 79",
+      "Answer: 91"
+    ]
+  },
+  {
+    "question": "At what age did James Brown die?",
+    "answer": 73,
+    "category": "Age at death",
+    "name": "James Brown",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 31,
+    "paraphrases": [
+      "At what age did James Brown die?",
+      "How old was James Brown when they died?",
+      "What was James Brown's age at death?",
+      "How many years old was James Brown at the time of their death?",
+      "At the time of death, what age was James Brown?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      83,
+      79,
+      83,
+      79,
+      79
+    ],
+    "trial_responses": [
+      "Answer: 83",
+      "Answer: 79",
+      "Answer: 83",
+      "Answer: 79",
+      "Answer: 79"
+    ]
+  },
+  {
+    "question": "At what age did Hebe Camargo die?",
+    "answer": 83,
+    "category": "Age at death",
+    "name": "Hebe Camargo",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 34,
+    "paraphrases": [
+      "At what age did Hebe Camargo die?",
+      "How old was Hebe Camargo when they died?",
+      "What was Hebe Camargo's age at death?",
+      "How many years old was Hebe Camargo at the time of their death?",
+      "At the time of death, what age was Hebe Camargo?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      80,
+      80,
+      79,
+      80,
+      79
+    ],
+    "trial_responses": [
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 79",
+      "Answer: 80",
+      "Answer: 79"
+    ]
+  },
+  {
+    "question": "At what age did Gerardus Mercator die?",
+    "answer": 82,
+    "category": "Age at death",
+    "name": "Gerardus Mercator",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 36,
+    "paraphrases": [
+      "At what age did Gerardus Mercator die?",
+      "How old was Gerardus Mercator when they died?",
+      "What was Gerardus Mercator's age at death?",
+      "How many years old was Gerardus Mercator at the time of their death?",
+      "At the time of death, what age was Gerardus Mercator?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      57,
+      67,
+      68,
+      58,
+      68
+    ],
+    "trial_responses": [
+      "Answer: 57",
+      "Answer: 67",
+      "Answer: 68",
+      "Answer: 58",
+      "Answer: 68"
+    ]
+  },
+  {
+    "question": "At what age did Søren Kierkegaard die?",
+    "answer": 42,
+    "category": "Age at death",
+    "name": "Søren Kierkegaard",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 37,
+    "paraphrases": [
+      "At what age did Søren Kierkegaard die?",
+      "How old was Søren Kierkegaard when they died?",
+      "What was Søren Kierkegaard's age at death?",
+      "How many years old was Søren Kierkegaard at the time of their death?",
+      "At the time of death, what age was Søren Kierkegaard?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      63,
+      61,
+      63,
+      62
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 61",
+      "Answer: 63",
+      "Answer: 62"
+    ]
+  },
+  {
+    "question": "At what age did Günter Grass die?",
+    "answer": 87,
+    "category": "Age at death",
+    "name": "Günter Grass",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 41,
+    "paraphrases": [
+      "At what age did Günter Grass die?",
+      "How old was Günter Grass when they died?",
+      "What was Günter Grass's age at death?",
+      "How many years old was Günter Grass at the time of their death?",
+      "At the time of death, what age was Günter Grass?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      89,
+      89,
+      89,
+      89,
+      89
+    ],
+    "trial_responses": [
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 89"
+    ]
+  },
+  {
+    "question": "At what age did Alexander von Humboldt die?",
+    "answer": 89,
+    "category": "Age at death",
+    "name": "Alexander von Humboldt",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 43,
+    "paraphrases": [
+      "At what age did Alexander von Humboldt die?",
+      "How old was Alexander von Humboldt when they died?",
+      "What was Alexander von Humboldt's age at death?",
+      "How many years old was Alexander von Humboldt at the time of their death?",
+      "At the time of death, what age was Alexander von Humboldt?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      69,
+      69,
+      85,
+      69
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 69",
+      "Answer: 69",
+      "Answer: 85",
+      "Answer: 69"
+    ]
+  },
+  {
+    "question": "At what age did Allen Ginsberg die?",
+    "answer": 70,
+    "category": "Age at death",
+    "name": "Allen Ginsberg",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 44,
+    "paraphrases": [
+      "At what age did Allen Ginsberg die?",
+      "How old was Allen Ginsberg when they died?",
+      "What was Allen Ginsberg's age at death?",
+      "How many years old was Allen Ginsberg at the time of their death?",
+      "At the time of death, what age was Allen Ginsberg?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      87,
+      64,
+      69,
+      64,
+      69
+    ],
+    "trial_responses": [
+      "Answer: 87",
+      "Answer: 64",
+      "Answer: 69",
+      "Answer: 64",
+      "Answer: 69"
+    ]
+  },
+  {
+    "question": "At what age did Wilhelm Grimm die?",
+    "answer": 73,
+    "category": "Age at death",
+    "name": "Wilhelm Grimm",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 45,
+    "paraphrases": [
+      "At what age did Wilhelm Grimm die?",
+      "How old was Wilhelm Grimm when they died?",
+      "What was Wilhelm Grimm's age at death?",
+      "How many years old was Wilhelm Grimm at the time of their death?",
+      "At the time of death, what age was Wilhelm Grimm?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      78,
+      78,
+      71,
+      78,
+      71
+    ],
+    "trial_responses": [
+      "Answer: 78",
+      "Answer: 78",
+      "Answer: 71",
+      "Answer: 78",
+      "Answer: 71"
+    ]
+  },
+  {
+    "question": "At what age did Edward Teller die?",
+    "answer": 95,
+    "category": "Age at death",
+    "name": "Edward Teller",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 47,
+    "paraphrases": [
+      "At what age did Edward Teller die?",
+      "How old was Edward Teller when they died?",
+      "What was Edward Teller's age at death?",
+      "How many years old was Edward Teller at the time of their death?",
+      "At the time of death, what age was Edward Teller?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      89,
+      85,
+      95,
+      86,
+      85
+    ],
+    "trial_responses": [
+      "Answer: 89",
+      "Answer: 85",
+      "Answer: 95",
+      "Answer: 86",
+      "Answer: 85"
+    ]
+  },
+  {
+    "question": "At what age did James Joyce die?",
+    "answer": 58,
+    "category": "Age at death",
+    "name": "James Joyce",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 48,
+    "paraphrases": [
+      "At what age did James Joyce die?",
+      "How old was James Joyce when they died?",
+      "What was James Joyce's age at death?",
+      "How many years old was James Joyce at the time of their death?",
+      "At the time of death, what age was James Joyce?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      59,
+      59,
+      59,
+      59,
+      59
+    ],
+    "trial_responses": [
+      "Answer: 59",
+      "Answer: 59",
+      "Answer: 59",
+      "Answer: 59",
+      "Answer: 59"
+    ]
+  },
+  {
+    "question": "At what age did Sophie Germain die?",
+    "answer": 55,
+    "category": "Age at death",
+    "name": "Sophie Germain",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 52,
+    "paraphrases": [
+      "At what age did Sophie Germain die?",
+      "How old was Sophie Germain when they died?",
+      "What was Sophie Germain's age at death?",
+      "How many years old was Sophie Germain at the time of their death?",
+      "At the time of death, what age was Sophie Germain?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      36,
+      36,
+      36,
+      36,
+      36
+    ],
+    "trial_responses": [
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36"
+    ]
+  },
+  {
+    "question": "At what age did Simone de Beauvoir die?",
+    "answer": 78,
+    "category": "Age at death",
+    "name": "Simone de Beauvoir",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 55,
+    "paraphrases": [
+      "At what age did Simone de Beauvoir die?",
+      "How old was Simone de Beauvoir when they died?",
+      "What was Simone de Beauvoir's age at death?",
+      "How many years old was Simone de Beauvoir at the time of their death?",
+      "At the time of death, what age was Simone de Beauvoir?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      86,
+      86,
+      86,
+      86,
+      86
+    ],
+    "trial_responses": [
+      "Answer: 86",
+      "Answer: 86",
+      "Answer: 86",
+      "Answer: 86",
+      "Answer: 86"
+    ]
+  },
+  {
+    "question": "At what age did Marcel Proust die?",
+    "answer": 51,
+    "category": "Age at death",
+    "name": "Marcel Proust",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 56,
+    "paraphrases": [
+      "At what age did Marcel Proust die?",
+      "How old was Marcel Proust when they died?",
+      "What was Marcel Proust's age at death?",
+      "How many years old was Marcel Proust at the time of their death?",
+      "At the time of death, what age was Marcel Proust?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      54,
+      54,
+      71,
+      71
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 54",
+      "Answer: 54",
+      "Answer: 71",
+      "Answer: 71"
+    ]
+  },
+  {
+    "question": "At what age did Elizabeth I of England die?",
+    "answer": 69,
+    "category": "Age at death",
+    "name": "Elizabeth I of England",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 58,
+    "paraphrases": [
+      "At what age did Elizabeth I of England die?",
+      "How old was Elizabeth I of England when they died?",
+      "What was Elizabeth I of England's age at death?",
+      "How many years old was Elizabeth I of England at the time of their death?",
+      "At the time of death, what age was Elizabeth I of England?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      70,
+      70,
+      70,
+      70,
+      70
+    ],
+    "trial_responses": [
+      "Answer: 70",
+      "Answer: 70",
+      "Answer: 70",
+      "Answer: 70",
+      "Answer: 70"
+    ]
+  },
+  {
+    "question": "At what age did Marie-Anne Paulze Lavoisier die?",
+    "answer": 78,
+    "category": "Age at death",
+    "name": "Marie-Anne Paulze Lavoisier",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 59,
+    "paraphrases": [
+      "At what age did Marie-Anne Paulze Lavoisier die?",
+      "How old was Marie-Anne Paulze Lavoisier when they died?",
+      "What was Marie-Anne Paulze Lavoisier's age at death?",
+      "How many years old was Marie-Anne Paulze Lavoisier at the time of their death?",
+      "At the time of death, what age was Marie-Anne Paulze Lavoisier?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      49,
+      41,
+      41,
+      41,
+      41
+    ],
+    "trial_responses": [
+      "Answer: 49",
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41"
+    ]
+  },
+  {
+    "question": "At what age did Antonín Dvořák die?",
+    "answer": 63,
+    "category": "Age at death",
+    "name": "Antonín Dvořák",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 69,
+    "paraphrases": [
+      "At what age did Antonín Dvořák die?",
+      "How old was Antonín Dvořák when they died?",
+      "What was Antonín Dvořák's age at death?",
+      "How many years old was Antonín Dvořák at the time of their death?",
+      "At the time of death, what age was Antonín Dvořák?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      51,
+      58,
+      51,
+      58,
+      51
+    ],
+    "trial_responses": [
+      "Answer: 51",
+      "Answer: 58",
+      "Answer: 51",
+      "Answer: 58",
+      "Answer: 51"
+    ]
+  },
+  {
+    "question": "At what age did George Frideric Handel die?",
+    "answer": 74,
+    "category": "Age at death",
+    "name": "George Frideric Handel",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 70,
+    "paraphrases": [
+      "At what age did George Frideric Handel die?",
+      "How old was George Frideric Handel when they died?",
+      "What was George Frideric Handel's age at death?",
+      "How many years old was George Frideric Handel at the time of their death?",
+      "At the time of death, what age was George Frideric Handel?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      75,
+      75,
+      78,
+      75,
+      75
+    ],
+    "trial_responses": [
+      "Answer: 75",
+      "Answer: 75",
+      "Answer: 78",
+      "Answer: 75",
+      "Answer: 75"
+    ]
+  },
+  {
+    "question": "At what age did Gustav Mahler die?",
+    "answer": 50,
+    "category": "Age at death",
+    "name": "Gustav Mahler",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 71,
+    "paraphrases": [
+      "At what age did Gustav Mahler die?",
+      "How old was Gustav Mahler when they died?",
+      "What was Gustav Mahler's age at death?",
+      "How many years old was Gustav Mahler at the time of their death?",
+      "At the time of death, what age was Gustav Mahler?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      80,
+      80,
+      82,
+      86,
+      80
+    ],
+    "trial_responses": [
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 82",
+      "Answer: 86",
+      "Answer: 80"
+    ]
+  },
+  {
+    "question": "At what age did Igor Stravinsky die?",
+    "answer": 88,
+    "category": "Age at death",
+    "name": "Igor Stravinsky",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 74,
+    "paraphrases": [
+      "At what age did Igor Stravinsky die?",
+      "How old was Igor Stravinsky when they died?",
+      "What was Igor Stravinsky's age at death?",
+      "How many years old was Igor Stravinsky at the time of their death?",
+      "At the time of death, what age was Igor Stravinsky?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      84,
+      84,
+      84,
+      84
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84"
+    ]
+  },
+  {
+    "question": "At what age did James Cook die?",
+    "answer": 50,
+    "category": "Age at death",
+    "name": "James Cook",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 77,
+    "paraphrases": [
+      "At what age did James Cook die?",
+      "How old was James Cook when they died?",
+      "What was James Cook's age at death?",
+      "How many years old was James Cook at the time of their death?",
+      "At the time of death, what age was James Cook?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      52,
+      52,
+      52,
+      52,
+      52
+    ],
+    "trial_responses": [
+      "Answer: 52",
+      "Answer: 52",
+      "Answer: 52",
+      "Answer: 52",
+      "Answer: 52"
+    ]
+  },
+  {
+    "question": "At what age did Yuri Gagarin die?",
+    "answer": 34,
+    "category": "Age at death",
+    "name": "Yuri Gagarin",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 78,
+    "paraphrases": [
+      "At what age did Yuri Gagarin die?",
+      "How old was Yuri Gagarin when they died?",
+      "What was Yuri Gagarin's age at death?",
+      "How many years old was Yuri Gagarin at the time of their death?",
+      "At the time of death, what age was Yuri Gagarin?"
+    ],
+    "correct_fraction": 0.6,
+    "correct_count": 3,
+    "trial_count": 5,
+    "trial_predictions": [
+      45,
+      34,
+      34,
+      27,
+      34
+    ],
+    "trial_responses": [
+      "Answer: 45",
+      "Answer: 34",
+      "Answer: 34",
+      "Answer: 27",
+      "Answer: 34"
+    ]
+  },
+  {
+    "question": "At what age did Otto Frank die?",
+    "answer": 91,
+    "category": "Age at death",
+    "name": "Otto Frank",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 79,
+    "paraphrases": [
+      "At what age did Otto Frank die?",
+      "How old was Otto Frank when they died?",
+      "What was Otto Frank's age at death?",
+      "How many years old was Otto Frank at the time of their death?",
+      "At the time of death, what age was Otto Frank?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      89,
+      89,
+      89,
+      85,
+      85
+    ],
+    "trial_responses": [
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 85",
+      "Answer: 85"
+    ]
+  },
+  {
+    "question": "At what age did John Coltrane die?",
+    "answer": 40,
+    "category": "Age at death",
+    "name": "John Coltrane",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 80,
+    "paraphrases": [
+      "At what age did John Coltrane die?",
+      "How old was John Coltrane when they died?",
+      "What was John Coltrane's age at death?",
+      "How many years old was John Coltrane at the time of their death?",
+      "At the time of death, what age was John Coltrane?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "trial_responses": [
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64"
+    ]
+  },
+  {
+    "question": "At what age did Robert Schumann die?",
+    "answer": 46,
+    "category": "Age at death",
+    "name": "Robert Schumann",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 82,
+    "paraphrases": [
+      "At what age did Robert Schumann die?",
+      "How old was Robert Schumann when they died?",
+      "What was Robert Schumann's age at death?",
+      "How many years old was Robert Schumann at the time of their death?",
+      "At the time of death, what age was Robert Schumann?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      38,
+      38,
+      38,
+      38,
+      38
+    ],
+    "trial_responses": [
+      "Answer: 38",
+      "Answer: 38",
+      "Answer: 38",
+      "Answer: 38",
+      "Answer: 38"
+    ]
+  },
+  {
+    "question": "At what age did Kamala Sohonie die?",
+    "answer": 86,
+    "category": "Age at death",
+    "name": "Kamala Sohonie",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 84,
+    "paraphrases": [
+      "At what age did Kamala Sohonie die?",
+      "How old was Kamala Sohonie when they died?",
+      "What was Kamala Sohonie's age at death?",
+      "How many years old was Kamala Sohonie at the time of their death?",
+      "At the time of death, what age was Kamala Sohonie?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      75,
+      70,
+      70,
+      79,
+      10
+    ],
+    "trial_responses": [
+      "Answer: 75",
+      "Answer: 70",
+      "Answer: 70",
+      "Answer: 79",
+      "Answer: 10"
+    ]
+  },
+  {
+    "question": "At what age did Karen Wetterhahn die?",
+    "answer": 48,
+    "category": "Age at death",
+    "name": "Karen Wetterhahn",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 87,
+    "paraphrases": [
+      "At what age did Karen Wetterhahn die?",
+      "How old was Karen Wetterhahn when they died?",
+      "What was Karen Wetterhahn's age at death?",
+      "How many years old was Karen Wetterhahn at the time of their death?",
+      "At the time of death, what age was Karen Wetterhahn?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      53,
+      49,
+      50,
+      50,
+      34
+    ],
+    "trial_responses": [
+      "Answer: 53",
+      "Answer: 49",
+      "Answer: 50",
+      "Answer: 50",
+      "Answer: 34"
+    ]
+  },
+  {
+    "question": "At what age did Ruth R. Benerito die?",
+    "answer": 97,
+    "category": "Age at death",
+    "name": "Ruth R. Benerito",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 89,
+    "paraphrases": [
+      "At what age did Ruth R. Benerito die?",
+      "How old was Ruth R. Benerito when they died?",
+      "What was Ruth R. Benerito's age at death?",
+      "How many years old was Ruth R. Benerito at the time of their death?",
+      "At the time of death, what age was Ruth R. Benerito?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      89,
+      84,
+      84,
+      89,
+      84
+    ],
+    "trial_responses": [
+      "Answer: 89",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 89",
+      "Answer: 84"
+    ]
+  },
+  {
+    "question": "At what age did Hazel Bishop die?",
+    "answer": 92,
+    "category": "Age at death",
+    "name": "Hazel Bishop",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 90,
+    "paraphrases": [
+      "At what age did Hazel Bishop die?",
+      "How old was Hazel Bishop when they died?",
+      "What was Hazel Bishop's age at death?",
+      "How many years old was Hazel Bishop at the time of their death?",
+      "At the time of death, what age was Hazel Bishop?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      82,
+      80,
+      80,
+      85,
+      100
+    ],
+    "trial_responses": [
+      "Answer: 82",
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 85",
+      "Answer: 100"
+    ]
+  },
+  {
+    "question": "At what age did Asima Chatterjee die?",
+    "answer": 89,
+    "category": "Age at death",
+    "name": "Asima Chatterjee",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 93,
+    "paraphrases": [
+      "At what age did Asima Chatterjee die?",
+      "How old was Asima Chatterjee when they died?",
+      "What was Asima Chatterjee's age at death?",
+      "How many years old was Asima Chatterjee at the time of their death?",
+      "At the time of death, what age was Asima Chatterjee?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      82,
+      82,
+      83,
+      82
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 83",
+      "Answer: 82"
+    ]
+  },
+  {
+    "question": "At what age did Mildred Cohn die?",
+    "answer": 95,
+    "category": "Age at death",
+    "name": "Mildred Cohn",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 94,
+    "paraphrases": [
+      "At what age did Mildred Cohn die?",
+      "How old was Mildred Cohn when they died?",
+      "What was Mildred Cohn's age at death?",
+      "How many years old was Mildred Cohn at the time of their death?",
+      "At the time of death, what age was Mildred Cohn?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      85,
+      82,
+      82,
+      82,
+      82
+    ],
+    "trial_responses": [
+      "Answer: 85",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82"
+    ]
+  },
+  {
+    "question": "At what age did Anna J. Harrison die?",
+    "answer": 85,
+    "category": "Age at death",
+    "name": "Anna J. Harrison",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 96,
+    "paraphrases": [
+      "At what age did Anna J. Harrison die?",
+      "How old was Anna J. Harrison when they died?",
+      "What was Anna J. Harrison's age at death?",
+      "How many years old was Anna J. Harrison at the time of their death?",
+      "At the time of death, what age was Anna J. Harrison?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      82,
+      82,
+      82,
+      82,
+      78
+    ],
+    "trial_responses": [
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 78"
+    ]
+  },
+  {
+    "question": "At what age did Dorothy Hodgkin die?",
+    "answer": 84,
+    "category": "Age at death",
+    "name": "Dorothy Hodgkin",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 97,
+    "paraphrases": [
+      "At what age did Dorothy Hodgkin die?",
+      "How old was Dorothy Hodgkin when they died?",
+      "What was Dorothy Hodgkin's age at death?",
+      "How many years old was Dorothy Hodgkin at the time of their death?",
+      "At the time of death, what age was Dorothy Hodgkin?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      90,
+      95,
+      95,
+      95,
+      90
+    ],
+    "trial_responses": [
+      "Answer: 90",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 90"
+    ]
+  },
+  {
+    "question": "At what age did Stephanie L. Kwolek die?",
+    "answer": 90,
+    "category": "Age at death",
+    "name": "Stephanie L. Kwolek",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 99,
+    "paraphrases": [
+      "At what age did Stephanie L. Kwolek die?",
+      "How old was Stephanie L. Kwolek when they died?",
+      "What was Stephanie L. Kwolek's age at death?",
+      "How many years old was Stephanie L. Kwolek at the time of their death?",
+      "At the time of death, what age was Stephanie L. Kwolek?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      84,
+      84,
+      84,
+      84
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84"
+    ]
+  },
+  {
+    "question": "At what age did Louise Nevelson die?",
+    "answer": 88,
+    "category": "Age at death",
+    "name": "Louise Nevelson",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 100,
+    "paraphrases": [
+      "At what age did Louise Nevelson die?",
+      "How old was Louise Nevelson when they died?",
+      "What was Louise Nevelson's age at death?",
+      "How many years old was Louise Nevelson at the time of their death?",
+      "At the time of death, what age was Louise Nevelson?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      89,
+      89,
+      91,
+      84,
+      89
+    ],
+    "trial_responses": [
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 91",
+      "Answer: 84",
+      "Answer: 89"
+    ]
+  },
+  {
+    "question": "At what age did Ingmar Bergman die?",
+    "answer": 89,
+    "category": "Age at death",
+    "name": "Ingmar Bergman",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 102,
+    "paraphrases": [
+      "At what age did Ingmar Bergman die?",
+      "How old was Ingmar Bergman when they died?",
+      "What was Ingmar Bergman's age at death?",
+      "How many years old was Ingmar Bergman at the time of their death?",
+      "At the time of death, what age was Ingmar Bergman?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      83,
+      83,
+      83,
+      88,
+      85
+    ],
+    "trial_responses": [
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 88",
+      "Answer: 85"
+    ]
+  },
+  {
+    "question": "At what age did Leonhard Euler die?",
+    "answer": 76,
+    "category": "Age at death",
+    "name": "Leonhard Euler",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 103,
+    "paraphrases": [
+      "At what age did Leonhard Euler die?",
+      "How old was Leonhard Euler when they died?",
+      "What was Leonhard Euler's age at death?",
+      "How many years old was Leonhard Euler at the time of their death?",
+      "At the time of death, what age was Leonhard Euler?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      83,
+      83,
+      83,
+      83,
+      83
+    ],
+    "trial_responses": [
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83"
+    ]
+  },
+  {
+    "question": "At what age did August Strindberg die?",
+    "answer": 63,
+    "category": "Age at death",
+    "name": "August Strindberg",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 106,
+    "paraphrases": [
+      "At what age did August Strindberg die?",
+      "How old was August Strindberg when they died?",
+      "What was August Strindberg's age at death?",
+      "How many years old was August Strindberg at the time of their death?",
+      "At the time of death, what age was August Strindberg?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      80,
+      65,
+      80,
+      65
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 80",
+      "Answer: 65",
+      "Answer: 80",
+      "Answer: 65"
+    ]
+  },
+  {
+    "question": "At what age did Joseph Bonaparte die?",
+    "answer": 76,
+    "category": "Age at death",
+    "name": "Joseph Bonaparte",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 107,
+    "paraphrases": [
+      "At what age did Joseph Bonaparte die?",
+      "How old was Joseph Bonaparte when they died?",
+      "What was Joseph Bonaparte's age at death?",
+      "How many years old was Joseph Bonaparte at the time of their death?",
+      "At the time of death, what age was Joseph Bonaparte?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      59,
+      58,
+      58,
+      58,
+      57
+    ],
+    "trial_responses": [
+      "Answer: 59",
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 57"
+    ]
+  },
+  {
+    "question": "At what age did Louis XVI of France die?",
+    "answer": 38,
+    "category": "Age at death",
+    "name": "Louis XVI of France",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 108,
+    "paraphrases": [
+      "At what age did Louis XVI of France die?",
+      "How old was Louis XVI of France when they died?",
+      "What was Louis XVI of France's age at death?",
+      "How many years old was Louis XVI of France at the time of their death?",
+      "At the time of death, what age was Louis XVI of France?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      39,
+      39,
+      39,
+      39,
+      39
+    ],
+    "trial_responses": [
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39"
+    ]
+  },
+  {
+    "question": "At what age did Louis XVIII of France die?",
+    "answer": 68,
+    "category": "Age at death",
+    "name": "Louis XVIII of France",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 111,
+    "paraphrases": [
+      "At what age did Louis XVIII of France die?",
+      "How old was Louis XVIII of France when they died?",
+      "What was Louis XVIII of France's age at death?",
+      "How many years old was Louis XVIII of France at the time of their death?",
+      "At the time of death, what age was Louis XVIII of France?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      60,
+      51,
+      77,
+      51,
+      60
+    ],
+    "trial_responses": [
+      "Answer: 60",
+      "Answer: 51",
+      "Answer: 77",
+      "Answer: 51",
+      "Answer: 60"
+    ]
+  },
+  {
+    "question": "At what age did Giuseppe Arcimboldo die?",
+    "answer": 66,
+    "category": "Age at death",
+    "name": "Giuseppe Arcimboldo",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 112,
+    "paraphrases": [
+      "At what age did Giuseppe Arcimboldo die?",
+      "How old was Giuseppe Arcimboldo when they died?",
+      "What was Giuseppe Arcimboldo's age at death?",
+      "How many years old was Giuseppe Arcimboldo at the time of their death?",
+      "At the time of death, what age was Giuseppe Arcimboldo?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      51,
+      59,
+      59,
+      60,
+      60
+    ],
+    "trial_responses": [
+      "Answer: 51",
+      "Answer: 59",
+      "Answer: 59",
+      "Answer: 60",
+      "Answer: 60"
+    ]
+  },
+  {
+    "question": "At what age did Charles X of France die?",
+    "answer": 79,
+    "category": "Age at death",
+    "name": "Charles X of France",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 113,
+    "paraphrases": [
+      "At what age did Charles X of France die?",
+      "How old was Charles X of France when they died?",
+      "What was Charles X of France's age at death?",
+      "How many years old was Charles X of France at the time of their death?",
+      "At the time of death, what age was Charles X of France?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      45,
+      45,
+      56,
+      45,
+      45
+    ],
+    "trial_responses": [
+      "Answer: 45",
+      "Answer: 45",
+      "Answer: 56",
+      "Answer: 45",
+      "Answer: 45"
+    ]
+  },
+  {
+    "question": "At what age did Louis Philippe I die?",
+    "answer": 76,
+    "category": "Age at death",
+    "name": "Louis Philippe I",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 114,
+    "paraphrases": [
+      "At what age did Louis Philippe I die?",
+      "How old was Louis Philippe I when they died?",
+      "What was Louis Philippe I's age at death?",
+      "How many years old was Louis Philippe I at the time of their death?",
+      "At the time of death, what age was Louis Philippe I?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      46,
+      46,
+      70,
+      46,
+      70
+    ],
+    "trial_responses": [
+      "Answer: 46",
+      "Answer: 46",
+      "Answer: 70",
+      "Answer: 46",
+      "Answer: 70"
+    ]
+  },
+  {
+    "question": "At what age did Annibale Carracci die?",
+    "answer": 49,
+    "category": "Age at death",
+    "name": "Annibale Carracci",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 115,
+    "paraphrases": [
+      "At what age did Annibale Carracci die?",
+      "How old was Annibale Carracci when they died?",
+      "What was Annibale Carracci's age at death?",
+      "How many years old was Annibale Carracci at the time of their death?",
+      "At the time of death, what age was Annibale Carracci?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      50,
+      50,
+      59,
+      50,
+      50
+    ],
+    "trial_responses": [
+      "Answer: 50",
+      "Answer: 50",
+      "Answer: 59",
+      "Answer: 50",
+      "Answer: 50"
+    ]
+  },
+  {
+    "question": "At what age did René Magritte die?",
+    "answer": 68,
+    "category": "Age at death",
+    "name": "René Magritte",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 117,
+    "paraphrases": [
+      "At what age did René Magritte die?",
+      "How old was René Magritte when they died?",
+      "What was René Magritte's age at death?",
+      "How many years old was René Magritte at the time of their death?",
+      "At the time of death, what age was René Magritte?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      64,
+      64,
+      71,
+      64,
+      81
+    ],
+    "trial_responses": [
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 71",
+      "Answer: 64",
+      "Answer: 81"
+    ]
+  },
+  {
+    "question": "At what age did Lluís Companys die?",
+    "answer": 58,
+    "category": "Age at death",
+    "name": "Lluís Companys",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 120,
+    "paraphrases": [
+      "At what age did Lluís Companys die?",
+      "How old was Lluís Companys when they died?",
+      "What was Lluís Companys's age at death?",
+      "How many years old was Lluís Companys at the time of their death?",
+      "At the time of death, what age was Lluís Companys?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      79,
+      60,
+      69,
+      63,
+      59
+    ],
+    "trial_responses": [
+      "Answer: 79",
+      "Answer: 60",
+      "Answer: 69",
+      "Answer: 63",
+      "Answer: 59"
+    ]
+  },
+  {
+    "question": "At what age did Ivan IV Vasilyevich die?",
+    "answer": 53,
+    "category": "Age at death",
+    "name": "Ivan IV Vasilyevich",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 121,
+    "paraphrases": [
+      "At what age did Ivan IV Vasilyevich die?",
+      "How old was Ivan IV Vasilyevich when they died?",
+      "What was Ivan IV Vasilyevich's age at death?",
+      "How many years old was Ivan IV Vasilyevich at the time of their death?",
+      "At the time of death, what age was Ivan IV Vasilyevich?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      39,
+      54,
+      64,
+      54,
+      39
+    ],
+    "trial_responses": [
+      "Answer: 39",
+      "Answer: 54",
+      "Answer: 64",
+      "Answer: 54",
+      "Answer: 39"
+    ]
+  },
+  {
+    "question": "At what age did Winston Churchill die?",
+    "answer": 90,
+    "category": "Age at death",
+    "name": "Winston Churchill",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 125,
+    "paraphrases": [
+      "At what age did Winston Churchill die?",
+      "How old was Winston Churchill when they died?",
+      "What was Winston Churchill's age at death?",
+      "How many years old was Winston Churchill at the time of their death?",
+      "At the time of death, what age was Winston Churchill?"
+    ],
+    "correct_fraction": 0.4,
+    "correct_count": 2,
+    "trial_count": 5,
+    "trial_predictions": [
+      91,
+      91,
+      91,
+      90,
+      90
+    ],
+    "trial_responses": [
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 90",
+      "Answer: 90"
+    ]
+  },
+  {
+    "question": "At what age did Fred Sersen die?",
+    "answer": 72,
+    "category": "Age at death",
+    "name": "Fred Sersen",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 129,
+    "paraphrases": [
+      "At what age did Fred Sersen die?",
+      "How old was Fred Sersen when they died?",
+      "What was Fred Sersen's age at death?",
+      "How many years old was Fred Sersen at the time of their death?",
+      "At the time of death, what age was Fred Sersen?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      83,
+      82,
+      84,
+      82,
+      80
+    ],
+    "trial_responses": [
+      "Answer: 83",
+      "Answer: 82",
+      "Answer: 84",
+      "Answer: 82",
+      "Answer: 80"
+    ]
+  },
+  {
+    "question": "At what age did Sun Yat-sen die?",
+    "answer": 58,
+    "category": "Age at death",
+    "name": "Sun Yat-sen",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 135,
+    "paraphrases": [
+      "At what age did Sun Yat-sen die?",
+      "How old was Sun Yat-sen when they died?",
+      "What was Sun Yat-sen's age at death?",
+      "How many years old was Sun Yat-sen at the time of their death?",
+      "At the time of death, what age was Sun Yat-sen?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      91,
+      91,
+      90,
+      91,
+      91
+    ],
+    "trial_responses": [
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 90",
+      "Answer: 91",
+      "Answer: 91"
+    ]
+  },
+  {
+    "question": "At what age did Andrew Johnson die?",
+    "answer": 66,
+    "category": "Age at death",
+    "name": "Andrew Johnson",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 138,
+    "paraphrases": [
+      "At what age did Andrew Johnson die?",
+      "How old was Andrew Johnson when they died?",
+      "What was Andrew Johnson's age at death?",
+      "How many years old was Andrew Johnson at the time of their death?",
+      "At the time of death, what age was Andrew Johnson?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      57,
+      57,
+      57,
+      67,
+      67
+    ],
+    "trial_responses": [
+      "Answer: 57",
+      "Answer: 57",
+      "Answer: 57",
+      "Answer: 67",
+      "Answer: 67"
+    ]
+  },
+  {
+    "question": "At what age did Pierre Trudeau die?",
+    "answer": 80,
+    "category": "Age at death",
+    "name": "Pierre Trudeau",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 139,
+    "paraphrases": [
+      "At what age did Pierre Trudeau die?",
+      "How old was Pierre Trudeau when they died?",
+      "What was Pierre Trudeau's age at death?",
+      "How many years old was Pierre Trudeau at the time of their death?",
+      "At the time of death, what age was Pierre Trudeau?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      84,
+      84,
+      84,
+      84
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84"
+    ]
+  },
+  {
+    "question": "At what age did L. B. Abbott die?",
+    "answer": 77,
+    "category": "Age at death",
+    "name": "L. B. Abbott",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 140,
+    "paraphrases": [
+      "At what age did L. B. Abbott die?",
+      "How old was L. B. Abbott when they died?",
+      "What was L. B. Abbott's age at death?",
+      "How many years old was L. B. Abbott at the time of their death?",
+      "At the time of death, what age was L. B. Abbott?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      82,
+      79,
+      78,
+      79,
+      79
+    ],
+    "trial_responses": [
+      "Answer: 82",
+      "Answer: 79",
+      "Answer: 78",
+      "Answer: 79",
+      "Answer: 79"
+    ]
+  },
+  {
+    "question": "At what age did Michael Faraday die?",
+    "answer": 75,
+    "category": "Age at death",
+    "name": "Michael Faraday",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 144,
+    "paraphrases": [
+      "At what age did Michael Faraday die?",
+      "How old was Michael Faraday when they died?",
+      "What was Michael Faraday's age at death?",
+      "How many years old was Michael Faraday at the time of their death?",
+      "At the time of death, what age was Michael Faraday?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      65,
+      79,
+      79,
+      95,
+      80
+    ],
+    "trial_responses": [
+      "Answer: 65",
+      "Answer: 79",
+      "Answer: 79",
+      "Answer: 95",
+      "Answer: 80"
+    ]
+  },
+  {
+    "question": "At what age did Joseph Fourier die?",
+    "answer": 62,
+    "category": "Age at death",
+    "name": "Joseph Fourier",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 148,
+    "paraphrases": [
+      "At what age did Joseph Fourier die?",
+      "How old was Joseph Fourier when they died?",
+      "What was Joseph Fourier's age at death?",
+      "How many years old was Joseph Fourier at the time of their death?",
+      "At the time of death, what age was Joseph Fourier?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      52,
+      52,
+      50,
+      52,
+      52
+    ],
+    "trial_responses": [
+      "Answer: 52",
+      "Answer: 52",
+      "Answer: 50",
+      "Answer: 52",
+      "Answer: 52"
+    ]
+  },
+  {
+    "question": "At what age did Augustin-Louis Cauchy die?",
+    "answer": 67,
+    "category": "Age at death",
+    "name": "Augustin-Louis Cauchy",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 149,
+    "paraphrases": [
+      "At what age did Augustin-Louis Cauchy die?",
+      "How old was Augustin-Louis Cauchy when they died?",
+      "What was Augustin-Louis Cauchy's age at death?",
+      "How many years old was Augustin-Louis Cauchy at the time of their death?",
+      "At the time of death, what age was Augustin-Louis Cauchy?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      53,
+      53,
+      53,
+      53,
+      53
+    ],
+    "trial_responses": [
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 53"
+    ]
+  },
+  {
+    "question": "What is the number of surviving string quartets Schubert composed?",
+    "answer": 15,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 0,
+    "paraphrases": [
+      "What is the number of surviving string quartets Schubert composed?",
+      "How many surviving string quartets Schubert composed?",
+      "Give the number of surviving string quartets Schubert composed.",
+      "State the total count of surviving string quartets Schubert composed.",
+      "What is the total number of surviving string quartets Schubert composed?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      17,
+      12,
+      12,
+      17,
+      19
+    ],
+    "trial_responses": [
+      "Answer: 17",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 17",
+      "Answer: 19"
+    ]
+  },
+  {
+    "question": "What is the number of cantos in Dante's Inferno?",
+    "answer": 34,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 1,
+    "paraphrases": [
+      "What is the number of cantos in Dante's Inferno?",
+      "How many cantos are in Dante's Inferno?",
+      "How many cantos does Dante's Inferno contain?",
+      "Give the total number of cantos in Dante's Inferno.",
+      "What is the canto count for Dante's Inferno?"
+    ],
+    "correct_fraction": 0.4,
+    "correct_count": 2,
+    "trial_count": 5,
+    "trial_predictions": [
+      33,
+      33,
+      33,
+      34,
+      34
+    ],
+    "trial_responses": [
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 34",
+      "Answer: 34"
+    ]
+  },
+  {
+    "question": "What is the number of operas Verdi composed?",
+    "answer": 28,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 4,
+    "paraphrases": [
+      "What is the number of operas Verdi composed?",
+      "How many operas Verdi composed?",
+      "Give the number of operas Verdi composed.",
+      "State the total count of operas Verdi composed.",
+      "What is the total number of operas Verdi composed?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      20,
+      20,
+      20,
+      28,
+      20
+    ],
+    "trial_responses": [
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 28",
+      "Answer: 20"
+    ]
+  },
+  {
+    "question": "What is the number of counties in England?",
+    "answer": 48,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 8,
+    "paraphrases": [
+      "What is the number of counties in England?",
+      "How many counties in England?",
+      "Give the number of counties in England.",
+      "State the total count of counties in England.",
+      "What is the total number of counties in England?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      52,
+      52,
+      52,
+      52,
+      52
+    ],
+    "trial_responses": [
+      "Answer: 52",
+      "Answer: 52",
+      "Answer: 52",
+      "Answer: 52",
+      "Answer: 52"
+    ]
+  },
+  {
+    "question": "What is the number of pairs of ribs humans have?",
+    "answer": 12,
+    "category": "Biology",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 13,
+    "paraphrases": [
+      "What is the number of pairs of ribs humans have?",
+      "How many pairs of ribs humans have?",
+      "Give the number of pairs of ribs humans have.",
+      "State the total count of pairs of ribs humans have.",
+      "What is the total number of pairs of ribs humans have?"
+    ],
+    "correct_fraction": 0.4,
+    "correct_count": 2,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      12,
+      12,
+      24,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 24",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the number of fables attributed to Aesop?",
+    "answer": 725,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 14,
+    "paraphrases": [
+      "What is the number of fables attributed to Aesop?",
+      "How many fables are attributed to Aesop?",
+      "Aesop is traditionally credited with how many fables?",
+      "Give the total count of fables attributed to Aesop.",
+      "What is the number of fables traditionally credited to Aesop?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      500,
+      500,
+      850,
+      500,
+      500
+    ],
+    "trial_responses": [
+      "Answer: 500",
+      "Answer: 500",
+      "Answer: 850",
+      "Answer: 500",
+      "Answer: 500"
+    ]
+  },
+  {
+    "question": "What is the number of muscles in the human body?",
+    "answer": 600,
+    "category": "Biology",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 16,
+    "paraphrases": [
+      "What is the number of muscles in the human body?",
+      "How many muscles in the human body?",
+      "Give the number of muscles in the human body.",
+      "State the total count of muscles in the human body.",
+      "What is the total number of muscles in the human body?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      640,
+      640,
+      640,
+      640,
+      640
+    ],
+    "trial_responses": [
+      "Answer: 640",
+      "Answer: 640",
+      "Answer: 640",
+      "Answer: 640",
+      "Answer: 640"
+    ]
+  },
+  {
+    "question": "What is the number of books in the Hebrew Bible?",
+    "answer": 24,
+    "category": "Religion",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 26,
+    "paraphrases": [
+      "What is the number of books in the Hebrew Bible?",
+      "How many books in the Hebrew Bible?",
+      "Give the number of books in the Hebrew Bible.",
+      "State the total count of books in the Hebrew Bible.",
+      "What is the total number of books in the Hebrew Bible?"
+    ],
+    "correct_fraction": 0.6,
+    "correct_count": 3,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      39,
+      39,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the number of metric tons the Statue of Liberty weighs?",
+    "answer": 225,
+    "category": "Trivia",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 29,
+    "paraphrases": [
+      "What is the number of metric tons the Statue of Liberty weighs?",
+      "How many metric tons the Statue of Liberty weighs?",
+      "Give the number of metric tons the Statue of Liberty weighs.",
+      "State the total count of metric tons the Statue of Liberty weighs.",
+      "What is the total number of metric tons the Statue of Liberty weighs?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      230,
+      230,
+      230,
+      230,
+      230
+    ],
+    "trial_responses": [
+      "Answer: 230",
+      "Answer: 230",
+      "Answer: 230",
+      "Answer: 230",
+      "Answer: 230"
+    ]
+  },
+  {
+    "question": "What is the number of Goldberg Variations Bach composed?",
+    "answer": 30,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 37,
+    "paraphrases": [
+      "What is the number of Goldberg Variations Bach composed?",
+      "How many Goldberg Variations did Bach compose?",
+      "What is the total number of Bach's Goldberg Variations?",
+      "Give the count of Goldberg Variations composed by Bach.",
+      "Bach composed how many Goldberg Variations?"
+    ],
+    "correct_fraction": 0.6,
+    "correct_count": 3,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      0,
+      30,
+      30,
+      30
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 0",
+      "Answer: 30",
+      "Answer: 30",
+      "Answer: 30"
+    ]
+  },
+  {
+    "question": "What is the number of storeys in the Leaning Tower of Pisa?",
+    "answer": 8,
+    "category": "Architecture",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 38,
+    "paraphrases": [
+      "What is the number of storeys in the Leaning Tower of Pisa?",
+      "How many storeys does the Leaning Tower of Pisa have?",
+      "What is the storey count of the Leaning Tower of Pisa?",
+      "Give the number of storeys in the Leaning Tower of Pisa.",
+      "The Leaning Tower of Pisa consists of how many storeys?"
+    ],
+    "correct_fraction": 0.6,
+    "correct_count": 3,
+    "trial_count": 5,
+    "trial_predictions": [
+      5,
+      5,
+      8,
+      8,
+      8
+    ],
+    "trial_responses": [
+      "Answer: 5",
+      "Answer: 5",
+      "Answer: 8",
+      "Answer: 8",
+      "Answer: 8"
+    ]
+  },
+  {
+    "question": "What is the number of Olympic gold medals Michael Phelps won?",
+    "answer": 23,
+    "category": "Sports",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 43,
+    "paraphrases": [
+      "What is the number of Olympic gold medals Michael Phelps won?",
+      "How many Olympic gold medals Michael Phelps won?",
+      "Give the number of Olympic gold medals Michael Phelps won.",
+      "State the total count of Olympic gold medals Michael Phelps won.",
+      "What is the total number of Olympic gold medals Michael Phelps won?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      28,
+      23,
+      28,
+      28,
+      28
+    ],
+    "trial_responses": [
+      "Answer: 28",
+      "Answer: 23",
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28"
+    ]
+  },
+  {
+    "question": "What is the number of string quartets Beethoven composed?",
+    "answer": 16,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 51,
+    "paraphrases": [
+      "What is the number of string quartets Beethoven composed?",
+      "How many string quartets Beethoven composed?",
+      "Give the number of string quartets Beethoven composed.",
+      "State the total count of string quartets Beethoven composed.",
+      "What is the total number of string quartets Beethoven composed?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      9,
+      9,
+      9,
+      9,
+      12
+    ],
+    "trial_responses": [
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 12"
+    ]
+  },
+  {
+    "question": "What is the number of nocturnes Chopin composed?",
+    "answer": 21,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 52,
+    "paraphrases": [
+      "What is the number of nocturnes Chopin composed?",
+      "How many nocturnes did Chopin compose?",
+      "What is the total count of Chopin's nocturnes?",
+      "Give the number of nocturnes composed by Chopin.",
+      "Chopin composed how many nocturnes?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      20,
+      23,
+      21
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 20",
+      "Answer: 23",
+      "Answer: 21"
+    ]
+  },
+  {
+    "question": "What is the number of provinces in China?",
+    "answer": 23,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 55,
+    "paraphrases": [
+      "What is the number of provinces in China?",
+      "How many provinces in China?",
+      "Give the number of provinces in China.",
+      "State the total count of provinces in China.",
+      "What is the total number of provinces in China?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      23,
+      34,
+      34,
+      34,
+      34
+    ],
+    "trial_responses": [
+      "Answer: 23",
+      "Answer: 34",
+      "Answer: 34",
+      "Answer: 34",
+      "Answer: 34"
+    ]
+  },
+  {
+    "question": "What is the number of chapters in Don Quixote?",
+    "answer": 126,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 68,
+    "paraphrases": [
+      "What is the number of chapters in Don Quixote?",
+      "How many chapters in Don Quixote?",
+      "Give the number of chapters in Don Quixote.",
+      "State the total count of chapters in Don Quixote.",
+      "What is the total number of chapters in Don Quixote?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      82,
+      82,
+      82,
+      82,
+      82
+    ],
+    "trial_responses": [
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82"
+    ]
+  },
+  {
+    "question": "What is the number of violin concertos Vivaldi composed?",
+    "answer": 230,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 70,
+    "paraphrases": [
+      "What is the number of violin concertos Vivaldi composed?",
+      "How many violin concertos Vivaldi composed?",
+      "Give the number of violin concertos Vivaldi composed.",
+      "State the total count of violin concertos Vivaldi composed.",
+      "What is the total number of violin concertos Vivaldi composed?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      12,
+      12,
+      24,
+      12
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 24",
+      "Answer: 12"
+    ]
+  },
+  {
+    "question": "What is the number of missions in the Apollo program?",
+    "answer": 17,
+    "category": "Space",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 73,
+    "paraphrases": [
+      "What is the number of missions in the Apollo program?",
+      "How many missions in the Apollo program?",
+      "Give the number of missions in the Apollo program.",
+      "State the total count of missions in the Apollo program.",
+      "What is the total number of missions in the Apollo program?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      12,
+      12,
+      12,
+      17
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 17"
+    ]
+  },
+  {
+    "question": "What is the number of dialogues Plato wrote?",
+    "answer": 36,
+    "category": "Philosophy",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 74,
+    "paraphrases": [
+      "What is the number of dialogues Plato wrote?",
+      "How many dialogues Plato wrote?",
+      "Give the number of dialogues Plato wrote.",
+      "State the total count of dialogues Plato wrote.",
+      "What is the total number of dialogues Plato wrote?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      37,
+      37,
+      12,
+      37
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 12",
+      "Answer: 37"
+    ]
+  },
+  {
+    "question": "What is the number of partitas for solo violin Bach composed?",
+    "answer": 3,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 76,
+    "paraphrases": [
+      "What is the number of partitas for solo violin Bach composed?",
+      "How many partitas for solo violin Bach composed?",
+      "Give the number of partitas for solo violin Bach composed.",
+      "State the total count of partitas for solo violin Bach composed.",
+      "What is the total number of partitas for solo violin Bach composed?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      8,
+      5,
+      8,
+      8,
+      8
+    ],
+    "trial_responses": [
+      "Answer: 8",
+      "Answer: 5",
+      "Answer: 8",
+      "Answer: 8",
+      "Answer: 8"
+    ]
+  },
+  {
+    "question": "What is the number of poems in Emily Dickinson's first published collection?",
+    "answer": 115,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 77,
+    "paraphrases": [
+      "What is the number of poems in Emily Dickinson's first published collection?",
+      "How many poems in Emily Dickinson's first published collection?",
+      "Give the number of poems in Emily Dickinson's first published collection.",
+      "State the total count of poems in Emily Dickinson's first published collection.",
+      "What is the total number of poems in Emily Dickinson's first published collection?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "trial_responses": [
+      "Answer: 48",
+      "Answer: 48",
+      "Answer: 48",
+      "Answer: 48",
+      "Answer: 48"
+    ]
+  },
+  {
+    "question": "What is the number of odes Horace wrote?",
+    "answer": 103,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 79,
+    "paraphrases": [
+      "What is the number of odes Horace wrote?",
+      "How many odes Horace wrote?",
+      "Give the number of odes Horace wrote.",
+      "State the total count of odes Horace wrote.",
+      "What is the total number of odes Horace wrote?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "trial_responses": [
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17"
+    ]
+  },
+  {
+    "question": "What is the number of satires Juvenal wrote?",
+    "answer": 16,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 80,
+    "paraphrases": [
+      "What is the number of satires Juvenal wrote?",
+      "How many satires Juvenal wrote?",
+      "Give the number of satires Juvenal wrote.",
+      "State the total count of satires Juvenal wrote.",
+      "What is the total number of satires Juvenal wrote?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "trial_responses": [
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14"
+    ]
+  },
+  {
+    "question": "What is the number of eclogues Virgil wrote?",
+    "answer": 10,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 81,
+    "paraphrases": [
+      "What is the number of eclogues Virgil wrote?",
+      "How many eclogues Virgil wrote?",
+      "Give the number of eclogues Virgil wrote.",
+      "State the total count of eclogues Virgil wrote.",
+      "What is the total number of eclogues Virgil wrote?"
+    ],
+    "correct_fraction": 0.2,
+    "correct_count": 1,
+    "trial_count": 5,
+    "trial_predictions": [
+      4,
+      10,
+      4,
+      4,
+      4
+    ],
+    "trial_responses": [
+      "Answer: 4",
+      "Answer: 10",
+      "Answer: 4",
+      "Answer: 4",
+      "Answer: 4"
+    ]
+  },
+  {
+    "question": "What is the number of departments in France?",
+    "answer": 101,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 89,
+    "paraphrases": [
+      "What is the number of departments in France?",
+      "How many departments are in France?",
+      "Into how many departments is France divided?",
+      "Give the total number of French departments.",
+      "What is France's count of departments?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "trial_responses": [
+      "Answer: 18",
+      "Answer: 18",
+      "Answer: 18",
+      "Answer: 18",
+      "Answer: 18"
+    ]
+  },
+  {
+    "question": "What is the number of études Ligeti composed for piano?",
+    "answer": 18,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 91,
+    "paraphrases": [
+      "What is the number of études Ligeti composed for piano?",
+      "How many études Ligeti composed for piano?",
+      "Give the number of études Ligeti composed for piano.",
+      "State the total count of études Ligeti composed for piano.",
+      "What is the total number of études Ligeti composed for piano?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12"
+    ]
+  },
+  {
+    "question": "What is the number of operas Wagner composed?",
+    "answer": 13,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 95,
+    "paraphrases": [
+      "What is the number of operas Wagner composed?",
+      "How many operas Wagner composed?",
+      "Give the number of operas Wagner composed.",
+      "State the total count of operas Wagner composed.",
+      "What is the total number of operas Wagner composed?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      4,
+      4,
+      4,
+      40,
+      4
+    ],
+    "trial_responses": [
+      "Answer: 4",
+      "Answer: 4",
+      "Answer: 4",
+      "Answer: 40",
+      "Answer: 4"
+    ]
+  },
+  {
+    "question": "What is the number of sonnets in Petrarch's Canzoniere?",
+    "answer": 317,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 96,
+    "paraphrases": [
+      "What is the number of sonnets in Petrarch's Canzoniere?",
+      "How many sonnets in Petrarch's Canzoniere?",
+      "Give the number of sonnets in Petrarch's Canzoniere.",
+      "State the total count of sonnets in Petrarch's Canzoniere.",
+      "What is the total number of sonnets in Petrarch's Canzoniere?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      366,
+      366,
+      366,
+      366,
+      366
+    ],
+    "trial_responses": [
+      "Answer: 366",
+      "Answer: 366",
+      "Answer: 366",
+      "Answer: 366",
+      "Answer: 366"
+    ]
+  },
+  {
+    "question": "What is the number of maxims in La Rochefoucauld's Maximes?",
+    "answer": 504,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 98,
+    "paraphrases": [
+      "What is the number of maxims in La Rochefoucauld's Maximes?",
+      "How many maxims in La Rochefoucauld's Maximes?",
+      "Give the number of maxims in La Rochefoucauld's Maximes.",
+      "State the total count of maxims in La Rochefoucauld's Maximes.",
+      "What is the total number of maxims in La Rochefoucauld's Maximes?"
+    ],
+    "correct_fraction": 0.0,
+    "correct_count": 0,
+    "trial_count": 5,
+    "trial_predictions": [
+      450,
+      48,
+      450,
+      450,
+      450
+    ],
+    "trial_responses": [
+      "Answer: 450",
+      "Answer: 48",
+      "Answer: 450",
+      "Answer: 450",
+      "Answer: 450"
+    ]
+  }
+]

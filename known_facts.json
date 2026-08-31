@@ -1,0 +1,6499 @@
+[
+  {
+    "question": "At what age did Vincent van Gogh die?",
+    "answer": 37,
+    "category": "Age at death",
+    "name": "Vincent van Gogh",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 10,
+    "paraphrases": [
+      "At what age did Vincent van Gogh die?",
+      "How old was Vincent van Gogh when they died?",
+      "What was Vincent van Gogh's age at death?",
+      "How many years old was Vincent van Gogh at the time of their death?",
+      "At the time of death, what age was Vincent van Gogh?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      37,
+      37,
+      37,
+      37,
+      37
+    ],
+    "trial_responses": [
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37"
+    ]
+  },
+  {
+    "question": "At what age did Frida Kahlo die?",
+    "answer": 47,
+    "category": "Age at death",
+    "name": "Frida Kahlo",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 11,
+    "paraphrases": [
+      "At what age did Frida Kahlo die?",
+      "How old was Frida Kahlo when they died?",
+      "What was Frida Kahlo's age at death?",
+      "How many years old was Frida Kahlo at the time of their death?",
+      "At the time of death, what age was Frida Kahlo?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      47,
+      47,
+      47,
+      47,
+      47
+    ],
+    "trial_responses": [
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47"
+    ]
+  },
+  {
+    "question": "At what age did Pablo Picasso die?",
+    "answer": 91,
+    "category": "Age at death",
+    "name": "Pablo Picasso",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 13,
+    "paraphrases": [
+      "At what age did Pablo Picasso die?",
+      "How old was Pablo Picasso when they died?",
+      "What was Pablo Picasso's age at death?",
+      "How many years old was Pablo Picasso at the time of their death?",
+      "At the time of death, what age was Pablo Picasso?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      91,
+      91,
+      91,
+      91,
+      91
+    ],
+    "trial_responses": [
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 91"
+    ]
+  },
+  {
+    "question": "At what age did Rembrandt die?",
+    "answer": 63,
+    "category": "Age at death",
+    "name": "Rembrandt",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 14,
+    "paraphrases": [
+      "At what age did Rembrandt die?",
+      "How old was Rembrandt when they died?",
+      "What was Rembrandt's age at death?",
+      "How many years old was Rembrandt at the time of their death?",
+      "At the time of death, what age was Rembrandt?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      62,
+      63,
+      63,
+      63,
+      63
+    ],
+    "trial_responses": [
+      "Answer: 62",
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63"
+    ]
+  },
+  {
+    "question": "At what age did Frank Lloyd Wright die?",
+    "answer": 91,
+    "category": "Age at death",
+    "name": "Frank Lloyd Wright",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 17,
+    "paraphrases": [
+      "At what age did Frank Lloyd Wright die?",
+      "How old was Frank Lloyd Wright when they died?",
+      "What was Frank Lloyd Wright's age at death?",
+      "How many years old was Frank Lloyd Wright at the time of their death?",
+      "At the time of death, what age was Frank Lloyd Wright?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      91,
+      91,
+      91,
+      104,
+      91
+    ],
+    "trial_responses": [
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 91",
+      "Answer: 104",
+      "Answer: 91"
+    ]
+  },
+  {
+    "question": "At what age did Lord Byron die?",
+    "answer": 36,
+    "category": "Age at death",
+    "name": "Lord Byron",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 20,
+    "paraphrases": [
+      "At what age did Lord Byron die?",
+      "How old was Lord Byron when they died?",
+      "What was Lord Byron's age at death?",
+      "How many years old was Lord Byron at the time of their death?",
+      "At the time of death, what age was Lord Byron?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      36,
+      36,
+      36,
+      36,
+      36
+    ],
+    "trial_responses": [
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36"
+    ]
+  },
+  {
+    "question": "At what age did Anton Chekhov die?",
+    "answer": 44,
+    "category": "Age at death",
+    "name": "Anton Chekhov",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 22,
+    "paraphrases": [
+      "At what age did Anton Chekhov die?",
+      "How old was Anton Chekhov when they died?",
+      "What was Anton Chekhov's age at death?",
+      "How many years old was Anton Chekhov at the time of their death?",
+      "At the time of death, what age was Anton Chekhov?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      44,
+      44,
+      44,
+      44,
+      44
+    ],
+    "trial_responses": [
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44"
+    ]
+  },
+  {
+    "question": "At what age did Charles Dickens die?",
+    "answer": 58,
+    "category": "Age at death",
+    "name": "Charles Dickens",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 23,
+    "paraphrases": [
+      "At what age did Charles Dickens die?",
+      "How old was Charles Dickens when they died?",
+      "What was Charles Dickens's age at death?",
+      "How many years old was Charles Dickens at the time of their death?",
+      "At the time of death, what age was Charles Dickens?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      58,
+      58,
+      58,
+      58,
+      58
+    ],
+    "trial_responses": [
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 58"
+    ]
+  },
+  {
+    "question": "At what age did Che Guevara die?",
+    "answer": 39,
+    "category": "Age at death",
+    "name": "Che Guevara",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 26,
+    "paraphrases": [
+      "At what age did Che Guevara die?",
+      "How old was Che Guevara when they died?",
+      "What was Che Guevara's age at death?",
+      "How many years old was Che Guevara at the time of their death?",
+      "At the time of death, what age was Che Guevara?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      39,
+      39,
+      39,
+      39,
+      39
+    ],
+    "trial_responses": [
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39"
+    ]
+  },
+  {
+    "question": "At what age did Chuck Berry die?",
+    "answer": 90,
+    "category": "Age at death",
+    "name": "Chuck Berry",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 29,
+    "paraphrases": [
+      "At what age did Chuck Berry die?",
+      "How old was Chuck Berry when they died?",
+      "What was Chuck Berry's age at death?",
+      "How many years old was Chuck Berry at the time of their death?",
+      "At the time of death, what age was Chuck Berry?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      90,
+      90,
+      90,
+      90,
+      90
+    ],
+    "trial_responses": [
+      "Answer: 90",
+      "Answer: 90",
+      "Answer: 90",
+      "Answer: 90",
+      "Answer: 90"
+    ]
+  },
+  {
+    "question": "At what age did Buddy Holly die?",
+    "answer": 22,
+    "category": "Age at death",
+    "name": "Buddy Holly",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 33,
+    "paraphrases": [
+      "At what age did Buddy Holly die?",
+      "How old was Buddy Holly when they died?",
+      "What was Buddy Holly's age at death?",
+      "How many years old was Buddy Holly at the time of their death?",
+      "At the time of death, what age was Buddy Holly?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      22,
+      22,
+      22,
+      22,
+      22
+    ],
+    "trial_responses": [
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22"
+    ]
+  },
+  {
+    "question": "At what age did Tupac Shakur die?",
+    "answer": 25,
+    "category": "Age at death",
+    "name": "Tupac Shakur",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 35,
+    "paraphrases": [
+      "At what age did Tupac Shakur die?",
+      "How old was Tupac Shakur when they died?",
+      "What was Tupac Shakur's age at death?",
+      "How many years old was Tupac Shakur at the time of their death?",
+      "At the time of death, what age was Tupac Shakur?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      26,
+      25,
+      25,
+      25,
+      25
+    ],
+    "trial_responses": [
+      "Answer: 26",
+      "Answer: 25",
+      "Answer: 25",
+      "Answer: 25",
+      "Answer: 25"
+    ]
+  },
+  {
+    "question": "At what age did Carl Friedrich Gauss die?",
+    "answer": 77,
+    "category": "Age at death",
+    "name": "Carl Friedrich Gauss",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 46,
+    "paraphrases": [
+      "At what age did Carl Friedrich Gauss die?",
+      "How old was Carl Friedrich Gauss when they died?",
+      "What was Carl Friedrich Gauss's age at death?",
+      "How many years old was Carl Friedrich Gauss at the time of their death?",
+      "At the time of death, what age was Carl Friedrich Gauss?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      50,
+      77,
+      77,
+      77,
+      77
+    ],
+    "trial_responses": [
+      "Answer: 50",
+      "Answer: 77",
+      "Answer: 77",
+      "Answer: 77",
+      "Answer: 77"
+    ]
+  },
+  {
+    "question": "At what age did Évariste Galois die?",
+    "answer": 20,
+    "category": "Age at death",
+    "name": "Évariste Galois",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 50,
+    "paraphrases": [
+      "At what age did Évariste Galois die?",
+      "How old was Évariste Galois when they died?",
+      "What was Évariste Galois's age at death?",
+      "How many years old was Évariste Galois at the time of their death?",
+      "At the time of death, what age was Évariste Galois?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "trial_responses": [
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20"
+    ]
+  },
+  {
+    "question": "At what age did Emmy Noether die?",
+    "answer": 53,
+    "category": "Age at death",
+    "name": "Emmy Noether",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 51,
+    "paraphrases": [
+      "At what age did Emmy Noether die?",
+      "How old was Emmy Noether when they died?",
+      "What was Emmy Noether's age at death?",
+      "How many years old was Emmy Noether at the time of their death?",
+      "At the time of death, what age was Emmy Noether?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      53,
+      53,
+      53,
+      35,
+      53
+    ],
+    "trial_responses": [
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 35",
+      "Answer: 53"
+    ]
+  },
+  {
+    "question": "At what age did Marie Curie die?",
+    "answer": 66,
+    "category": "Age at death",
+    "name": "Marie Curie",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 54,
+    "paraphrases": [
+      "At what age did Marie Curie die?",
+      "How old was Marie Curie when they died?",
+      "What was Marie Curie's age at death?",
+      "How many years old was Marie Curie at the time of their death?",
+      "At the time of death, what age was Marie Curie?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      66,
+      66,
+      66,
+      66,
+      66
+    ],
+    "trial_responses": [
+      "Answer: 66",
+      "Answer: 66",
+      "Answer: 66",
+      "Answer: 66",
+      "Answer: 66"
+    ]
+  },
+  {
+    "question": "At what age did Alexander Pushkin die?",
+    "answer": 37,
+    "category": "Age at death",
+    "name": "Alexander Pushkin",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 57,
+    "paraphrases": [
+      "At what age did Alexander Pushkin die?",
+      "How old was Alexander Pushkin when they died?",
+      "What was Alexander Pushkin's age at death?",
+      "How many years old was Alexander Pushkin at the time of their death?",
+      "At the time of death, what age was Alexander Pushkin?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      37,
+      37,
+      37,
+      37,
+      37
+    ],
+    "trial_responses": [
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37"
+    ]
+  },
+  {
+    "question": "At what age did Leo Tolstoy die?",
+    "answer": 82,
+    "category": "Age at death",
+    "name": "Leo Tolstoy",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 62,
+    "paraphrases": [
+      "At what age did Leo Tolstoy die?",
+      "How old was Leo Tolstoy when they died?",
+      "What was Leo Tolstoy's age at death?",
+      "How many years old was Leo Tolstoy at the time of their death?",
+      "At the time of death, what age was Leo Tolstoy?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      82,
+      82,
+      82,
+      82,
+      82
+    ],
+    "trial_responses": [
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82",
+      "Answer: 82"
+    ]
+  },
+  {
+    "question": "At what age did Johannes Brahms die?",
+    "answer": 63,
+    "category": "Age at death",
+    "name": "Johannes Brahms",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 68,
+    "paraphrases": [
+      "At what age did Johannes Brahms die?",
+      "How old was Johannes Brahms when they died?",
+      "What was Johannes Brahms's age at death?",
+      "How many years old was Johannes Brahms at the time of their death?",
+      "At the time of death, what age was Johannes Brahms?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      63,
+      63,
+      78,
+      63
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 78",
+      "Answer: 63"
+    ]
+  },
+  {
+    "question": "At what age did Franz Schubert die?",
+    "answer": 31,
+    "category": "Age at death",
+    "name": "Franz Schubert",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 73,
+    "paraphrases": [
+      "At what age did Franz Schubert die?",
+      "How old was Franz Schubert when they died?",
+      "What was Franz Schubert's age at death?",
+      "How many years old was Franz Schubert at the time of their death?",
+      "At the time of death, what age was Franz Schubert?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "trial_responses": [
+      "Answer: 31",
+      "Answer: 31",
+      "Answer: 31",
+      "Answer: 31",
+      "Answer: 31"
+    ]
+  },
+  {
+    "question": "At what age did Giuseppe Verdi die?",
+    "answer": 87,
+    "category": "Age at death",
+    "name": "Giuseppe Verdi",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 76,
+    "paraphrases": [
+      "At what age did Giuseppe Verdi die?",
+      "How old was Giuseppe Verdi when they died?",
+      "What was Giuseppe Verdi's age at death?",
+      "How many years old was Giuseppe Verdi at the time of their death?",
+      "At the time of death, what age was Giuseppe Verdi?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      87,
+      87,
+      87,
+      87,
+      87
+    ],
+    "trial_responses": [
+      "Answer: 87",
+      "Answer: 87",
+      "Answer: 87",
+      "Answer: 87",
+      "Answer: 87"
+    ]
+  },
+  {
+    "question": "At what age did Napoleon II die?",
+    "answer": 21,
+    "category": "Age at death",
+    "name": "Napoleon II",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 105,
+    "paraphrases": [
+      "At what age did Napoleon II die?",
+      "How old was Napoleon II when they died?",
+      "What was Napoleon II's age at death?",
+      "How many years old was Napoleon II at the time of their death?",
+      "At the time of death, what age was Napoleon II?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "trial_responses": [
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21"
+    ]
+  },
+  {
+    "question": "At what age did Franklin Delano Roosevelt die?",
+    "answer": 63,
+    "category": "Age at death",
+    "name": "Franklin Delano Roosevelt",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 124,
+    "paraphrases": [
+      "At what age did Franklin Delano Roosevelt die?",
+      "How old was Franklin Delano Roosevelt when they died?",
+      "What was Franklin Delano Roosevelt's age at death?",
+      "How many years old was Franklin Delano Roosevelt at the time of their death?",
+      "At the time of death, what age was Franklin Delano Roosevelt?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      63,
+      63,
+      63,
+      63
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63"
+    ]
+  },
+  {
+    "question": "At what age did Nelson Mandela die?",
+    "answer": 95,
+    "category": "Age at death",
+    "name": "Nelson Mandela",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 126,
+    "paraphrases": [
+      "At what age did Nelson Mandela die?",
+      "How old was Nelson Mandela when they died?",
+      "What was Nelson Mandela's age at death?",
+      "How many years old was Nelson Mandela at the time of their death?",
+      "At the time of death, what age was Nelson Mandela?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      95,
+      95,
+      95,
+      95,
+      95
+    ],
+    "trial_responses": [
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95"
+    ]
+  },
+  {
+    "question": "At what age did Walt Disney die?",
+    "answer": 65,
+    "category": "Age at death",
+    "name": "Walt Disney",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 142,
+    "paraphrases": [
+      "At what age did Walt Disney die?",
+      "How old was Walt Disney when they died?",
+      "What was Walt Disney's age at death?",
+      "How many years old was Walt Disney at the time of their death?",
+      "At the time of death, what age was Walt Disney?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      65,
+      65,
+      65,
+      65,
+      65
+    ],
+    "trial_responses": [
+      "Answer: 65",
+      "Answer: 65",
+      "Answer: 65",
+      "Answer: 65",
+      "Answer: 65"
+    ]
+  },
+  {
+    "question": "At what age did Thomas Alva Edison die?",
+    "answer": 84,
+    "category": "Age at death",
+    "name": "Thomas Alva Edison",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 143,
+    "paraphrases": [
+      "At what age did Thomas Alva Edison die?",
+      "How old was Thomas Alva Edison when they died?",
+      "What was Thomas Alva Edison's age at death?",
+      "How many years old was Thomas Alva Edison at the time of their death?",
+      "At the time of death, what age was Thomas Alva Edison?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      84,
+      84,
+      84,
+      84,
+      84
+    ],
+    "trial_responses": [
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84",
+      "Answer: 84"
+    ]
+  },
+  {
+    "question": "At what age did Henry Ford die?",
+    "answer": 83,
+    "category": "Age at death",
+    "name": "Henry Ford",
+    "kind": "age",
+    "source_file": "age_facts.json",
+    "source_index": 147,
+    "paraphrases": [
+      "At what age did Henry Ford die?",
+      "How old was Henry Ford when they died?",
+      "What was Henry Ford's age at death?",
+      "How many years old was Henry Ford at the time of their death?",
+      "At the time of death, what age was Henry Ford?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      83,
+      83,
+      83,
+      83,
+      83
+    ],
+    "trial_responses": [
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83",
+      "Answer: 83"
+    ]
+  },
+  {
+    "question": "What is the atomic number of lithium?",
+    "answer": 3,
+    "category": "Atomic number",
+    "symbol": "Li",
+    "name": "Lithium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 2,
+    "paraphrases": [
+      "What is the atomic number of lithium?",
+      "Which atomic number does lithium have?",
+      "What number on the periodic table corresponds to lithium?",
+      "How many protons are in an atom of lithium?",
+      "Give the atomic number for lithium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "trial_responses": [
+      "Answer: 3",
+      "Answer: 3",
+      "Answer: 3",
+      "Answer: 3",
+      "Answer: 3"
+    ]
+  },
+  {
+    "question": "What is the atomic number of beryllium?",
+    "answer": 4,
+    "category": "Atomic number",
+    "symbol": "Be",
+    "name": "Beryllium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 3,
+    "paraphrases": [
+      "What is the atomic number of beryllium?",
+      "Which atomic number does beryllium have?",
+      "What number on the periodic table corresponds to beryllium?",
+      "How many protons are in an atom of beryllium?",
+      "Give the atomic number for beryllium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "trial_responses": [
+      "Answer: 4",
+      "Answer: 4",
+      "Answer: 4",
+      "Answer: 4",
+      "Answer: 4"
+    ]
+  },
+  {
+    "question": "What is the atomic number of boron?",
+    "answer": 5,
+    "category": "Atomic number",
+    "symbol": "B",
+    "name": "Boron",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 4,
+    "paraphrases": [
+      "What is the atomic number of boron?",
+      "Which atomic number does boron have?",
+      "What number on the periodic table corresponds to boron?",
+      "How many protons are in an atom of boron?",
+      "Give the atomic number for boron."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "trial_responses": [
+      "Answer: 5",
+      "Answer: 5",
+      "Answer: 5",
+      "Answer: 5",
+      "Answer: 5"
+    ]
+  },
+  {
+    "question": "What is the atomic number of carbon?",
+    "answer": 6,
+    "category": "Atomic number",
+    "symbol": "C",
+    "name": "Carbon",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 5,
+    "paraphrases": [
+      "What is the atomic number of carbon?",
+      "Which atomic number does carbon have?",
+      "What number on the periodic table corresponds to carbon?",
+      "How many protons are in an atom of carbon?",
+      "Give the atomic number for carbon."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "trial_responses": [
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6"
+    ]
+  },
+  {
+    "question": "What is the atomic number of nitrogen?",
+    "answer": 7,
+    "category": "Atomic number",
+    "symbol": "N",
+    "name": "Nitrogen",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 6,
+    "paraphrases": [
+      "What is the atomic number of nitrogen?",
+      "Which atomic number does nitrogen have?",
+      "What number on the periodic table corresponds to nitrogen?",
+      "How many protons are in an atom of nitrogen?",
+      "Give the atomic number for nitrogen."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "trial_responses": [
+      "Answer: 7",
+      "Answer: 7",
+      "Answer: 7",
+      "Answer: 7",
+      "Answer: 7"
+    ]
+  },
+  {
+    "question": "What is the atomic number of oxygen?",
+    "answer": 8,
+    "category": "Atomic number",
+    "symbol": "O",
+    "name": "Oxygen",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 7,
+    "paraphrases": [
+      "What is the atomic number of oxygen?",
+      "Which atomic number does oxygen have?",
+      "What number on the periodic table corresponds to oxygen?",
+      "How many protons are in an atom of oxygen?",
+      "Give the atomic number for oxygen."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "trial_responses": [
+      "Answer: 8",
+      "Answer: 8",
+      "Answer: 8",
+      "Answer: 8",
+      "Answer: 8"
+    ]
+  },
+  {
+    "question": "What is the atomic number of fluorine?",
+    "answer": 9,
+    "category": "Atomic number",
+    "symbol": "F",
+    "name": "Fluorine",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 8,
+    "paraphrases": [
+      "What is the atomic number of fluorine?",
+      "Which atomic number does fluorine have?",
+      "What number on the periodic table corresponds to fluorine?",
+      "How many protons are in an atom of fluorine?",
+      "Give the atomic number for fluorine."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "trial_responses": [
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9"
+    ]
+  },
+  {
+    "question": "What is the atomic number of neon?",
+    "answer": 10,
+    "category": "Atomic number",
+    "symbol": "Ne",
+    "name": "Neon",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 9,
+    "paraphrases": [
+      "What is the atomic number of neon?",
+      "Which atomic number does neon have?",
+      "What number on the periodic table corresponds to neon?",
+      "How many protons are in an atom of neon?",
+      "Give the atomic number for neon."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "trial_responses": [
+      "Answer: 10",
+      "Answer: 10",
+      "Answer: 10",
+      "Answer: 10",
+      "Answer: 10"
+    ]
+  },
+  {
+    "question": "What is the atomic number of sodium?",
+    "answer": 11,
+    "category": "Atomic number",
+    "symbol": "Na",
+    "name": "Sodium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 10,
+    "paraphrases": [
+      "What is the atomic number of sodium?",
+      "Which atomic number does sodium have?",
+      "What number on the periodic table corresponds to sodium?",
+      "How many protons are in an atom of sodium?",
+      "Give the atomic number for sodium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "trial_responses": [
+      "Answer: 11",
+      "Answer: 11",
+      "Answer: 11",
+      "Answer: 11",
+      "Answer: 11"
+    ]
+  },
+  {
+    "question": "What is the atomic number of magnesium?",
+    "answer": 12,
+    "category": "Atomic number",
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 11,
+    "paraphrases": [
+      "What is the atomic number of magnesium?",
+      "Which atomic number does magnesium have?",
+      "What number on the periodic table corresponds to magnesium?",
+      "How many protons are in an atom of magnesium?",
+      "Give the atomic number for magnesium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12"
+    ]
+  },
+  {
+    "question": "What is the atomic number of aluminium?",
+    "answer": 13,
+    "category": "Atomic number",
+    "symbol": "Al",
+    "name": "Aluminium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 12,
+    "paraphrases": [
+      "What is the atomic number of aluminium?",
+      "Which atomic number does aluminium have?",
+      "What number on the periodic table corresponds to aluminium?",
+      "How many protons are in an atom of aluminium?",
+      "Give the atomic number for aluminium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "trial_responses": [
+      "Answer: 13",
+      "Answer: 13",
+      "Answer: 13",
+      "Answer: 13",
+      "Answer: 13"
+    ]
+  },
+  {
+    "question": "What is the atomic number of silicon?",
+    "answer": 14,
+    "category": "Atomic number",
+    "symbol": "Si",
+    "name": "Silicon",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 13,
+    "paraphrases": [
+      "What is the atomic number of silicon?",
+      "Which atomic number does silicon have?",
+      "What number on the periodic table corresponds to silicon?",
+      "How many protons are in an atom of silicon?",
+      "Give the atomic number for silicon."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "trial_responses": [
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14"
+    ]
+  },
+  {
+    "question": "What is the atomic number of sulfur?",
+    "answer": 16,
+    "category": "Atomic number",
+    "symbol": "S",
+    "name": "Sulfur",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 15,
+    "paraphrases": [
+      "What is the atomic number of sulfur?",
+      "Which atomic number does sulfur have?",
+      "What number on the periodic table corresponds to sulfur?",
+      "How many protons are in an atom of sulfur?",
+      "Give the atomic number for sulfur."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "trial_responses": [
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16"
+    ]
+  },
+  {
+    "question": "What is the atomic number of chlorine?",
+    "answer": 17,
+    "category": "Atomic number",
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 16,
+    "paraphrases": [
+      "What is the atomic number of chlorine?",
+      "Which atomic number does chlorine have?",
+      "What number on the periodic table corresponds to chlorine?",
+      "How many protons are in an atom of chlorine?",
+      "Give the atomic number for chlorine."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "trial_responses": [
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17"
+    ]
+  },
+  {
+    "question": "What is the atomic number of argon?",
+    "answer": 18,
+    "category": "Atomic number",
+    "symbol": "Ar",
+    "name": "Argon",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 17,
+    "paraphrases": [
+      "What is the atomic number of argon?",
+      "Which atomic number does argon have?",
+      "What number on the periodic table corresponds to argon?",
+      "How many protons are in an atom of argon?",
+      "Give the atomic number for argon."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "trial_responses": [
+      "Answer: 18",
+      "Answer: 18",
+      "Answer: 18",
+      "Answer: 18",
+      "Answer: 18"
+    ]
+  },
+  {
+    "question": "What is the atomic number of potassium?",
+    "answer": 19,
+    "category": "Atomic number",
+    "symbol": "K",
+    "name": "Potassium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 18,
+    "paraphrases": [
+      "What is the atomic number of potassium?",
+      "Which atomic number does potassium have?",
+      "What number on the periodic table corresponds to potassium?",
+      "How many protons are in an atom of potassium?",
+      "Give the atomic number for potassium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      19,
+      19,
+      19,
+      19,
+      19
+    ],
+    "trial_responses": [
+      "Answer: 19",
+      "Answer: 19",
+      "Answer: 19",
+      "Answer: 19",
+      "Answer: 19"
+    ]
+  },
+  {
+    "question": "What is the atomic number of calcium?",
+    "answer": 20,
+    "category": "Atomic number",
+    "symbol": "Ca",
+    "name": "Calcium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 19,
+    "paraphrases": [
+      "What is the atomic number of calcium?",
+      "Which atomic number does calcium have?",
+      "What number on the periodic table corresponds to calcium?",
+      "How many protons are in an atom of calcium?",
+      "Give the atomic number for calcium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "trial_responses": [
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20"
+    ]
+  },
+  {
+    "question": "What is the atomic number of scandium?",
+    "answer": 21,
+    "category": "Atomic number",
+    "symbol": "Sc",
+    "name": "Scandium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 20,
+    "paraphrases": [
+      "What is the atomic number of scandium?",
+      "Which atomic number does scandium have?",
+      "What number on the periodic table corresponds to scandium?",
+      "How many protons are in an atom of scandium?",
+      "Give the atomic number for scandium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "trial_responses": [
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21"
+    ]
+  },
+  {
+    "question": "What is the atomic number of titanium?",
+    "answer": 22,
+    "category": "Atomic number",
+    "symbol": "Ti",
+    "name": "Titanium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 21,
+    "paraphrases": [
+      "What is the atomic number of titanium?",
+      "Which atomic number does titanium have?",
+      "What number on the periodic table corresponds to titanium?",
+      "How many protons are in an atom of titanium?",
+      "Give the atomic number for titanium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      22,
+      22,
+      22,
+      22,
+      22
+    ],
+    "trial_responses": [
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22"
+    ]
+  },
+  {
+    "question": "What is the atomic number of vanadium?",
+    "answer": 23,
+    "category": "Atomic number",
+    "symbol": "V",
+    "name": "Vanadium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 22,
+    "paraphrases": [
+      "What is the atomic number of vanadium?",
+      "Which atomic number does vanadium have?",
+      "What number on the periodic table corresponds to vanadium?",
+      "How many protons are in an atom of vanadium?",
+      "Give the atomic number for vanadium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      23,
+      23,
+      23,
+      23,
+      23
+    ],
+    "trial_responses": [
+      "Answer: 23",
+      "Answer: 23",
+      "Answer: 23",
+      "Answer: 23",
+      "Answer: 23"
+    ]
+  },
+  {
+    "question": "What is the atomic number of chromium?",
+    "answer": 24,
+    "category": "Atomic number",
+    "symbol": "Cr",
+    "name": "Chromium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 23,
+    "paraphrases": [
+      "What is the atomic number of chromium?",
+      "Which atomic number does chromium have?",
+      "What number on the periodic table corresponds to chromium?",
+      "How many protons are in an atom of chromium?",
+      "Give the atomic number for chromium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the atomic number of manganese?",
+    "answer": 25,
+    "category": "Atomic number",
+    "symbol": "Mn",
+    "name": "Manganese",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 24,
+    "paraphrases": [
+      "What is the atomic number of manganese?",
+      "Which atomic number does manganese have?",
+      "What number on the periodic table corresponds to manganese?",
+      "How many protons are in an atom of manganese?",
+      "Give the atomic number for manganese."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      25,
+      25,
+      25,
+      25,
+      25
+    ],
+    "trial_responses": [
+      "Answer: 25",
+      "Answer: 25",
+      "Answer: 25",
+      "Answer: 25",
+      "Answer: 25"
+    ]
+  },
+  {
+    "question": "What is the atomic number of cobalt?",
+    "answer": 27,
+    "category": "Atomic number",
+    "symbol": "Co",
+    "name": "Cobalt",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 26,
+    "paraphrases": [
+      "What is the atomic number of cobalt?",
+      "Which atomic number does cobalt have?",
+      "What number on the periodic table corresponds to cobalt?",
+      "How many protons are in an atom of cobalt?",
+      "Give the atomic number for cobalt."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      27,
+      27,
+      27,
+      27,
+      27
+    ],
+    "trial_responses": [
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27"
+    ]
+  },
+  {
+    "question": "What is the atomic number of nickel?",
+    "answer": 28,
+    "category": "Atomic number",
+    "symbol": "Ni",
+    "name": "Nickel",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 27,
+    "paraphrases": [
+      "What is the atomic number of nickel?",
+      "Which atomic number does nickel have?",
+      "What number on the periodic table corresponds to nickel?",
+      "How many protons are in an atom of nickel?",
+      "Give the atomic number for nickel."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "trial_responses": [
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28"
+    ]
+  },
+  {
+    "question": "What is the atomic number of copper?",
+    "answer": 29,
+    "category": "Atomic number",
+    "symbol": "Cu",
+    "name": "Copper",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 28,
+    "paraphrases": [
+      "What is the atomic number of copper?",
+      "Which atomic number does copper have?",
+      "What number on the periodic table corresponds to copper?",
+      "How many protons are in an atom of copper?",
+      "Give the atomic number for copper."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      29,
+      29,
+      29,
+      29,
+      29
+    ],
+    "trial_responses": [
+      "Answer: 29",
+      "Answer: 29",
+      "Answer: 29",
+      "Answer: 29",
+      "Answer: 29"
+    ]
+  },
+  {
+    "question": "What is the atomic number of zinc?",
+    "answer": 30,
+    "category": "Atomic number",
+    "symbol": "Zn",
+    "name": "Zinc",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 29,
+    "paraphrases": [
+      "What is the atomic number of zinc?",
+      "Which atomic number does zinc have?",
+      "What number on the periodic table corresponds to zinc?",
+      "How many protons are in an atom of zinc?",
+      "Give the atomic number for zinc."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "trial_responses": [
+      "Answer: 30",
+      "Answer: 30",
+      "Answer: 30",
+      "Answer: 30",
+      "Answer: 30"
+    ]
+  },
+  {
+    "question": "What is the atomic number of gallium?",
+    "answer": 31,
+    "category": "Atomic number",
+    "symbol": "Ga",
+    "name": "Gallium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 30,
+    "paraphrases": [
+      "What is the atomic number of gallium?",
+      "Which atomic number does gallium have?",
+      "What number on the periodic table corresponds to gallium?",
+      "How many protons are in an atom of gallium?",
+      "Give the atomic number for gallium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "trial_responses": [
+      "Answer: 31",
+      "Answer: 31",
+      "Answer: 31",
+      "Answer: 31",
+      "Answer: 31"
+    ]
+  },
+  {
+    "question": "What is the atomic number of germanium?",
+    "answer": 32,
+    "category": "Atomic number",
+    "symbol": "Ge",
+    "name": "Germanium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 31,
+    "paraphrases": [
+      "What is the atomic number of germanium?",
+      "Which atomic number does germanium have?",
+      "What number on the periodic table corresponds to germanium?",
+      "How many protons are in an atom of germanium?",
+      "Give the atomic number for germanium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "trial_responses": [
+      "Answer: 32",
+      "Answer: 32",
+      "Answer: 32",
+      "Answer: 32",
+      "Answer: 32"
+    ]
+  },
+  {
+    "question": "What is the atomic number of arsenic?",
+    "answer": 33,
+    "category": "Atomic number",
+    "symbol": "As",
+    "name": "Arsenic",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 32,
+    "paraphrases": [
+      "What is the atomic number of arsenic?",
+      "Which atomic number does arsenic have?",
+      "What number on the periodic table corresponds to arsenic?",
+      "How many protons are in an atom of arsenic?",
+      "Give the atomic number for arsenic."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      33,
+      33,
+      33,
+      33,
+      33
+    ],
+    "trial_responses": [
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33"
+    ]
+  },
+  {
+    "question": "What is the atomic number of selenium?",
+    "answer": 34,
+    "category": "Atomic number",
+    "symbol": "Se",
+    "name": "Selenium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 33,
+    "paraphrases": [
+      "What is the atomic number of selenium?",
+      "Which atomic number does selenium have?",
+      "What number on the periodic table corresponds to selenium?",
+      "How many protons are in an atom of selenium?",
+      "Give the atomic number for selenium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      34,
+      34,
+      34,
+      34,
+      34
+    ],
+    "trial_responses": [
+      "Answer: 34",
+      "Answer: 34",
+      "Answer: 34",
+      "Answer: 34",
+      "Answer: 34"
+    ]
+  },
+  {
+    "question": "What is the atomic number of bromine?",
+    "answer": 35,
+    "category": "Atomic number",
+    "symbol": "Br",
+    "name": "Bromine",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 34,
+    "paraphrases": [
+      "What is the atomic number of bromine?",
+      "Which atomic number does bromine have?",
+      "What number on the periodic table corresponds to bromine?",
+      "How many protons are in an atom of bromine?",
+      "Give the atomic number for bromine."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      35,
+      35,
+      35,
+      35,
+      35
+    ],
+    "trial_responses": [
+      "Answer: 35",
+      "Answer: 35",
+      "Answer: 35",
+      "Answer: 35",
+      "Answer: 35"
+    ]
+  },
+  {
+    "question": "What is the atomic number of krypton?",
+    "answer": 36,
+    "category": "Atomic number",
+    "symbol": "Kr",
+    "name": "Krypton",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 35,
+    "paraphrases": [
+      "What is the atomic number of krypton?",
+      "Which atomic number does krypton have?",
+      "What number on the periodic table corresponds to krypton?",
+      "How many protons are in an atom of krypton?",
+      "Give the atomic number for krypton."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      36,
+      36,
+      36,
+      36,
+      36
+    ],
+    "trial_responses": [
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36"
+    ]
+  },
+  {
+    "question": "What is the atomic number of rubidium?",
+    "answer": 37,
+    "category": "Atomic number",
+    "symbol": "Rb",
+    "name": "Rubidium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 36,
+    "paraphrases": [
+      "What is the atomic number of rubidium?",
+      "Which atomic number does rubidium have?",
+      "What number on the periodic table corresponds to rubidium?",
+      "How many protons are in an atom of rubidium?",
+      "Give the atomic number for rubidium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      37,
+      37,
+      37,
+      37,
+      37
+    ],
+    "trial_responses": [
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37"
+    ]
+  },
+  {
+    "question": "What is the atomic number of strontium?",
+    "answer": 38,
+    "category": "Atomic number",
+    "symbol": "Sr",
+    "name": "Strontium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 37,
+    "paraphrases": [
+      "What is the atomic number of strontium?",
+      "Which atomic number does strontium have?",
+      "What number on the periodic table corresponds to strontium?",
+      "How many protons are in an atom of strontium?",
+      "Give the atomic number for strontium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      38,
+      38,
+      38,
+      38,
+      38
+    ],
+    "trial_responses": [
+      "Answer: 38",
+      "Answer: 38",
+      "Answer: 38",
+      "Answer: 38",
+      "Answer: 38"
+    ]
+  },
+  {
+    "question": "What is the atomic number of yttrium?",
+    "answer": 39,
+    "category": "Atomic number",
+    "symbol": "Y",
+    "name": "Yttrium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 38,
+    "paraphrases": [
+      "What is the atomic number of yttrium?",
+      "Which atomic number does yttrium have?",
+      "What number on the periodic table corresponds to yttrium?",
+      "How many protons are in an atom of yttrium?",
+      "Give the atomic number for yttrium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      39,
+      39,
+      39,
+      39,
+      39
+    ],
+    "trial_responses": [
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39"
+    ]
+  },
+  {
+    "question": "What is the atomic number of zirconium?",
+    "answer": 40,
+    "category": "Atomic number",
+    "symbol": "Zr",
+    "name": "Zirconium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 39,
+    "paraphrases": [
+      "What is the atomic number of zirconium?",
+      "Which atomic number does zirconium have?",
+      "What number on the periodic table corresponds to zirconium?",
+      "How many protons are in an atom of zirconium?",
+      "Give the atomic number for zirconium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "trial_responses": [
+      "Answer: 40",
+      "Answer: 40",
+      "Answer: 40",
+      "Answer: 40",
+      "Answer: 40"
+    ]
+  },
+  {
+    "question": "What is the atomic number of niobium?",
+    "answer": 41,
+    "category": "Atomic number",
+    "symbol": "Nb",
+    "name": "Niobium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 40,
+    "paraphrases": [
+      "What is the atomic number of niobium?",
+      "Which atomic number does niobium have?",
+      "What number on the periodic table corresponds to niobium?",
+      "How many protons are in an atom of niobium?",
+      "Give the atomic number for niobium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      41,
+      41,
+      41,
+      41,
+      41
+    ],
+    "trial_responses": [
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41"
+    ]
+  },
+  {
+    "question": "What is the atomic number of molybdenum?",
+    "answer": 42,
+    "category": "Atomic number",
+    "symbol": "Mo",
+    "name": "Molybdenum",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 41,
+    "paraphrases": [
+      "What is the atomic number of molybdenum?",
+      "Which atomic number does molybdenum have?",
+      "What number on the periodic table corresponds to molybdenum?",
+      "How many protons are in an atom of molybdenum?",
+      "Give the atomic number for molybdenum."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      42,
+      42,
+      42,
+      42,
+      42
+    ],
+    "trial_responses": [
+      "Answer: 42",
+      "Answer: 42",
+      "Answer: 42",
+      "Answer: 42",
+      "Answer: 42"
+    ]
+  },
+  {
+    "question": "What is the atomic number of technetium?",
+    "answer": 43,
+    "category": "Atomic number",
+    "symbol": "Tc",
+    "name": "Technetium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 42,
+    "paraphrases": [
+      "What is the atomic number of technetium?",
+      "Which atomic number does technetium have?",
+      "What number on the periodic table corresponds to technetium?",
+      "How many protons are in an atom of technetium?",
+      "Give the atomic number for technetium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      43,
+      43,
+      43,
+      43,
+      43
+    ],
+    "trial_responses": [
+      "Answer: 43",
+      "Answer: 43",
+      "Answer: 43",
+      "Answer: 43",
+      "Answer: 43"
+    ]
+  },
+  {
+    "question": "What is the atomic number of rhodium?",
+    "answer": 45,
+    "category": "Atomic number",
+    "symbol": "Rh",
+    "name": "Rhodium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 44,
+    "paraphrases": [
+      "What is the atomic number of rhodium?",
+      "Which atomic number does rhodium have?",
+      "What number on the periodic table corresponds to rhodium?",
+      "How many protons are in an atom of rhodium?",
+      "Give the atomic number for rhodium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      45,
+      45,
+      45,
+      45,
+      45
+    ],
+    "trial_responses": [
+      "Answer: 45",
+      "Answer: 45",
+      "Answer: 45",
+      "Answer: 45",
+      "Answer: 45"
+    ]
+  },
+  {
+    "question": "What is the atomic number of silver?",
+    "answer": 47,
+    "category": "Atomic number",
+    "symbol": "Ag",
+    "name": "Silver",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 46,
+    "paraphrases": [
+      "What is the atomic number of silver?",
+      "Which atomic number does silver have?",
+      "What number on the periodic table corresponds to silver?",
+      "How many protons are in an atom of silver?",
+      "Give the atomic number for silver."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      47,
+      47,
+      47,
+      47,
+      47
+    ],
+    "trial_responses": [
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47"
+    ]
+  },
+  {
+    "question": "What is the atomic number of cadmium?",
+    "answer": 48,
+    "category": "Atomic number",
+    "symbol": "Cd",
+    "name": "Cadmium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 47,
+    "paraphrases": [
+      "What is the atomic number of cadmium?",
+      "Which atomic number does cadmium have?",
+      "What number on the periodic table corresponds to cadmium?",
+      "How many protons are in an atom of cadmium?",
+      "Give the atomic number for cadmium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "trial_responses": [
+      "Answer: 48",
+      "Answer: 48",
+      "Answer: 48",
+      "Answer: 48",
+      "Answer: 48"
+    ]
+  },
+  {
+    "question": "What is the atomic number of indium?",
+    "answer": 49,
+    "category": "Atomic number",
+    "symbol": "In",
+    "name": "Indium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 48,
+    "paraphrases": [
+      "What is the atomic number of indium?",
+      "Which atomic number does indium have?",
+      "What number on the periodic table corresponds to indium?",
+      "How many protons are in an atom of indium?",
+      "Give the atomic number for indium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      49,
+      49,
+      49,
+      49,
+      49
+    ],
+    "trial_responses": [
+      "Answer: 49",
+      "Answer: 49",
+      "Answer: 49",
+      "Answer: 49",
+      "Answer: 49"
+    ]
+  },
+  {
+    "question": "What is the atomic number of tin?",
+    "answer": 50,
+    "category": "Atomic number",
+    "symbol": "Sn",
+    "name": "Tin",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 49,
+    "paraphrases": [
+      "What is the atomic number of tin?",
+      "Which atomic number does tin have?",
+      "What number on the periodic table corresponds to tin?",
+      "How many protons are in an atom of tin?",
+      "Give the atomic number for tin."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "trial_responses": [
+      "Answer: 50",
+      "Answer: 50",
+      "Answer: 50",
+      "Answer: 50",
+      "Answer: 50"
+    ]
+  },
+  {
+    "question": "What is the atomic number of antimony?",
+    "answer": 51,
+    "category": "Atomic number",
+    "symbol": "Sb",
+    "name": "Antimony",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 50,
+    "paraphrases": [
+      "What is the atomic number of antimony?",
+      "Which atomic number does antimony have?",
+      "What number on the periodic table corresponds to antimony?",
+      "How many protons are in an atom of antimony?",
+      "Give the atomic number for antimony."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      51,
+      51,
+      51,
+      51,
+      51
+    ],
+    "trial_responses": [
+      "Answer: 51",
+      "Answer: 51",
+      "Answer: 51",
+      "Answer: 51",
+      "Answer: 51"
+    ]
+  },
+  {
+    "question": "What is the atomic number of iodine?",
+    "answer": 53,
+    "category": "Atomic number",
+    "symbol": "I",
+    "name": "Iodine",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 52,
+    "paraphrases": [
+      "What is the atomic number of iodine?",
+      "Which atomic number does iodine have?",
+      "What number on the periodic table corresponds to iodine?",
+      "How many protons are in an atom of iodine?",
+      "Give the atomic number for iodine."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      53,
+      53,
+      53,
+      53,
+      53
+    ],
+    "trial_responses": [
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 53",
+      "Answer: 53"
+    ]
+  },
+  {
+    "question": "What is the atomic number of xenon?",
+    "answer": 54,
+    "category": "Atomic number",
+    "symbol": "Xe",
+    "name": "Xenon",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 53,
+    "paraphrases": [
+      "What is the atomic number of xenon?",
+      "Which atomic number does xenon have?",
+      "What number on the periodic table corresponds to xenon?",
+      "How many protons are in an atom of xenon?",
+      "Give the atomic number for xenon."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      54,
+      54,
+      54,
+      54,
+      54
+    ],
+    "trial_responses": [
+      "Answer: 54",
+      "Answer: 54",
+      "Answer: 54",
+      "Answer: 54",
+      "Answer: 54"
+    ]
+  },
+  {
+    "question": "What is the atomic number of cesium?",
+    "answer": 55,
+    "category": "Atomic number",
+    "symbol": "Cs",
+    "name": "Cesium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 54,
+    "paraphrases": [
+      "What is the atomic number of cesium?",
+      "Which atomic number does cesium have?",
+      "What number on the periodic table corresponds to cesium?",
+      "How many protons are in an atom of cesium?",
+      "Give the atomic number for cesium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      55,
+      55,
+      55,
+      55,
+      55
+    ],
+    "trial_responses": [
+      "Answer: 55",
+      "Answer: 55",
+      "Answer: 55",
+      "Answer: 55",
+      "Answer: 55"
+    ]
+  },
+  {
+    "question": "What is the atomic number of barium?",
+    "answer": 56,
+    "category": "Atomic number",
+    "symbol": "Ba",
+    "name": "Barium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 55,
+    "paraphrases": [
+      "What is the atomic number of barium?",
+      "Which atomic number does barium have?",
+      "What number on the periodic table corresponds to barium?",
+      "How many protons are in an atom of barium?",
+      "Give the atomic number for barium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      56,
+      56,
+      56,
+      56,
+      56
+    ],
+    "trial_responses": [
+      "Answer: 56",
+      "Answer: 56",
+      "Answer: 56",
+      "Answer: 56",
+      "Answer: 56"
+    ]
+  },
+  {
+    "question": "What is the atomic number of lanthanum?",
+    "answer": 57,
+    "category": "Atomic number",
+    "symbol": "La",
+    "name": "Lanthanum",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 56,
+    "paraphrases": [
+      "What is the atomic number of lanthanum?",
+      "Which atomic number does lanthanum have?",
+      "What number on the periodic table corresponds to lanthanum?",
+      "How many protons are in an atom of lanthanum?",
+      "Give the atomic number for lanthanum."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      57,
+      57,
+      57,
+      57,
+      57
+    ],
+    "trial_responses": [
+      "Answer: 57",
+      "Answer: 57",
+      "Answer: 57",
+      "Answer: 57",
+      "Answer: 57"
+    ]
+  },
+  {
+    "question": "What is the atomic number of cerium?",
+    "answer": 58,
+    "category": "Atomic number",
+    "symbol": "Ce",
+    "name": "Cerium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 57,
+    "paraphrases": [
+      "What is the atomic number of cerium?",
+      "Which atomic number does cerium have?",
+      "What number on the periodic table corresponds to cerium?",
+      "How many protons are in an atom of cerium?",
+      "Give the atomic number for cerium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      58,
+      58,
+      58,
+      58,
+      58
+    ],
+    "trial_responses": [
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 58",
+      "Answer: 58"
+    ]
+  },
+  {
+    "question": "What is the atomic number of praseodymium?",
+    "answer": 59,
+    "category": "Atomic number",
+    "symbol": "Pr",
+    "name": "Praseodymium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 58,
+    "paraphrases": [
+      "What is the atomic number of praseodymium?",
+      "Which atomic number does praseodymium have?",
+      "What number on the periodic table corresponds to praseodymium?",
+      "How many protons are in an atom of praseodymium?",
+      "Give the atomic number for praseodymium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      59,
+      59,
+      59,
+      59,
+      59
+    ],
+    "trial_responses": [
+      "Answer: 59",
+      "Answer: 59",
+      "Answer: 59",
+      "Answer: 59",
+      "Answer: 59"
+    ]
+  },
+  {
+    "question": "What is the atomic number of neodymium?",
+    "answer": 60,
+    "category": "Atomic number",
+    "symbol": "Nd",
+    "name": "Neodymium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 59,
+    "paraphrases": [
+      "What is the atomic number of neodymium?",
+      "Which atomic number does neodymium have?",
+      "What number on the periodic table corresponds to neodymium?",
+      "How many protons are in an atom of neodymium?",
+      "Give the atomic number for neodymium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "trial_responses": [
+      "Answer: 60",
+      "Answer: 60",
+      "Answer: 60",
+      "Answer: 60",
+      "Answer: 60"
+    ]
+  },
+  {
+    "question": "What is the atomic number of samarium?",
+    "answer": 62,
+    "category": "Atomic number",
+    "symbol": "Sm",
+    "name": "Samarium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 61,
+    "paraphrases": [
+      "What is the atomic number of samarium?",
+      "Which atomic number does samarium have?",
+      "What number on the periodic table corresponds to samarium?",
+      "How many protons are in an atom of samarium?",
+      "Give the atomic number for samarium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      62,
+      62,
+      62,
+      62,
+      62
+    ],
+    "trial_responses": [
+      "Answer: 62",
+      "Answer: 62",
+      "Answer: 62",
+      "Answer: 62",
+      "Answer: 62"
+    ]
+  },
+  {
+    "question": "What is the atomic number of europium?",
+    "answer": 63,
+    "category": "Atomic number",
+    "symbol": "Eu",
+    "name": "Europium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 62,
+    "paraphrases": [
+      "What is the atomic number of europium?",
+      "Which atomic number does europium have?",
+      "What number on the periodic table corresponds to europium?",
+      "How many protons are in an atom of europium?",
+      "Give the atomic number for europium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      63,
+      63,
+      63,
+      63,
+      63
+    ],
+    "trial_responses": [
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63",
+      "Answer: 63"
+    ]
+  },
+  {
+    "question": "What is the atomic number of gadolinium?",
+    "answer": 64,
+    "category": "Atomic number",
+    "symbol": "Gd",
+    "name": "Gadolinium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 63,
+    "paraphrases": [
+      "What is the atomic number of gadolinium?",
+      "Which atomic number does gadolinium have?",
+      "What number on the periodic table corresponds to gadolinium?",
+      "How many protons are in an atom of gadolinium?",
+      "Give the atomic number for gadolinium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "trial_responses": [
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64"
+    ]
+  },
+  {
+    "question": "What is the atomic number of terbium?",
+    "answer": 65,
+    "category": "Atomic number",
+    "symbol": "Tb",
+    "name": "Terbium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 64,
+    "paraphrases": [
+      "What is the atomic number of terbium?",
+      "Which atomic number does terbium have?",
+      "What number on the periodic table corresponds to terbium?",
+      "How many protons are in an atom of terbium?",
+      "Give the atomic number for terbium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      65,
+      65,
+      65,
+      65,
+      65
+    ],
+    "trial_responses": [
+      "Answer: 65",
+      "Answer: 65",
+      "Answer: 65",
+      "Answer: 65",
+      "Answer: 65"
+    ]
+  },
+  {
+    "question": "What is the atomic number of dysprosium?",
+    "answer": 66,
+    "category": "Atomic number",
+    "symbol": "Dy",
+    "name": "Dysprosium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 65,
+    "paraphrases": [
+      "What is the atomic number of dysprosium?",
+      "Which atomic number does dysprosium have?",
+      "What number on the periodic table corresponds to dysprosium?",
+      "How many protons are in an atom of dysprosium?",
+      "Give the atomic number for dysprosium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      66,
+      66,
+      66,
+      66,
+      66
+    ],
+    "trial_responses": [
+      "Answer: 66",
+      "Answer: 66",
+      "Answer: 66",
+      "Answer: 66",
+      "Answer: 66"
+    ]
+  },
+  {
+    "question": "What is the atomic number of holmium?",
+    "answer": 67,
+    "category": "Atomic number",
+    "symbol": "Ho",
+    "name": "Holmium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 66,
+    "paraphrases": [
+      "What is the atomic number of holmium?",
+      "Which atomic number does holmium have?",
+      "What number on the periodic table corresponds to holmium?",
+      "How many protons are in an atom of holmium?",
+      "Give the atomic number for holmium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      67,
+      67,
+      67,
+      67,
+      67
+    ],
+    "trial_responses": [
+      "Answer: 67",
+      "Answer: 67",
+      "Answer: 67",
+      "Answer: 67",
+      "Answer: 67"
+    ]
+  },
+  {
+    "question": "What is the atomic number of thulium?",
+    "answer": 69,
+    "category": "Atomic number",
+    "symbol": "Tm",
+    "name": "Thulium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 68,
+    "paraphrases": [
+      "What is the atomic number of thulium?",
+      "Which atomic number does thulium have?",
+      "What number on the periodic table corresponds to thulium?",
+      "How many protons are in an atom of thulium?",
+      "Give the atomic number for thulium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      69,
+      69,
+      69,
+      69,
+      69
+    ],
+    "trial_responses": [
+      "Answer: 69",
+      "Answer: 69",
+      "Answer: 69",
+      "Answer: 69",
+      "Answer: 69"
+    ]
+  },
+  {
+    "question": "What is the atomic number of ytterbium?",
+    "answer": 70,
+    "category": "Atomic number",
+    "symbol": "Yb",
+    "name": "Ytterbium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 69,
+    "paraphrases": [
+      "What is the atomic number of ytterbium?",
+      "Which atomic number does ytterbium have?",
+      "What number on the periodic table corresponds to ytterbium?",
+      "How many protons are in an atom of ytterbium?",
+      "Give the atomic number for ytterbium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      70,
+      70,
+      70,
+      70,
+      70
+    ],
+    "trial_responses": [
+      "Answer: 70",
+      "Answer: 70",
+      "Answer: 70",
+      "Answer: 70",
+      "Answer: 70"
+    ]
+  },
+  {
+    "question": "What is the atomic number of lutetium?",
+    "answer": 71,
+    "category": "Atomic number",
+    "symbol": "Lu",
+    "name": "Lutetium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 70,
+    "paraphrases": [
+      "What is the atomic number of lutetium?",
+      "Which atomic number does lutetium have?",
+      "What number on the periodic table corresponds to lutetium?",
+      "How many protons are in an atom of lutetium?",
+      "Give the atomic number for lutetium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      71,
+      71,
+      71,
+      71,
+      71
+    ],
+    "trial_responses": [
+      "Answer: 71",
+      "Answer: 71",
+      "Answer: 71",
+      "Answer: 71",
+      "Answer: 71"
+    ]
+  },
+  {
+    "question": "What is the atomic number of hafnium?",
+    "answer": 72,
+    "category": "Atomic number",
+    "symbol": "Hf",
+    "name": "Hafnium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 71,
+    "paraphrases": [
+      "What is the atomic number of hafnium?",
+      "Which atomic number does hafnium have?",
+      "What number on the periodic table corresponds to hafnium?",
+      "How many protons are in an atom of hafnium?",
+      "Give the atomic number for hafnium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      72,
+      72,
+      72,
+      72,
+      72
+    ],
+    "trial_responses": [
+      "Answer: 72",
+      "Answer: 72",
+      "Answer: 72",
+      "Answer: 72",
+      "Answer: 72"
+    ]
+  },
+  {
+    "question": "What is the atomic number of tantalum?",
+    "answer": 73,
+    "category": "Atomic number",
+    "symbol": "Ta",
+    "name": "Tantalum",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 72,
+    "paraphrases": [
+      "What is the atomic number of tantalum?",
+      "Which atomic number does tantalum have?",
+      "What number on the periodic table corresponds to tantalum?",
+      "How many protons are in an atom of tantalum?",
+      "Give the atomic number for tantalum."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      73,
+      73,
+      73,
+      73,
+      73
+    ],
+    "trial_responses": [
+      "Answer: 73",
+      "Answer: 73",
+      "Answer: 73",
+      "Answer: 73",
+      "Answer: 73"
+    ]
+  },
+  {
+    "question": "What is the atomic number of tungsten?",
+    "answer": 74,
+    "category": "Atomic number",
+    "symbol": "W",
+    "name": "Tungsten",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 73,
+    "paraphrases": [
+      "What is the atomic number of tungsten?",
+      "Which atomic number does tungsten have?",
+      "What number on the periodic table corresponds to tungsten?",
+      "How many protons are in an atom of tungsten?",
+      "Give the atomic number for tungsten."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      74,
+      74,
+      74,
+      74,
+      74
+    ],
+    "trial_responses": [
+      "Answer: 74",
+      "Answer: 74",
+      "Answer: 74",
+      "Answer: 74",
+      "Answer: 74"
+    ]
+  },
+  {
+    "question": "What is the atomic number of osmium?",
+    "answer": 76,
+    "category": "Atomic number",
+    "symbol": "Os",
+    "name": "Osmium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 75,
+    "paraphrases": [
+      "What is the atomic number of osmium?",
+      "Which atomic number does osmium have?",
+      "What number on the periodic table corresponds to osmium?",
+      "How many protons are in an atom of osmium?",
+      "Give the atomic number for osmium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      76,
+      76,
+      76,
+      76,
+      76
+    ],
+    "trial_responses": [
+      "Answer: 76",
+      "Answer: 76",
+      "Answer: 76",
+      "Answer: 76",
+      "Answer: 76"
+    ]
+  },
+  {
+    "question": "What is the atomic number of iridium?",
+    "answer": 77,
+    "category": "Atomic number",
+    "symbol": "Ir",
+    "name": "Iridium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 76,
+    "paraphrases": [
+      "What is the atomic number of iridium?",
+      "Which atomic number does iridium have?",
+      "What number on the periodic table corresponds to iridium?",
+      "How many protons are in an atom of iridium?",
+      "Give the atomic number for iridium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      77,
+      77,
+      77,
+      77,
+      77
+    ],
+    "trial_responses": [
+      "Answer: 77",
+      "Answer: 77",
+      "Answer: 77",
+      "Answer: 77",
+      "Answer: 77"
+    ]
+  },
+  {
+    "question": "What is the atomic number of platinum?",
+    "answer": 78,
+    "category": "Atomic number",
+    "symbol": "Pt",
+    "name": "Platinum",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 77,
+    "paraphrases": [
+      "What is the atomic number of platinum?",
+      "Which atomic number does platinum have?",
+      "What number on the periodic table corresponds to platinum?",
+      "How many protons are in an atom of platinum?",
+      "Give the atomic number for platinum."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      78,
+      78,
+      78,
+      78,
+      78
+    ],
+    "trial_responses": [
+      "Answer: 78",
+      "Answer: 78",
+      "Answer: 78",
+      "Answer: 78",
+      "Answer: 78"
+    ]
+  },
+  {
+    "question": "What is the atomic number of gold?",
+    "answer": 79,
+    "category": "Atomic number",
+    "symbol": "Au",
+    "name": "Gold",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 78,
+    "paraphrases": [
+      "What is the atomic number of gold?",
+      "Which atomic number does gold have?",
+      "What number on the periodic table corresponds to gold?",
+      "How many protons are in an atom of gold?",
+      "Give the atomic number for gold."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      79,
+      79,
+      79,
+      79,
+      79
+    ],
+    "trial_responses": [
+      "Answer: 79",
+      "Answer: 79",
+      "Answer: 79",
+      "Answer: 79",
+      "Answer: 79"
+    ]
+  },
+  {
+    "question": "What is the atomic number of mercury?",
+    "answer": 80,
+    "category": "Atomic number",
+    "symbol": "Hg",
+    "name": "Mercury",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 79,
+    "paraphrases": [
+      "What is the atomic number of mercury?",
+      "Which atomic number does mercury have?",
+      "What number on the periodic table corresponds to mercury?",
+      "How many protons are in an atom of mercury?",
+      "Give the atomic number for mercury."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "trial_responses": [
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 80"
+    ]
+  },
+  {
+    "question": "What is the atomic number of thallium?",
+    "answer": 81,
+    "category": "Atomic number",
+    "symbol": "Tl",
+    "name": "Thallium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 80,
+    "paraphrases": [
+      "What is the atomic number of thallium?",
+      "Which atomic number does thallium have?",
+      "What number on the periodic table corresponds to thallium?",
+      "How many protons are in an atom of thallium?",
+      "Give the atomic number for thallium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      81,
+      81,
+      81,
+      81,
+      81
+    ],
+    "trial_responses": [
+      "Answer: 81",
+      "Answer: 81",
+      "Answer: 81",
+      "Answer: 81",
+      "Answer: 81"
+    ]
+  },
+  {
+    "question": "What is the atomic number of radon?",
+    "answer": 86,
+    "category": "Atomic number",
+    "symbol": "Rn",
+    "name": "Radon",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 85,
+    "paraphrases": [
+      "What is the atomic number of radon?",
+      "Which atomic number does radon have?",
+      "What number on the periodic table corresponds to radon?",
+      "How many protons are in an atom of radon?",
+      "Give the atomic number for radon."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      86,
+      86,
+      86,
+      86,
+      86
+    ],
+    "trial_responses": [
+      "Answer: 86",
+      "Answer: 86",
+      "Answer: 86",
+      "Answer: 86",
+      "Answer: 86"
+    ]
+  },
+  {
+    "question": "What is the atomic number of francium?",
+    "answer": 87,
+    "category": "Atomic number",
+    "symbol": "Fr",
+    "name": "Francium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 86,
+    "paraphrases": [
+      "What is the atomic number of francium?",
+      "Which atomic number does francium have?",
+      "What number on the periodic table corresponds to francium?",
+      "How many protons are in an atom of francium?",
+      "Give the atomic number for francium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      87,
+      87,
+      87,
+      87,
+      87
+    ],
+    "trial_responses": [
+      "Answer: 87",
+      "Answer: 87",
+      "Answer: 87",
+      "Answer: 87",
+      "Answer: 87"
+    ]
+  },
+  {
+    "question": "What is the atomic number of radium?",
+    "answer": 88,
+    "category": "Atomic number",
+    "symbol": "Ra",
+    "name": "Radium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 87,
+    "paraphrases": [
+      "What is the atomic number of radium?",
+      "Which atomic number does radium have?",
+      "What number on the periodic table corresponds to radium?",
+      "How many protons are in an atom of radium?",
+      "Give the atomic number for radium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      88,
+      88,
+      88,
+      88,
+      88
+    ],
+    "trial_responses": [
+      "Answer: 88",
+      "Answer: 88",
+      "Answer: 88",
+      "Answer: 88",
+      "Answer: 88"
+    ]
+  },
+  {
+    "question": "What is the atomic number of actinium?",
+    "answer": 89,
+    "category": "Atomic number",
+    "symbol": "Ac",
+    "name": "Actinium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 88,
+    "paraphrases": [
+      "What is the atomic number of actinium?",
+      "Which atomic number does actinium have?",
+      "What number on the periodic table corresponds to actinium?",
+      "How many protons are in an atom of actinium?",
+      "Give the atomic number for actinium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      89,
+      89,
+      89,
+      89,
+      89
+    ],
+    "trial_responses": [
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 89",
+      "Answer: 89"
+    ]
+  },
+  {
+    "question": "What is the atomic number of thorium?",
+    "answer": 90,
+    "category": "Atomic number",
+    "symbol": "Th",
+    "name": "Thorium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 89,
+    "paraphrases": [
+      "What is the atomic number of thorium?",
+      "Which atomic number does thorium have?",
+      "What number on the periodic table corresponds to thorium?",
+      "How many protons are in an atom of thorium?",
+      "Give the atomic number for thorium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      90,
+      90,
+      90,
+      90,
+      90
+    ],
+    "trial_responses": [
+      "Answer: 90",
+      "Answer: 90",
+      "Answer: 90",
+      "Answer: 90",
+      "Answer: 90"
+    ]
+  },
+  {
+    "question": "What is the atomic number of uranium?",
+    "answer": 92,
+    "category": "Atomic number",
+    "symbol": "U",
+    "name": "Uranium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 91,
+    "paraphrases": [
+      "What is the atomic number of uranium?",
+      "Which atomic number does uranium have?",
+      "What number on the periodic table corresponds to uranium?",
+      "How many protons are in an atom of uranium?",
+      "Give the atomic number for uranium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      92,
+      92,
+      92,
+      92,
+      92
+    ],
+    "trial_responses": [
+      "Answer: 92",
+      "Answer: 92",
+      "Answer: 92",
+      "Answer: 92",
+      "Answer: 92"
+    ]
+  },
+  {
+    "question": "What is the atomic number of neptunium?",
+    "answer": 93,
+    "category": "Atomic number",
+    "symbol": "Np",
+    "name": "Neptunium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 92,
+    "paraphrases": [
+      "What is the atomic number of neptunium?",
+      "Which atomic number does neptunium have?",
+      "What number on the periodic table corresponds to neptunium?",
+      "How many protons are in an atom of neptunium?",
+      "Give the atomic number for neptunium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      93,
+      93,
+      93,
+      93,
+      93
+    ],
+    "trial_responses": [
+      "Answer: 93",
+      "Answer: 93",
+      "Answer: 93",
+      "Answer: 93",
+      "Answer: 93"
+    ]
+  },
+  {
+    "question": "What is the atomic number of americium?",
+    "answer": 95,
+    "category": "Atomic number",
+    "symbol": "Am",
+    "name": "Americium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 94,
+    "paraphrases": [
+      "What is the atomic number of americium?",
+      "Which atomic number does americium have?",
+      "What number on the periodic table corresponds to americium?",
+      "How many protons are in an atom of americium?",
+      "Give the atomic number for americium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      95,
+      95,
+      95,
+      95,
+      95
+    ],
+    "trial_responses": [
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95"
+    ]
+  },
+  {
+    "question": "What is the atomic number of curium?",
+    "answer": 96,
+    "category": "Atomic number",
+    "symbol": "Cm",
+    "name": "Curium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 95,
+    "paraphrases": [
+      "What is the atomic number of curium?",
+      "Which atomic number does curium have?",
+      "What number on the periodic table corresponds to curium?",
+      "How many protons are in an atom of curium?",
+      "Give the atomic number for curium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "trial_responses": [
+      "Answer: 96",
+      "Answer: 96",
+      "Answer: 96",
+      "Answer: 96",
+      "Answer: 96"
+    ]
+  },
+  {
+    "question": "What is the atomic number of berkelium?",
+    "answer": 97,
+    "category": "Atomic number",
+    "symbol": "Bk",
+    "name": "Berkelium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 96,
+    "paraphrases": [
+      "What is the atomic number of berkelium?",
+      "Which atomic number does berkelium have?",
+      "What number on the periodic table corresponds to berkelium?",
+      "How many protons are in an atom of berkelium?",
+      "Give the atomic number for berkelium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      97,
+      97,
+      97,
+      97,
+      97
+    ],
+    "trial_responses": [
+      "Answer: 97",
+      "Answer: 97",
+      "Answer: 97",
+      "Answer: 97",
+      "Answer: 97"
+    ]
+  },
+  {
+    "question": "What is the atomic number of californium?",
+    "answer": 98,
+    "category": "Atomic number",
+    "symbol": "Cf",
+    "name": "Californium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 97,
+    "paraphrases": [
+      "What is the atomic number of californium?",
+      "Which atomic number does californium have?",
+      "What number on the periodic table corresponds to californium?",
+      "How many protons are in an atom of californium?",
+      "Give the atomic number for californium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      98,
+      98,
+      98,
+      98,
+      98
+    ],
+    "trial_responses": [
+      "Answer: 98",
+      "Answer: 98",
+      "Answer: 98",
+      "Answer: 98",
+      "Answer: 98"
+    ]
+  },
+  {
+    "question": "What is the atomic number of mendelevium?",
+    "answer": 101,
+    "category": "Atomic number",
+    "symbol": "Md",
+    "name": "Mendelevium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 100,
+    "paraphrases": [
+      "What is the atomic number of mendelevium?",
+      "Which atomic number does mendelevium have?",
+      "What number on the periodic table corresponds to mendelevium?",
+      "How many protons are in an atom of mendelevium?",
+      "Give the atomic number for mendelevium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      101,
+      101,
+      101,
+      101,
+      101
+    ],
+    "trial_responses": [
+      "Answer: 101",
+      "Answer: 101",
+      "Answer: 101",
+      "Answer: 101",
+      "Answer: 101"
+    ]
+  },
+  {
+    "question": "What is the atomic number of nobelium?",
+    "answer": 102,
+    "category": "Atomic number",
+    "symbol": "No",
+    "name": "Nobelium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 101,
+    "paraphrases": [
+      "What is the atomic number of nobelium?",
+      "Which atomic number does nobelium have?",
+      "What number on the periodic table corresponds to nobelium?",
+      "How many protons are in an atom of nobelium?",
+      "Give the atomic number for nobelium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      102,
+      102,
+      102,
+      102,
+      102
+    ],
+    "trial_responses": [
+      "Answer: 102",
+      "Answer: 102",
+      "Answer: 102",
+      "Answer: 102",
+      "Answer: 102"
+    ]
+  },
+  {
+    "question": "What is the atomic number of lawrencium?",
+    "answer": 103,
+    "category": "Atomic number",
+    "symbol": "Lr",
+    "name": "Lawrencium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 102,
+    "paraphrases": [
+      "What is the atomic number of lawrencium?",
+      "Which atomic number does lawrencium have?",
+      "What number on the periodic table corresponds to lawrencium?",
+      "How many protons are in an atom of lawrencium?",
+      "Give the atomic number for lawrencium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      103,
+      103,
+      103,
+      103,
+      103
+    ],
+    "trial_responses": [
+      "Answer: 103",
+      "Answer: 103",
+      "Answer: 103",
+      "Answer: 103",
+      "Answer: 103"
+    ]
+  },
+  {
+    "question": "What is the atomic number of rutherfordium?",
+    "answer": 104,
+    "category": "Atomic number",
+    "symbol": "Rf",
+    "name": "Rutherfordium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 103,
+    "paraphrases": [
+      "What is the atomic number of rutherfordium?",
+      "Which atomic number does rutherfordium have?",
+      "What number on the periodic table corresponds to rutherfordium?",
+      "How many protons are in an atom of rutherfordium?",
+      "Give the atomic number for rutherfordium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      104,
+      104,
+      104,
+      104,
+      104
+    ],
+    "trial_responses": [
+      "Answer: 104",
+      "Answer: 104",
+      "Answer: 104",
+      "Answer: 104",
+      "Answer: 104"
+    ]
+  },
+  {
+    "question": "What is the atomic number of dubnium?",
+    "answer": 105,
+    "category": "Atomic number",
+    "symbol": "Db",
+    "name": "Dubnium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 104,
+    "paraphrases": [
+      "What is the atomic number of dubnium?",
+      "Which atomic number does dubnium have?",
+      "What number on the periodic table corresponds to dubnium?",
+      "How many protons are in an atom of dubnium?",
+      "Give the atomic number for dubnium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      105,
+      105,
+      105,
+      105,
+      105
+    ],
+    "trial_responses": [
+      "Answer: 105",
+      "Answer: 105",
+      "Answer: 105",
+      "Answer: 105",
+      "Answer: 105"
+    ]
+  },
+  {
+    "question": "What is the atomic number of seaborgium?",
+    "answer": 106,
+    "category": "Atomic number",
+    "symbol": "Sg",
+    "name": "Seaborgium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 105,
+    "paraphrases": [
+      "What is the atomic number of seaborgium?",
+      "Which atomic number does seaborgium have?",
+      "What number on the periodic table corresponds to seaborgium?",
+      "How many protons are in an atom of seaborgium?",
+      "Give the atomic number for seaborgium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      106,
+      106,
+      106,
+      106,
+      106
+    ],
+    "trial_responses": [
+      "Answer: 106",
+      "Answer: 106",
+      "Answer: 106",
+      "Answer: 106",
+      "Answer: 106"
+    ]
+  },
+  {
+    "question": "What is the atomic number of bohrium?",
+    "answer": 107,
+    "category": "Atomic number",
+    "symbol": "Bh",
+    "name": "Bohrium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 106,
+    "paraphrases": [
+      "What is the atomic number of bohrium?",
+      "Which atomic number does bohrium have?",
+      "What number on the periodic table corresponds to bohrium?",
+      "How many protons are in an atom of bohrium?",
+      "Give the atomic number for bohrium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      107,
+      107,
+      107,
+      107,
+      107
+    ],
+    "trial_responses": [
+      "Answer: 107",
+      "Answer: 107",
+      "Answer: 107",
+      "Answer: 107",
+      "Answer: 107"
+    ]
+  },
+  {
+    "question": "What is the atomic number of hassium?",
+    "answer": 108,
+    "category": "Atomic number",
+    "symbol": "Hs",
+    "name": "Hassium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 107,
+    "paraphrases": [
+      "What is the atomic number of hassium?",
+      "Which atomic number does hassium have?",
+      "What number on the periodic table corresponds to hassium?",
+      "How many protons are in an atom of hassium?",
+      "Give the atomic number for hassium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      108,
+      108,
+      108,
+      108,
+      108
+    ],
+    "trial_responses": [
+      "Answer: 108",
+      "Answer: 108",
+      "Answer: 108",
+      "Answer: 108",
+      "Answer: 108"
+    ]
+  },
+  {
+    "question": "What is the atomic number of meitnerium?",
+    "answer": 109,
+    "category": "Atomic number",
+    "symbol": "Mt",
+    "name": "Meitnerium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 108,
+    "paraphrases": [
+      "What is the atomic number of meitnerium?",
+      "Which atomic number does meitnerium have?",
+      "What number on the periodic table corresponds to meitnerium?",
+      "How many protons are in an atom of meitnerium?",
+      "Give the atomic number for meitnerium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      109,
+      109,
+      109,
+      109,
+      109
+    ],
+    "trial_responses": [
+      "Answer: 109",
+      "Answer: 109",
+      "Answer: 109",
+      "Answer: 109",
+      "Answer: 109"
+    ]
+  },
+  {
+    "question": "What is the atomic number of darmstadtium?",
+    "answer": 110,
+    "category": "Atomic number",
+    "symbol": "Ds",
+    "name": "Darmstadtium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 109,
+    "paraphrases": [
+      "What is the atomic number of darmstadtium?",
+      "Which atomic number does darmstadtium have?",
+      "What number on the periodic table corresponds to darmstadtium?",
+      "How many protons are in an atom of darmstadtium?",
+      "Give the atomic number for darmstadtium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      110,
+      110,
+      110,
+      110,
+      110
+    ],
+    "trial_responses": [
+      "Answer: 110",
+      "Answer: 110",
+      "Answer: 110",
+      "Answer: 110",
+      "Answer: 110"
+    ]
+  },
+  {
+    "question": "What is the atomic number of roentgenium?",
+    "answer": 111,
+    "category": "Atomic number",
+    "symbol": "Rg",
+    "name": "Roentgenium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 110,
+    "paraphrases": [
+      "What is the atomic number of roentgenium?",
+      "Which atomic number does roentgenium have?",
+      "What number on the periodic table corresponds to roentgenium?",
+      "How many protons are in an atom of roentgenium?",
+      "Give the atomic number for roentgenium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      111,
+      111,
+      111,
+      111,
+      111
+    ],
+    "trial_responses": [
+      "Answer: 111",
+      "Answer: 111",
+      "Answer: 111",
+      "Answer: 111",
+      "Answer: 111"
+    ]
+  },
+  {
+    "question": "What is the atomic number of copernicium?",
+    "answer": 112,
+    "category": "Atomic number",
+    "symbol": "Cn",
+    "name": "Copernicium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 111,
+    "paraphrases": [
+      "What is the atomic number of copernicium?",
+      "Which atomic number does copernicium have?",
+      "What number on the periodic table corresponds to copernicium?",
+      "How many protons are in an atom of copernicium?",
+      "Give the atomic number for copernicium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      112,
+      112,
+      112,
+      112,
+      112
+    ],
+    "trial_responses": [
+      "Answer: 112",
+      "Answer: 112",
+      "Answer: 112",
+      "Answer: 112",
+      "Answer: 112"
+    ]
+  },
+  {
+    "question": "What is the atomic number of nihonium?",
+    "answer": 113,
+    "category": "Atomic number",
+    "symbol": "Nh",
+    "name": "Nihonium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 112,
+    "paraphrases": [
+      "What is the atomic number of nihonium?",
+      "Which atomic number does nihonium have?",
+      "What number on the periodic table corresponds to nihonium?",
+      "How many protons are in an atom of nihonium?",
+      "Give the atomic number for nihonium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      113,
+      113,
+      113,
+      113,
+      113
+    ],
+    "trial_responses": [
+      "Answer: 113",
+      "Answer: 113",
+      "Answer: 113",
+      "Answer: 113",
+      "Answer: 113"
+    ]
+  },
+  {
+    "question": "What is the atomic number of livermorium?",
+    "answer": 116,
+    "category": "Atomic number",
+    "symbol": "Lv",
+    "name": "Livermorium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 115,
+    "paraphrases": [
+      "What is the atomic number of livermorium?",
+      "Which atomic number does livermorium have?",
+      "What number on the periodic table corresponds to livermorium?",
+      "How many protons are in an atom of livermorium?",
+      "Give the atomic number for livermorium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      116,
+      116,
+      116,
+      116,
+      116
+    ],
+    "trial_responses": [
+      "Answer: 116",
+      "Answer: 116",
+      "Answer: 116",
+      "Answer: 116",
+      "Answer: 116"
+    ]
+  },
+  {
+    "question": "What is the atomic number of tennessine?",
+    "answer": 117,
+    "category": "Atomic number",
+    "symbol": "Ts",
+    "name": "Tennessine",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 116,
+    "paraphrases": [
+      "What is the atomic number of tennessine?",
+      "Which atomic number does tennessine have?",
+      "What number on the periodic table corresponds to tennessine?",
+      "How many protons are in an atom of tennessine?",
+      "Give the atomic number for tennessine."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      117,
+      117,
+      117,
+      117,
+      117
+    ],
+    "trial_responses": [
+      "Answer: 117",
+      "Answer: 117",
+      "Answer: 117",
+      "Answer: 117",
+      "Answer: 117"
+    ]
+  },
+  {
+    "question": "What is the atomic number of oganesson?",
+    "answer": 118,
+    "category": "Atomic number",
+    "symbol": "Og",
+    "name": "Oganesson",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 117,
+    "paraphrases": [
+      "What is the atomic number of oganesson?",
+      "Which atomic number does oganesson have?",
+      "What number on the periodic table corresponds to oganesson?",
+      "How many protons are in an atom of oganesson?",
+      "Give the atomic number for oganesson."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      118,
+      118,
+      118,
+      118,
+      118
+    ],
+    "trial_responses": [
+      "Answer: 118",
+      "Answer: 118",
+      "Answer: 118",
+      "Answer: 118",
+      "Answer: 118"
+    ]
+  },
+  {
+    "question": "What is the atomic number of ununennium?",
+    "answer": 119,
+    "category": "Atomic number",
+    "symbol": "Uue",
+    "name": "Ununennium",
+    "kind": "atomic",
+    "source_file": "atomic_facts.json",
+    "source_index": 118,
+    "paraphrases": [
+      "What is the atomic number of ununennium?",
+      "Which atomic number does ununennium have?",
+      "What number on the periodic table corresponds to ununennium?",
+      "How many protons are in an atom of ununennium?",
+      "Give the atomic number for ununennium."
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      119,
+      119,
+      119,
+      119,
+      119
+    ],
+    "trial_responses": [
+      "Answer: 119",
+      "Answer: 119",
+      "Answer: 119",
+      "Answer: 119",
+      "Answer: 119"
+    ]
+  },
+  {
+    "question": "What is the number of cards in a standard tarot deck?",
+    "answer": 78,
+    "category": "Games",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 2,
+    "paraphrases": [
+      "What is the number of cards in a standard tarot deck?",
+      "How many cards in a standard tarot deck?",
+      "Give the number of cards in a standard tarot deck.",
+      "State the total count of cards in a standard tarot deck.",
+      "What is the total number of cards in a standard tarot deck?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      78,
+      78,
+      78,
+      78,
+      78
+    ],
+    "trial_responses": [
+      "Answer: 78",
+      "Answer: 78",
+      "Answer: 78",
+      "Answer: 78",
+      "Answer: 78"
+    ]
+  },
+  {
+    "question": "What is the number of essays in The Federalist Papers?",
+    "answer": 85,
+    "category": "History",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 3,
+    "paraphrases": [
+      "What is the number of essays in The Federalist Papers?",
+      "How many essays are in The Federalist Papers?",
+      "How many essays does The Federalist Papers contain?",
+      "Give the total number of essays in The Federalist Papers.",
+      "What is the essay count for The Federalist Papers?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      85,
+      85,
+      85,
+      85,
+      85
+    ],
+    "trial_responses": [
+      "Answer: 85",
+      "Answer: 85",
+      "Answer: 85",
+      "Answer: 85",
+      "Answer: 85"
+    ]
+  },
+  {
+    "question": "What is the number of paintings in Monet's Water Lilies series?",
+    "answer": 250,
+    "category": "Art",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 5,
+    "paraphrases": [
+      "What is the number of paintings in Monet's Water Lilies series?",
+      "How many paintings in Monet's Water Lilies series?",
+      "Give the number of paintings in Monet's Water Lilies series.",
+      "State the total count of paintings in Monet's Water Lilies series.",
+      "What is the total number of paintings in Monet's Water Lilies series?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      250,
+      250,
+      250,
+      250,
+      250
+    ],
+    "trial_responses": [
+      "Answer: 250",
+      "Answer: 250",
+      "Answer: 250",
+      "Answer: 250",
+      "Answer: 250"
+    ]
+  },
+  {
+    "question": "What is the number of sonnets Shakespeare wrote?",
+    "answer": 154,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 6,
+    "paraphrases": [
+      "What is the number of sonnets Shakespeare wrote?",
+      "How many sonnets Shakespeare wrote?",
+      "Give the number of sonnets Shakespeare wrote.",
+      "State the total count of sonnets Shakespeare wrote.",
+      "What is the total number of sonnets Shakespeare wrote?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      154,
+      154,
+      154,
+      154,
+      154
+    ],
+    "trial_responses": [
+      "Answer: 154",
+      "Answer: 154",
+      "Answer: 154",
+      "Answer: 154",
+      "Answer: 154"
+    ]
+  },
+  {
+    "question": "What is the number of chapters in the Quran?",
+    "answer": 114,
+    "category": "Religion",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 7,
+    "paraphrases": [
+      "What is the number of chapters in the Quran?",
+      "How many chapters in the Quran?",
+      "Give the number of chapters in the Quran.",
+      "State the total count of chapters in the Quran.",
+      "What is the total number of chapters in the Quran?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      114,
+      114,
+      114,
+      114,
+      114
+    ],
+    "trial_responses": [
+      "Answer: 114",
+      "Answer: 114",
+      "Answer: 114",
+      "Answer: 114",
+      "Answer: 114"
+    ]
+  },
+  {
+    "question": "What is the number of prefectures in Japan?",
+    "answer": 47,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 9,
+    "paraphrases": [
+      "What is the number of prefectures in Japan?",
+      "How many prefectures in Japan?",
+      "Give the number of prefectures in Japan.",
+      "State the total count of prefectures in Japan.",
+      "What is the total number of prefectures in Japan?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      47,
+      47,
+      47,
+      47,
+      47
+    ],
+    "trial_responses": [
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47",
+      "Answer: 47"
+    ]
+  },
+  {
+    "question": "What is the number of peaks over 8000 meters?",
+    "answer": 14,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 10,
+    "paraphrases": [
+      "What is the number of peaks over 8000 meters?",
+      "How many peaks over 8000 meters?",
+      "Give the number of peaks over 8000 meters.",
+      "State the total count of peaks over 8000 meters.",
+      "What is the total number of peaks over 8000 meters?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "trial_responses": [
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14"
+    ]
+  },
+  {
+    "question": "What is the number of verses in the Tao Te Ching?",
+    "answer": 81,
+    "category": "Philosophy",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 11,
+    "paraphrases": [
+      "What is the number of verses in the Tao Te Ching?",
+      "How many verses in the Tao Te Ching?",
+      "Give the number of verses in the Tao Te Ching.",
+      "State the total count of verses in the Tao Te Ching.",
+      "What is the total number of verses in the Tao Te Ching?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      81,
+      81,
+      81,
+      81,
+      81
+    ],
+    "trial_responses": [
+      "Answer: 81",
+      "Answer: 81",
+      "Answer: 81",
+      "Answer: 81",
+      "Answer: 81"
+    ]
+  },
+  {
+    "question": "What is the number of amino acids used in protein synthesis?",
+    "answer": 20,
+    "category": "Biology",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 12,
+    "paraphrases": [
+      "What is the number of amino acids used in protein synthesis?",
+      "How many amino acids are used in protein synthesis?",
+      "Protein synthesis uses how many amino acids?",
+      "Give the standard number of amino acids used to synthesize proteins.",
+      "What is the count of amino acids used in making proteins?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "trial_responses": [
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20"
+    ]
+  },
+  {
+    "question": "What is the number of vertebrae in the human spine?",
+    "answer": 33,
+    "category": "Biology",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 15,
+    "paraphrases": [
+      "What is the number of vertebrae in the human spine?",
+      "How many vertebrae in the human spine?",
+      "Give the number of vertebrae in the human spine.",
+      "State the total count of vertebrae in the human spine.",
+      "What is the total number of vertebrae in the human spine?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      33,
+      33,
+      33,
+      33,
+      33
+    ],
+    "trial_responses": [
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33"
+    ]
+  },
+  {
+    "question": "What is the number of tarot cards in the major arcana?",
+    "answer": 22,
+    "category": "Games",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 17,
+    "paraphrases": [
+      "What is the number of tarot cards in the major arcana?",
+      "How many tarot cards in the major arcana?",
+      "Give the number of tarot cards in the major arcana.",
+      "State the total count of tarot cards in the major arcana.",
+      "What is the total number of tarot cards in the major arcana?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      22,
+      22,
+      22,
+      22,
+      22
+    ],
+    "trial_responses": [
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22"
+    ]
+  },
+  {
+    "question": "What is the number of hexagrams in the I Ching?",
+    "answer": 64,
+    "category": "Philosophy",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 18,
+    "paraphrases": [
+      "What is the number of hexagrams in the I Ching?",
+      "How many hexagrams in the I Ching?",
+      "Give the number of hexagrams in the I Ching.",
+      "State the total count of hexagrams in the I Ching.",
+      "What is the total number of hexagrams in the I Ching?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "trial_responses": [
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64",
+      "Answer: 64"
+    ]
+  },
+  {
+    "question": "What is the number of constellations officially recognized by the IAU?",
+    "answer": 88,
+    "category": "Astronomy",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 19,
+    "paraphrases": [
+      "What is the number of constellations officially recognized by the IAU?",
+      "How many constellations officially recognized by the IAU?",
+      "Give the number of constellations officially recognized by the IAU.",
+      "State the total count of constellations officially recognized by the IAU.",
+      "What is the total number of constellations officially recognized by the IAU?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      88,
+      88,
+      88,
+      88,
+      88
+    ],
+    "trial_responses": [
+      "Answer: 88",
+      "Answer: 88",
+      "Answer: 88",
+      "Answer: 88",
+      "Answer: 88"
+    ]
+  },
+  {
+    "question": "What is the number of moons Saturn has?",
+    "answer": 146,
+    "category": "Astronomy",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 20,
+    "paraphrases": [
+      "What is the number of moons Saturn has?",
+      "How many moons does Saturn have?",
+      "What is the total count of Saturn's moons?",
+      "Give the number of natural satellites orbiting Saturn.",
+      "How many natural satellites belong to Saturn?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      146,
+      146,
+      146,
+      146,
+      146
+    ],
+    "trial_responses": [
+      "Answer: 146",
+      "Answer: 146",
+      "Answer: 146",
+      "Answer: 146",
+      "Answer: 146"
+    ]
+  },
+  {
+    "question": "What is the number of moons Jupiter has?",
+    "answer": 95,
+    "category": "Astronomy",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 21,
+    "paraphrases": [
+      "What is the number of moons Jupiter has?",
+      "How many moons Jupiter has?",
+      "Give the number of moons Jupiter has.",
+      "State the total count of moons Jupiter has.",
+      "What is the total number of moons Jupiter has?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      95,
+      95,
+      95,
+      95,
+      95
+    ],
+    "trial_responses": [
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95",
+      "Answer: 95"
+    ]
+  },
+  {
+    "question": "What is the number of piano sonatas Schubert composed?",
+    "answer": 21,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 22,
+    "paraphrases": [
+      "What is the number of piano sonatas Schubert composed?",
+      "How many piano sonatas did Schubert compose?",
+      "What is the total count of Schubert's piano sonatas?",
+      "Give the number of piano sonatas composed by Schubert.",
+      "Schubert composed how many piano sonatas?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      21,
+      21,
+      21,
+      21,
+      18
+    ],
+    "trial_responses": [
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 18"
+    ]
+  },
+  {
+    "question": "What is the number of symphonies Mozart composed?",
+    "answer": 41,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 23,
+    "paraphrases": [
+      "What is the number of symphonies Mozart composed?",
+      "How many symphonies Mozart composed?",
+      "Give the number of symphonies Mozart composed.",
+      "State the total count of symphonies Mozart composed.",
+      "What is the total number of symphonies Mozart composed?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      41,
+      41,
+      41,
+      41,
+      41
+    ],
+    "trial_responses": [
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41",
+      "Answer: 41"
+    ]
+  },
+  {
+    "question": "What is the number of symphonies Haydn composed?",
+    "answer": 104,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 24,
+    "paraphrases": [
+      "What is the number of symphonies Haydn composed?",
+      "How many symphonies Haydn composed?",
+      "Give the number of symphonies Haydn composed.",
+      "State the total count of symphonies Haydn composed.",
+      "What is the total number of symphonies Haydn composed?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      104,
+      104,
+      104,
+      104,
+      104
+    ],
+    "trial_responses": [
+      "Answer: 104",
+      "Answer: 104",
+      "Answer: 104",
+      "Answer: 104",
+      "Answer: 104"
+    ]
+  },
+  {
+    "question": "What is the number of plays Shakespeare wrote?",
+    "answer": 37,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 25,
+    "paraphrases": [
+      "What is the number of plays Shakespeare wrote?",
+      "How many plays Shakespeare wrote?",
+      "Give the number of plays Shakespeare wrote.",
+      "State the total count of plays Shakespeare wrote.",
+      "What is the total number of plays Shakespeare wrote?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      37,
+      37,
+      37,
+      37,
+      37
+    ],
+    "trial_responses": [
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37",
+      "Answer: 37"
+    ]
+  },
+  {
+    "question": "What is the number of suras in the Quran?",
+    "answer": 114,
+    "category": "Religion",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 27,
+    "paraphrases": [
+      "What is the number of suras in the Quran?",
+      "How many suras in the Quran?",
+      "Give the number of suras in the Quran.",
+      "State the total count of suras in the Quran.",
+      "What is the total number of suras in the Quran?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      114,
+      114,
+      114,
+      114,
+      114
+    ],
+    "trial_responses": [
+      "Answer: 114",
+      "Answer: 114",
+      "Answer: 114",
+      "Answer: 114",
+      "Answer: 114"
+    ]
+  },
+  {
+    "question": "What is the number of fugues in Bach's Well-Tempered Clavier?",
+    "answer": 48,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 28,
+    "paraphrases": [
+      "What is the number of fugues in Bach's Well-Tempered Clavier?",
+      "How many fugues are in Bach's Well-Tempered Clavier?",
+      "How many fugues does Bach's Well-Tempered Clavier contain?",
+      "Give the total number of fugues in The Well-Tempered Clavier by Bach.",
+      "What is the fugue count in Bach's Well-Tempered Clavier?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      48,
+      48,
+      24,
+      48,
+      48
+    ],
+    "trial_responses": [
+      "Answer: 48",
+      "Answer: 48",
+      "Answer: 24",
+      "Answer: 48",
+      "Answer: 48"
+    ]
+  },
+  {
+    "question": "What is the number of dominoes in a double-six set?",
+    "answer": 28,
+    "category": "Games",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 30,
+    "paraphrases": [
+      "What is the number of dominoes in a double-six set?",
+      "How many dominoes in a double-six set?",
+      "Give the number of dominoes in a double-six set.",
+      "State the total count of dominoes in a double-six set.",
+      "What is the total number of dominoes in a double-six set?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "trial_responses": [
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28"
+    ]
+  },
+  {
+    "question": "What is the number of countries in Africa?",
+    "answer": 54,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 31,
+    "paraphrases": [
+      "What is the number of countries in Africa?",
+      "How many countries in Africa?",
+      "Give the number of countries in Africa.",
+      "State the total count of countries in Africa.",
+      "What is the total number of countries in Africa?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      54,
+      54,
+      54,
+      54,
+      54
+    ],
+    "trial_responses": [
+      "Answer: 54",
+      "Answer: 54",
+      "Answer: 54",
+      "Answer: 54",
+      "Answer: 54"
+    ]
+  },
+  {
+    "question": "What is the number of countries in Europe?",
+    "answer": 44,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 32,
+    "paraphrases": [
+      "What is the number of countries in Europe?",
+      "How many countries in Europe?",
+      "Give the number of countries in Europe.",
+      "State the total count of countries in Europe.",
+      "What is the total number of countries in Europe?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      44,
+      44,
+      44,
+      44,
+      44
+    ],
+    "trial_responses": [
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44"
+    ]
+  },
+  {
+    "question": "What is the number of federal states in Germany?",
+    "answer": 16,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 33,
+    "paraphrases": [
+      "What is the number of federal states in Germany?",
+      "How many federal states in Germany?",
+      "Give the number of federal states in Germany.",
+      "State the total count of federal states in Germany.",
+      "What is the total number of federal states in Germany?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "trial_responses": [
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16"
+    ]
+  },
+  {
+    "question": "What is the number of major islands in the Galapagos archipelago?",
+    "answer": 13,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 34,
+    "paraphrases": [
+      "What is the number of major islands in the Galapagos archipelago?",
+      "How many major islands in the Galapagos archipelago?",
+      "Give the number of major islands in the Galapagos archipelago.",
+      "State the total count of major islands in the Galapagos archipelago.",
+      "What is the total number of major islands in the Galapagos archipelago?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "trial_responses": [
+      "Answer: 13",
+      "Answer: 13",
+      "Answer: 13",
+      "Answer: 13",
+      "Answer: 13"
+    ]
+  },
+  {
+    "question": "What is the number of columns on the Lincoln Memorial?",
+    "answer": 36,
+    "category": "Architecture",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 35,
+    "paraphrases": [
+      "What is the number of columns on the Lincoln Memorial?",
+      "How many columns on the Lincoln Memorial?",
+      "Give the number of columns on the Lincoln Memorial.",
+      "State the total count of columns on the Lincoln Memorial.",
+      "What is the total number of columns on the Lincoln Memorial?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      36,
+      4,
+      36,
+      36,
+      36
+    ],
+    "trial_responses": [
+      "Answer: 36",
+      "Answer: 4",
+      "Answer: 36",
+      "Answer: 36",
+      "Answer: 36"
+    ]
+  },
+  {
+    "question": "What is the number of arches in the Colosseum's outer wall?",
+    "answer": 80,
+    "category": "Architecture",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 36,
+    "paraphrases": [
+      "What is the number of arches in the Colosseum's outer wall?",
+      "How many arches in the Colosseum's outer wall?",
+      "Give the number of arches in the Colosseum's outer wall.",
+      "State the total count of arches in the Colosseum's outer wall.",
+      "What is the total number of arches in the Colosseum's outer wall?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "trial_responses": [
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 80",
+      "Answer: 80"
+    ]
+  },
+  {
+    "question": "What is the number of letters in the Greek alphabet?",
+    "answer": 24,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 39,
+    "paraphrases": [
+      "What is the number of letters in the Greek alphabet?",
+      "How many letters in the Greek alphabet?",
+      "Give the number of letters in the Greek alphabet.",
+      "State the total count of letters in the Greek alphabet.",
+      "What is the total number of letters in the Greek alphabet?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the number of letters in the Hebrew alphabet?",
+    "answer": 22,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 40,
+    "paraphrases": [
+      "What is the number of letters in the Hebrew alphabet?",
+      "How many letters in the Hebrew alphabet?",
+      "Give the number of letters in the Hebrew alphabet.",
+      "State the total count of letters in the Hebrew alphabet.",
+      "What is the total number of letters in the Hebrew alphabet?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      22,
+      22,
+      22,
+      22,
+      22
+    ],
+    "trial_responses": [
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22"
+    ]
+  },
+  {
+    "question": "What is the number of letters in the Arabic alphabet?",
+    "answer": 28,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 41,
+    "paraphrases": [
+      "What is the number of letters in the Arabic alphabet?",
+      "How many letters in the Arabic alphabet?",
+      "Give the number of letters in the Arabic alphabet.",
+      "State the total count of letters in the Arabic alphabet.",
+      "What is the total number of letters in the Arabic alphabet?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      28,
+      28,
+      28,
+      28,
+      28
+    ],
+    "trial_responses": [
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28",
+      "Answer: 28"
+    ]
+  },
+  {
+    "question": "What is the number of letters in the Russian alphabet?",
+    "answer": 33,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 42,
+    "paraphrases": [
+      "What is the number of letters in the Russian alphabet?",
+      "How many letters in the Russian alphabet?",
+      "Give the number of letters in the Russian alphabet.",
+      "State the total count of letters in the Russian alphabet.",
+      "What is the total number of letters in the Russian alphabet?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      33,
+      33,
+      33,
+      33,
+      33
+    ],
+    "trial_responses": [
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33"
+    ]
+  },
+  {
+    "question": "What is the number of Grand Slam tennis titles Roger Federer won?",
+    "answer": 20,
+    "category": "Sports",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 44,
+    "paraphrases": [
+      "What is the number of Grand Slam tennis titles Roger Federer won?",
+      "How many Grand Slam tennis titles Roger Federer won?",
+      "Give the number of Grand Slam tennis titles Roger Federer won.",
+      "State the total count of Grand Slam tennis titles Roger Federer won.",
+      "What is the total number of Grand Slam tennis titles Roger Federer won?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "trial_responses": [
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20"
+    ]
+  },
+  {
+    "question": "What is the number of nations that competed in the first modern Olympics?",
+    "answer": 14,
+    "category": "Sports",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 45,
+    "paraphrases": [
+      "What is the number of nations that competed in the first modern Olympics?",
+      "How many nations that competed in the first modern Olympics?",
+      "Give the number of nations that competed in the first modern Olympics.",
+      "State the total count of nations that competed in the first modern Olympics.",
+      "What is the total number of nations that competed in the first modern Olympics?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "trial_responses": [
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14",
+      "Answer: 14"
+    ]
+  },
+  {
+    "question": "What is the number of republics that made up the Soviet Union?",
+    "answer": 15,
+    "category": "History",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 46,
+    "paraphrases": [
+      "What is the number of republics that made up the Soviet Union?",
+      "How many republics that made up the Soviet Union?",
+      "Give the number of republics that made up the Soviet Union.",
+      "State the total count of republics that made up the Soviet Union.",
+      "What is the total number of republics that made up the Soviet Union?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "trial_responses": [
+      "Answer: 15",
+      "Answer: 15",
+      "Answer: 15",
+      "Answer: 15",
+      "Answer: 15"
+    ]
+  },
+  {
+    "question": "What is the number of people who have walked on the Moon?",
+    "answer": 12,
+    "category": "Space",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 47,
+    "paraphrases": [
+      "What is the number of people who have walked on the Moon?",
+      "How many people who have walked on the Moon?",
+      "Give the number of people who have walked on the Moon.",
+      "State the total count of people who have walked on the Moon.",
+      "What is the total number of people who have walked on the Moon?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12"
+    ]
+  },
+  {
+    "question": "What is the number of floors in the Empire State Building?",
+    "answer": 102,
+    "category": "Trivia",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 48,
+    "paraphrases": [
+      "What is the number of floors in the Empire State Building?",
+      "How many floors does the Empire State Building have?",
+      "What is the floor count of the Empire State Building?",
+      "Give the number of floors in the Empire State Building.",
+      "The Empire State Building has how many floors?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      102,
+      102,
+      102,
+      102,
+      102
+    ],
+    "trial_responses": [
+      "Answer: 102",
+      "Answer: 102",
+      "Answer: 102",
+      "Answer: 102",
+      "Answer: 102"
+    ]
+  },
+  {
+    "question": "What is the number of bones in the human hand?",
+    "answer": 27,
+    "category": "Biology",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 49,
+    "paraphrases": [
+      "What is the number of bones in the human hand?",
+      "How many bones in the human hand?",
+      "Give the number of bones in the human hand.",
+      "State the total count of bones in the human hand.",
+      "What is the total number of bones in the human hand?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      27,
+      27,
+      27,
+      27,
+      27
+    ],
+    "trial_responses": [
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27"
+    ]
+  },
+  {
+    "question": "What is the number of piano concertos Mozart composed?",
+    "answer": 27,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 50,
+    "paraphrases": [
+      "What is the number of piano concertos Mozart composed?",
+      "How many piano concertos Mozart composed?",
+      "Give the number of piano concertos Mozart composed.",
+      "State the total count of piano concertos Mozart composed.",
+      "What is the total number of piano concertos Mozart composed?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      27,
+      27,
+      27,
+      27,
+      27
+    ],
+    "trial_responses": [
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27"
+    ]
+  },
+  {
+    "question": "What is the number of cantons in Switzerland?",
+    "answer": 26,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 53,
+    "paraphrases": [
+      "What is the number of cantons in Switzerland?",
+      "How many cantons in Switzerland?",
+      "Give the number of cantons in Switzerland.",
+      "State the total count of cantons in Switzerland.",
+      "What is the total number of cantons in Switzerland?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      26,
+      26,
+      26,
+      26,
+      26
+    ],
+    "trial_responses": [
+      "Answer: 26",
+      "Answer: 26",
+      "Answer: 26",
+      "Answer: 26",
+      "Answer: 26"
+    ]
+  },
+  {
+    "question": "What is the number of regions in France?",
+    "answer": 18,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 54,
+    "paraphrases": [
+      "What is the number of regions in France?",
+      "How many regions in France?",
+      "Give the number of regions in France.",
+      "State the total count of regions in France.",
+      "What is the total number of regions in France?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      18,
+      13,
+      18,
+      18,
+      18
+    ],
+    "trial_responses": [
+      "Answer: 18",
+      "Answer: 13",
+      "Answer: 18",
+      "Answer: 18",
+      "Answer: 18"
+    ]
+  },
+  {
+    "question": "What is the number of bones in the human skull?",
+    "answer": 22,
+    "category": "Biology",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 56,
+    "paraphrases": [
+      "What is the number of bones in the human skull?",
+      "How many bones in the human skull?",
+      "Give the number of bones in the human skull.",
+      "State the total count of bones in the human skull.",
+      "What is the total number of bones in the human skull?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      22,
+      22,
+      22,
+      22,
+      22
+    ],
+    "trial_responses": [
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22",
+      "Answer: 22"
+    ]
+  },
+  {
+    "question": "What is the number of cranial nerves in humans?",
+    "answer": 12,
+    "category": "Biology",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 57,
+    "paraphrases": [
+      "What is the number of cranial nerves in humans?",
+      "How many cranial nerves in humans?",
+      "Give the number of cranial nerves in humans.",
+      "State the total count of cranial nerves in humans.",
+      "What is the total number of cranial nerves in humans?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "trial_responses": [
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12",
+      "Answer: 12"
+    ]
+  },
+  {
+    "question": "What is the number of books in the New Testament?",
+    "answer": 27,
+    "category": "Religion",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 58,
+    "paraphrases": [
+      "What is the number of books in the New Testament?",
+      "How many books in the New Testament?",
+      "Give the number of books in the New Testament.",
+      "State the total count of books in the New Testament.",
+      "What is the total number of books in the New Testament?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      27,
+      27,
+      27,
+      27,
+      27
+    ],
+    "trial_responses": [
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27",
+      "Answer: 27"
+    ]
+  },
+  {
+    "question": "What is the number of books in the Old Testament?",
+    "answer": 39,
+    "category": "Religion",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 59,
+    "paraphrases": [
+      "What is the number of books in the Old Testament?",
+      "How many books in the Old Testament?",
+      "Give the number of books in the Old Testament.",
+      "State the total count of books in the Old Testament.",
+      "What is the total number of books in the Old Testament?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      39,
+      39,
+      39,
+      39,
+      39
+    ],
+    "trial_responses": [
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39"
+    ]
+  },
+  {
+    "question": "What is the number of Psalms in the Bible?",
+    "answer": 150,
+    "category": "Religion",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 60,
+    "paraphrases": [
+      "What is the number of Psalms in the Bible?",
+      "How many Psalms in the Bible?",
+      "Give the number of Psalms in the Bible.",
+      "State the total count of Psalms in the Bible.",
+      "What is the total number of Psalms in the Bible?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      150,
+      150,
+      150,
+      150,
+      150
+    ],
+    "trial_responses": [
+      "Answer: 150",
+      "Answer: 150",
+      "Answer: 150",
+      "Answer: 150",
+      "Answer: 150"
+    ]
+  },
+  {
+    "question": "What is the number of articles in the US Constitution?",
+    "answer": 7,
+    "category": "History",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 61,
+    "paraphrases": [
+      "What is the number of articles in the US Constitution?",
+      "How many articles in the US Constitution?",
+      "Give the number of articles in the US Constitution.",
+      "State the total count of articles in the US Constitution.",
+      "What is the total number of articles in the US Constitution?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "trial_responses": [
+      "Answer: 7",
+      "Answer: 7",
+      "Answer: 7",
+      "Answer: 7",
+      "Answer: 7"
+    ]
+  },
+  {
+    "question": "What is the number of amendments in the US Bill of Rights?",
+    "answer": 10,
+    "category": "History",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 62,
+    "paraphrases": [
+      "What is the number of amendments in the US Bill of Rights?",
+      "How many amendments in the US Bill of Rights?",
+      "Give the number of amendments in the US Bill of Rights.",
+      "State the total count of amendments in the US Bill of Rights.",
+      "What is the total number of amendments in the US Bill of Rights?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "trial_responses": [
+      "Answer: 10",
+      "Answer: 10",
+      "Answer: 10",
+      "Answer: 10",
+      "Answer: 10"
+    ]
+  },
+  {
+    "question": "What is the number of wives Henry VIII had?",
+    "answer": 6,
+    "category": "History",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 63,
+    "paraphrases": [
+      "What is the number of wives Henry VIII had?",
+      "How many wives Henry VIII had?",
+      "Give the number of wives Henry VIII had.",
+      "State the total count of wives Henry VIII had.",
+      "What is the total number of wives Henry VIII had?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "trial_responses": [
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6"
+    ]
+  },
+  {
+    "question": "What is the number of crusades to the Holy Land?",
+    "answer": 9,
+    "category": "History",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 64,
+    "paraphrases": [
+      "What is the number of crusades to the Holy Land?",
+      "How many crusades to the Holy Land?",
+      "Give the number of crusades to the Holy Land.",
+      "State the total count of crusades to the Holy Land.",
+      "What is the total number of crusades to the Holy Land?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "trial_responses": [
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9"
+    ]
+  },
+  {
+    "question": "What is the number of books in Homer's Iliad?",
+    "answer": 24,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 65,
+    "paraphrases": [
+      "What is the number of books in Homer's Iliad?",
+      "How many books are in Homer's Iliad?",
+      "How many books does Homer's Iliad contain?",
+      "Give the total number of books in the Iliad.",
+      "What is the book count of Homer's Iliad?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the number of books in Homer's Odyssey?",
+    "answer": 24,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 66,
+    "paraphrases": [
+      "What is the number of books in Homer's Odyssey?",
+      "How many books are in Homer's Odyssey?",
+      "How many books does Homer's Odyssey contain?",
+      "Give the total number of books in the Odyssey.",
+      "What is the book count of Homer's Odyssey?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the number of tales in The Canterbury Tales?",
+    "answer": 24,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 67,
+    "paraphrases": [
+      "What is the number of tales in The Canterbury Tales?",
+      "How many tales in The Canterbury Tales?",
+      "Give the number of tales in The Canterbury Tales.",
+      "State the total count of tales in The Canterbury Tales.",
+      "What is the total number of tales in The Canterbury Tales?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the number of novels Jane Austen completed?",
+    "answer": 6,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 69,
+    "paraphrases": [
+      "What is the number of novels Jane Austen completed?",
+      "How many novels did Jane Austen complete?",
+      "What is the total count of novels completed by Jane Austen?",
+      "Give the number of novels Jane Austen finished.",
+      "Jane Austen completed how many novels?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "trial_responses": [
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6"
+    ]
+  },
+  {
+    "question": "What is the number of players on a cricket team?",
+    "answer": 11,
+    "category": "Sports",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 71,
+    "paraphrases": [
+      "What is the number of players on a cricket team?",
+      "How many players on a cricket team?",
+      "Give the number of players on a cricket team.",
+      "State the total count of players on a cricket team.",
+      "What is the total number of players on a cricket team?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "trial_responses": [
+      "Answer: 11",
+      "Answer: 11",
+      "Answer: 11",
+      "Answer: 11",
+      "Answer: 11"
+    ]
+  },
+  {
+    "question": "What is the number of dots on a standard die?",
+    "answer": 21,
+    "category": "Games",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 72,
+    "paraphrases": [
+      "What is the number of dots on a standard die?",
+      "How many dots are on a standard die in total?",
+      "What is the total dot count across all faces of a standard die?",
+      "Give the number of pips on all sides of a standard die combined.",
+      "A standard six-sided die has how many dots altogether?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      6,
+      21,
+      21,
+      21,
+      21
+    ],
+    "trial_responses": [
+      "Answer: 6",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21",
+      "Answer: 21"
+    ]
+  },
+  {
+    "question": "What is the number of cello suites Bach composed?",
+    "answer": 6,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 75,
+    "paraphrases": [
+      "What is the number of cello suites Bach composed?",
+      "How many cello suites Bach composed?",
+      "Give the number of cello suites Bach composed.",
+      "State the total count of cello suites Bach composed.",
+      "What is the total number of cello suites Bach composed?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "trial_responses": [
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6",
+      "Answer: 6"
+    ]
+  },
+  {
+    "question": "What is the number of engravings in Piranesi's Carceri series?",
+    "answer": 16,
+    "category": "Art",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 78,
+    "paraphrases": [
+      "What is the number of engravings in Piranesi's Carceri series?",
+      "How many engravings in Piranesi's Carceri series?",
+      "Give the number of engravings in Piranesi's Carceri series.",
+      "State the total count of engravings in Piranesi's Carceri series.",
+      "What is the total number of engravings in Piranesi's Carceri series?"
+    ],
+    "correct_fraction": 0.8,
+    "correct_count": 4,
+    "trial_count": 5,
+    "trial_predictions": [
+      16,
+      17,
+      16,
+      16,
+      16
+    ],
+    "trial_responses": [
+      "Answer: 16",
+      "Answer: 17",
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16"
+    ]
+  },
+  {
+    "question": "What is the number of letters in the Georgian alphabet?",
+    "answer": 33,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 82,
+    "paraphrases": [
+      "What is the number of letters in the Georgian alphabet?",
+      "How many letters in the Georgian alphabet?",
+      "Give the number of letters in the Georgian alphabet.",
+      "State the total count of letters in the Georgian alphabet.",
+      "What is the total number of letters in the Georgian alphabet?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      33,
+      33,
+      33,
+      33,
+      33
+    ],
+    "trial_responses": [
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33",
+      "Answer: 33"
+    ]
+  },
+  {
+    "question": "What is the number of letters in the Armenian alphabet?",
+    "answer": 39,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 83,
+    "paraphrases": [
+      "What is the number of letters in the Armenian alphabet?",
+      "How many letters in the Armenian alphabet?",
+      "Give the number of letters in the Armenian alphabet.",
+      "State the total count of letters in the Armenian alphabet.",
+      "What is the total number of letters in the Armenian alphabet?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      39,
+      39,
+      39,
+      39,
+      39
+    ],
+    "trial_responses": [
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39",
+      "Answer: 39"
+    ]
+  },
+  {
+    "question": "What is the number of letters in the Thai alphabet?",
+    "answer": 44,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 84,
+    "paraphrases": [
+      "What is the number of letters in the Thai alphabet?",
+      "How many letters in the Thai alphabet?",
+      "Give the number of letters in the Thai alphabet.",
+      "State the total count of letters in the Thai alphabet.",
+      "What is the total number of letters in the Thai alphabet?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      44,
+      44,
+      44,
+      44,
+      44
+    ],
+    "trial_responses": [
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44",
+      "Answer: 44"
+    ]
+  },
+  {
+    "question": "What is the number of kana in the Japanese hiragana syllabary?",
+    "answer": 46,
+    "category": "Language",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 85,
+    "paraphrases": [
+      "What is the number of kana in the Japanese hiragana syllabary?",
+      "How many kana in the Japanese hiragana syllabary?",
+      "Give the number of kana in the Japanese hiragana syllabary.",
+      "State the total count of kana in the Japanese hiragana syllabary.",
+      "What is the total number of kana in the Japanese hiragana syllabary?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      46,
+      46,
+      46,
+      46,
+      46
+    ],
+    "trial_responses": [
+      "Answer: 46",
+      "Answer: 46",
+      "Answer: 46",
+      "Answer: 46",
+      "Answer: 46"
+    ]
+  },
+  {
+    "question": "What is the number of autonomous communities in Spain?",
+    "answer": 17,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 86,
+    "paraphrases": [
+      "What is the number of autonomous communities in Spain?",
+      "How many autonomous communities in Spain?",
+      "Give the number of autonomous communities in Spain.",
+      "State the total count of autonomous communities in Spain.",
+      "What is the total number of autonomous communities in Spain?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "trial_responses": [
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17",
+      "Answer: 17"
+    ]
+  },
+  {
+    "question": "What is the number of oblasts in Ukraine?",
+    "answer": 24,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 87,
+    "paraphrases": [
+      "What is the number of oblasts in Ukraine?",
+      "How many oblasts in Ukraine?",
+      "Give the number of oblasts in Ukraine.",
+      "State the total count of oblasts in Ukraine.",
+      "What is the total number of oblasts in Ukraine?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "trial_responses": [
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24",
+      "Answer: 24"
+    ]
+  },
+  {
+    "question": "What is the number of voivodeships in Poland?",
+    "answer": 16,
+    "category": "Geography",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 88,
+    "paraphrases": [
+      "What is the number of voivodeships in Poland?",
+      "How many voivodeships are in Poland?",
+      "Into how many voivodeships is Poland divided?",
+      "Give the total number of Polish voivodeships.",
+      "What is Poland's count of voivodeships?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "trial_responses": [
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16",
+      "Answer: 16"
+    ]
+  },
+  {
+    "question": "What is the number of movements in Messiaen's Vingt regards sur l'enfant-Jésus?",
+    "answer": 20,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 90,
+    "paraphrases": [
+      "What is the number of movements in Messiaen's Vingt regards sur l'enfant-Jésus?",
+      "How many movements in Messiaen's Vingt regards sur l'enfant-Jésus?",
+      "Give the number of movements in Messiaen's Vingt regards sur l'enfant-Jésus.",
+      "State the total count of movements in Messiaen's Vingt regards sur l'enfant-Jésus.",
+      "What is the total number of movements in Messiaen's Vingt regards sur l'enfant-Jésus?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "trial_responses": [
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20",
+      "Answer: 20"
+    ]
+  },
+  {
+    "question": "What is the number of string quartets Shostakovich composed?",
+    "answer": 15,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 92,
+    "paraphrases": [
+      "What is the number of string quartets Shostakovich composed?",
+      "How many string quartets Shostakovich composed?",
+      "Give the number of string quartets Shostakovich composed.",
+      "State the total count of string quartets Shostakovich composed.",
+      "What is the total number of string quartets Shostakovich composed?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "trial_responses": [
+      "Answer: 15",
+      "Answer: 15",
+      "Answer: 15",
+      "Answer: 15",
+      "Answer: 15"
+    ]
+  },
+  {
+    "question": "What is the number of symphonies Bruckner composed?",
+    "answer": 9,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 93,
+    "paraphrases": [
+      "What is the number of symphonies Bruckner composed?",
+      "How many symphonies Bruckner composed?",
+      "Give the number of symphonies Bruckner composed.",
+      "State the total count of symphonies Bruckner composed.",
+      "What is the total number of symphonies Bruckner composed?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "trial_responses": [
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9"
+    ]
+  },
+  {
+    "question": "What is the number of symphonies Mahler composed?",
+    "answer": 9,
+    "category": "Music",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 94,
+    "paraphrases": [
+      "What is the number of symphonies Mahler composed?",
+      "How many symphonies Mahler composed?",
+      "Give the number of symphonies Mahler composed.",
+      "State the total count of symphonies Mahler composed.",
+      "What is the total number of symphonies Mahler composed?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "trial_responses": [
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9",
+      "Answer: 9"
+    ]
+  },
+  {
+    "question": "What is the number of books in Livy's Ab Urbe Condita that survive?",
+    "answer": 35,
+    "category": "Literature",
+    "kind": "static",
+    "source_file": "static_facts.json",
+    "source_index": 97,
+    "paraphrases": [
+      "What is the number of books in Livy's Ab Urbe Condita that survive?",
+      "How many books in Livy's Ab Urbe Condita that survive?",
+      "Give the number of books in Livy's Ab Urbe Condita that survive.",
+      "State the total count of books in Livy's Ab Urbe Condita that survive.",
+      "What is the total number of books in Livy's Ab Urbe Condita that survive?"
+    ],
+    "correct_fraction": 1.0,
+    "correct_count": 5,
+    "trial_count": 5,
+    "trial_predictions": [
+      35,
+      35,
+      35,
+      35,
+      35
+    ],
+    "trial_responses": [
+      "Answer: 35",
+      "Answer: 35",
+      "Answer: 35",
+      "Answer: 35",
+      "Answer: 35"
+    ]
+  }
+]
