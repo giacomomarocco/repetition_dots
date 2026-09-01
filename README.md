@@ -1,5 +1,55 @@
 # Local Qwen prompt experiments
 
+DeepSeek V4 Flash serving and fact-knowledge evaluation on Perlmutter are
+documented in [`DEEPSEEK_V4_A100_AUDIT.md`](DEEPSEEK_V4_A100_AUDIT.md). It
+includes the four-A100 launch procedure, runtime fixes, official prompt
+encoding, reproducible evaluation commands, and completed 297-fact results.
+
+The native-mHC factorial Logit Lens and causal-transplant toolkit is in
+`dsv4_factorial.py`; its executable design generator is
+`prepare_dsv4_factorial.py`. Full warm-worker integration instructions,
+precision requirements, and the experiment lab log are in
+[`DEEPSEEK_V4_LOGIT_LENS.md`](DEEPSEEK_V4_LOGIT_LENS.md).
+
+The factual one-fact-addition smoke test compares a baseline against 10, 20,
+50, and 100 forced dot fillers, without a numeric control and without reducing
+the sum modulo 10:
+
+```bash
+.venv-sglang/bin/python one_fact_addition_sglang.py \
+  --output-dir runs/deepseek-v4-flash/one-fact-addition-smoke
+```
+
+It defaults to one known fact and produces five requests with the same fact,
+addend, and target. Use `--max-facts N` for a larger test. The DeepSeek server
+must already be running; `--prompt-only` validates and records prompts without
+contacting it.
+
+During generation, the evaluator verifies through SGLang's tokenizer endpoint
+that every target is exactly one continuation token. It records strict answer
+correctness, the target token's probability and log-probability, and its rank
+when it appears in the returned top 20 tokens. A target outside that list is
+reported with the lower bound `>=21`; its exact probability is still recorded.
+The summary reports paired probability and observed-rank changes from baseline.
+
+The matching two-fact test deterministically forms disjoint pairs from the
+same known-fact set and asks for the full sum of both numeric factual answers:
+
+```bash
+.venv-sglang/bin/python two_fact_addition_sglang.py \
+  --output-dir runs/deepseek-v4-flash/two-fact-addition-smoke
+```
+
+It defaults to one pair and the same five filler conditions. Use `--max-pairs
+N` for a larger test, or add `--prompt-only` to construct and record prompts
+without contacting the server. During generation it uses the same one-token
+target validation and correct-answer probability, log-probability, top-20 rank,
+and paired summary reporting as the one-fact test. For the full seed-42 run,
+pass `--max-pairs 131`; this evaluates 131 pairs under five conditions, or 655
+generations. Completed rows are synchronously appended to
+`results_progress.jsonl`, and rerunning the same command resumes compatible
+partial output.
+
 This repository runs the text-only part of `Qwen/Qwen3.5-4B` locally on
 Apple silicon. The model weights are cached under:
 
