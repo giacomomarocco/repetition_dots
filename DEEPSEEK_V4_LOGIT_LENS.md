@@ -413,3 +413,41 @@ At 50 and 100 dots, the one-fact paired intervals exclude zero: +6.49 points
 respectively. None of the two-fact intervals exclude zero. Tests passed in the
 notebook environment (`3 passed`), and the modified notebook remains valid
 JSON. No model inference or Slurm work was required.
+
+### 2026-09-01: five-shot addition prompt revision
+
+Revised the one- and two-fact addition protocols from zero-shot to five-shot.
+Each task now has five fixed, elementary, task-matched user/assistant
+demonstrations. Demonstration user turns end in `Answer:` and their assistant
+turns contain only the integer. The target fillers and `Answer:` are likewise
+inside the final user turn; the final assistant turn is empty and begins only
+after the official encoder inserts `<｜Assistant｜></think>` in `chat` mode.
+The shared system prompt is now: `Solve each addition problem. After 'Answer:'
+respond with only the integer answer. No explanation, no words, no reasoning,
+just the number.` Run manifests use schema version 2 and record the complete
+demonstration set and prompt protocol.
+
+Updated factorial prompt splitting and absolute-position calculation so
+`answer_prompt` identifies the final user-turn `Answer:` token rather than the
+later assistant transition token. Added focused tests for five demonstration
+turns, user-turn filler placement, and generation-prefix-aware position
+indexing. A model-free render check with the pinned DeepSeek V4 encoder verified
+six user turns, six assistant transitions, and the exact target suffix `. . .
+. .\nAnswer:<｜Assistant｜></think>` for both tasks at `k=5`. Python syntax checks
+passed under Python 3.11. Removed eager imports of the PyTorch-based fact
+evaluation modules from both addition CLIs, because they made prompt-only runs
+stall during irrelevant framework initialization on a login node. Both actual
+prompt-only CLIs then completed at `k=5`, and all 17 one- and two-fact unit
+tests passed using the lightweight Python 3.11 environment. The separate
+torch-dependent factorial suite was not run; no model load, inference request,
+Slurm action, or GPU work was performed.
+
+Follow-up prompt correction: for a condition with filler length `k`, the same
+`k` space-separated literal periods are now inserted immediately before
+`Answer:` in all five demonstration user turns as well as the final target user
+turn. There is no `Filler:` label. The official encoder remains solely
+responsible for inserting `<｜Assistant｜></think>` after each user turn. At
+`k=5`, actual prompt-only rendering for both tasks verified exactly six copies
+of `. . . . .\nAnswer:<｜Assistant｜></think>`, no filler label, and generation
+starting immediately after the final native non-thinking transition. All 17
+addition tests passed.

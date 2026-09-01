@@ -38,16 +38,31 @@ class OneFactAdditionTests(unittest.TestCase):
             {"baseline", "dots_10", "dots_20", "dots_50", "dots_100"},
         )
 
-    def test_filler_is_forced_before_answer_prefix(self):
+    def test_filler_and_answer_slot_are_in_final_user_turn(self):
         tasks = experiment.make_tasks([self.fact], 42, 1, [0, 10])
         baseline = next(row for row in tasks if row["k"] == 0)
         filled = next(row for row in tasks if row["k"] == 10)
-        self.assertTrue(experiment.render_prompt(fake_encoder, baseline).endswith("Answer: "))
+        self.assertTrue(experiment.render_prompt(fake_encoder, baseline).endswith("<user>" + experiment.render_question(baseline) + "\nAnswer:"))
         self.assertTrue(
             experiment.render_prompt(fake_encoder, filled).endswith(
-                ". . . . . . . . . .\nAnswer: "
+                ". . . . . . . . . .\nAnswer:"
             )
         )
+
+    def test_prompt_contains_exactly_five_demonstrations(self):
+        captured = []
+        def encoder(messages, thinking_mode):
+            captured.extend(messages)
+            return fake_encoder(messages, thinking_mode)
+        task = experiment.make_tasks([self.fact], 42, 1, [5])[0]
+        experiment.render_prompt(encoder, task)
+        self.assertEqual(len([m for m in captured if m["role"] == "assistant"]), 5)
+        self.assertEqual(captured[-1]["role"], "user")
+        user_turns = [m["content"] for m in captured if m["role"] == "user"]
+        self.assertEqual(len(user_turns), 6)
+        self.assertTrue(all(content.endswith(". . . . .\nAnswer:") for content in user_turns))
+        self.assertTrue(all("Filler:" not in content for content in user_turns))
+        self.assertIn("No explanation, no words, no reasoning, just the number.", captured[0]["content"])
 
     def test_question_contains_fact_but_not_answer(self):
         task = experiment.make_tasks([self.fact], 42, 1, [0])[0]

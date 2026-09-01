@@ -13,7 +13,7 @@ from transformers import AutoTokenizer
 
 from dsv4_factorial import FactorialCell, assert_aligned_and_single_token, locate_positions
 from evaluate_facts_sglang import DEFAULT_ENCODER, DEFAULT_MODEL
-from one_fact_addition_sglang import assistant_prefix, filler, load_encoder, load_facts, render_prompt
+from one_fact_addition_sglang import load_encoder, load_facts, render_prompt, split_target_prompt
 
 
 def main() -> None:
@@ -51,14 +51,13 @@ def main() -> None:
                     "addend": cell.right_value, "target": cell.target, "k": args.filler_length,
                 }
                 prompt = render_prompt(encode_messages, task)
-                suffix = assistant_prefix(args.filler_length)
-                question_prefix = prompt[: -len(suffix)]
-                filler_text = (
-                    filler(args.filler_length) + "\n" if args.filler_length else ""
+                question_prefix, filler_text, answer_prefix, generation_prefix = (
+                    split_target_prompt(prompt, args.filler_length)
                 )
                 input_ids, positions = locate_positions(
                     tokenizer, prompt, question_prefix=question_prefix,
-                    filler_text=filler_text, answer_prefix="Answer: ",
+                    filler_text=filler_text, answer_prefix=answer_prefix,
+                    generation_prefix=generation_prefix,
                 )
                 records.append({
                     "cell": cell, "positions": positions, "input_ids": input_ids,

@@ -47,24 +47,29 @@ def locate_positions(
     question_prefix: str,
     filler_text: str,
     answer_prefix: str = "Answer: ",
+    generation_prefix: str = "",
 ) -> tuple[list[int], PositionSet]:
     """Tokenize exact prompt substrings and return absolute aligned positions.
 
     Prefix tokenization is used instead of offset mappings because the official
     DeepSeek tokenizer need not be a fast tokenizer.  The function verifies
-    that concatenating the three supplied substrings exactly reconstructs the
+    that concatenating the four supplied substrings exactly reconstructs the
     rendered prompt.
     """
-    if prompt != question_prefix + filler_text + answer_prefix:
+    if prompt != question_prefix + filler_text + answer_prefix + generation_prefix:
         raise ValueError("position substrings do not concatenate to the rendered prompt")
     encode = lambda text: list(tokenizer.encode(text, add_special_tokens=False))
     q = encode(question_prefix)
     qf = encode(question_prefix + filler_text)
+    qfa = encode(question_prefix + filler_text + answer_prefix)
     full = encode(prompt)
-    if not q or not full or full[: len(q)] != q or full[: len(qf)] != qf:
+    if (
+        not q or not qfa or not full or full[: len(q)] != q
+        or full[: len(qf)] != qf or full[: len(qfa)] != qfa
+    ):
         raise ValueError("token-boundary merge prevents unambiguous prefix positions")
     fillers = tuple(range(len(q), len(qf)))
-    return full, PositionSet(len(q) - 1, fillers, len(full) - 1)
+    return full, PositionSet(len(q) - 1, fillers, len(qfa) - 1)
 
 
 @dataclass(frozen=True)

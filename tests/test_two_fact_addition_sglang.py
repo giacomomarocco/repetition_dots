@@ -42,12 +42,26 @@ class TwoFactAdditionTests(unittest.TestCase):
         self.assertIn(self.facts[1]["question"], question)
         self.assertNotIn("2 + 7", question)
 
-    def test_filler_is_forced_before_answer_prefix(self):
+    def test_filler_and_answer_slot_are_in_final_user_turn(self):
         tasks = experiment.make_tasks([(self.facts[0], self.facts[1])], [0, 10])
-        self.assertTrue(experiment.render_prompt(fake_encoder, tasks[0]).endswith("Answer: "))
+        self.assertTrue(experiment.render_prompt(fake_encoder, tasks[0]).endswith("Answer:"))
         self.assertTrue(experiment.render_prompt(fake_encoder, tasks[1]).endswith(
-            ". . . . . . . . . .\nAnswer: "
+            ". . . . . . . . . .\nAnswer:"
         ))
+
+    def test_prompt_contains_exactly_five_two_fact_demonstrations(self):
+        captured = []
+        def encoder(messages, thinking_mode):
+            captured.extend(messages)
+            return fake_encoder(messages, thinking_mode)
+        task = experiment.make_tasks([(self.facts[0], self.facts[1])], [5])[0]
+        experiment.render_prompt(encoder, task)
+        self.assertEqual(len([m for m in captured if m["role"] == "assistant"]), 5)
+        self.assertEqual(captured[-1]["role"], "user")
+        user_turns = [m["content"] for m in captured if m["role"] == "user"]
+        self.assertEqual(len(user_turns), 6)
+        self.assertTrue(all(content.endswith(". . . . .\nAnswer:") for content in user_turns))
+        self.assertTrue(all("Filler:" not in content for content in user_turns))
 
     def test_scoring_options_match_one_fact_defaults(self):
         args = experiment.parse_args([])

@@ -14,7 +14,7 @@ from transformers import AutoTokenizer
 
 from dsv4_factorial import FactorialCell, assert_aligned_and_single_token, donor_roles, locate_positions
 from evaluate_facts_sglang import DEFAULT_ENCODER, DEFAULT_MODEL
-from one_fact_addition_sglang import assistant_prefix, filler, load_encoder, load_facts, render_prompt
+from one_fact_addition_sglang import load_encoder, load_facts, render_prompt, split_target_prompt
 
 
 def stable_panel_id(split: str, fact_ids: list[str], xs: tuple[int, int]) -> str:
@@ -26,12 +26,10 @@ def render_record(tokenizer, encoder, fact, x: int, k: int, cell: FactorialCell)
     task = {"question": fact["question"], "answer_value": fact["answer"],
             "addend": x, "target": fact["answer"] + x, "k": k}
     prompt = render_prompt(encoder, task)
-    suffix = assistant_prefix(k)
-    qprefix = prompt[:-len(suffix)]
-    filler_text = filler(k) + "\n" if k else ""
+    qprefix, filler_text, answer_prefix, generation_prefix = split_target_prompt(prompt, k)
     ids, positions = locate_positions(
         tokenizer, prompt, question_prefix=qprefix, filler_text=filler_text,
-        answer_prefix="Answer: ",
+        answer_prefix=answer_prefix, generation_prefix=generation_prefix,
     )
     return {"cell": cell, "input_ids": ids, "positions": positions}
 
@@ -121,10 +119,14 @@ def main() -> None:
                                     tokenizer, encoder, args.filler_lengths)
     cells = dcells + ccells
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "source": {"path": str(args.facts.resolve()), "sha256": source_sha,
                    "knowledge_status": "pre-filtered by user"},
         "design": {"filler_lengths": args.filler_lengths,
+                   "prompt_protocol": (
+                       "five-shot; identical k fillers before Answer: in every "
+                       "demonstration and target user turn"
+                   ),
                    "independent_observation": "fact-disjoint 2x2 panel",
                    "discovery_panel_count": len(dpanels),
                    "confirmation_panel_count": len(cpanels)},

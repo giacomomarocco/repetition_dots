@@ -4,8 +4,26 @@ import torch
 from deepseek_v4_logit_lens import DeepseekV4LensWeights
 from dsv4_factorial import (
     candidate_sites, causal_effect, copy_cache_rows, crossed_panels, donor_roles,
-    factorial_contrasts, score_numeric_targets, should_run_jlens,
+    factorial_contrasts, locate_positions, score_numeric_targets, should_run_jlens,
 )
+
+
+class _CharacterTokenizer:
+    def encode(self, text, add_special_tokens=False):
+        return [ord(char) for char in text]
+
+
+def test_positions_keep_answer_slot_in_user_turn_before_generation_prefix():
+    prompt = "question\n. .\nAnswer:<Assistant></think>"
+    ids, positions = locate_positions(
+        _CharacterTokenizer(), prompt, question_prefix="question\n",
+        filler_text=". .\n", answer_prefix="Answer:",
+        generation_prefix="<Assistant></think>",
+    )
+    assert len(ids) == len(prompt)
+    assert positions.last_question == len("question\n") - 1
+    assert positions.answer_prompt == len("question\n. .\nAnswer:") - 1
+    assert positions.answer_prompt < len(ids) - 1
 
 
 def test_factorial_panels_rotate_all_targets():

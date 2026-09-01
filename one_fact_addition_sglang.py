@@ -9,6 +9,7 @@ import importlib.util
 import json
 import math
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.request
@@ -17,18 +18,41 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Sequence
 
-import evaluate_facts as fact_protocol
-import evaluate_facts_hf as fact_outputs
-from evaluate_facts_sglang import DEFAULT_ENCODER, DEFAULT_ENDPOINT, DEFAULT_MODEL
-
-
 ROOT = Path(__file__).resolve().parent
+DEFAULT_MODEL = ROOT / "model" / "DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16"
+DEFAULT_ENCODER = ROOT / "model" / "DeepSeek-V4-Flash-0731" / "encoding" / "encoding_dsv4.py"
+DEFAULT_ENDPOINT = "http://127.0.0.1:30002/generate"
 DEFAULT_FACTS = ROOT / "runs" / "deepseek-v4-flash" / "fact-knowledge" / "known_facts.json"
 ANSWER_RE = re.compile(r"^[+-]?\d+$")
 SYSTEM_PROMPT = (
-    "Solve the addition problem. The assistant response has already been started and ends "
-    "with 'Answer: '. Continue it with only the integer answer, with no other text."
+    "Solve each addition problem. After 'Answer:' respond with only the integer answer. "
+    "No explanation, no words, no reasoning, just the number."
 )
+ONE_FACT_DEMONSTRATIONS = (
+    ("How many sides does a triangle have?", 17, 20),
+    ("How many days are in a week?", 24, 31),
+    ("How many legs does a spider have?", 35, 43),
+    ("How many letters are in the English alphabet?", 46, 72),
+    ("How many planets are in the Solar System?", 61, 69),
+)
+
+
+def atomic_write_json(path: Path, value: Any) -> None:
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(
+        json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    temporary.replace(path)
+
+
+def git_revision(path: Path) -> str | None:
+    try:
+        return subprocess.run(
+            ["git", "-C", str(path), "rev-parse", "HEAD"],
+            check=True, capture_output=True, text=True, timeout=5,
+        ).stdout.strip()
+    except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        return None
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
@@ -150,9 +174,13 @@ def make_tasks(
 
 
 def render_question(task: dict[str, Any]) -> str:
+    return one_fact_question(task["question"], task["addend"])
+
+
+def one_fact_question(question: str, addend: int) -> str:
     return (
         "What is the numeric answer to the fact question below, plus "
-        f"{task['addend']}?\nFact question: {task['question']}"
+        f"{addend}?\nFact question: {question}"
     )
 
 
@@ -160,8 +188,25 @@ def filler(k: int) -> str:
     return " ".join(["."] * k)
 
 
-def assistant_prefix(k: int) -> str:
-    return (filler(k) + "\n" if k else "") + "Answer: "
+def answer_slot(k: int) -> str:
+    """Return the target user-turn suffix immediately before assistant generation."""
+    return (filler(k) + "\n" if k else "") + "Answer:"
+
+
+def demonstration_messages(
+    k: int,
+    demonstrations: Sequence[tuple[str, int, int]] = ONE_FACT_DEMONSTRATIONS,
+) -> list[dict[str, str]]:
+    messages: list[dict[str, str]] = []
+    for question, addend, answer in demonstrations:
+        messages.extend([
+            {
+                "role": "user",
+                "content": one_fact_question(question, addend) + "\n" + answer_slot(k),
+            },
+            {"role": "assistant", "content": str(answer)},
+        ])
+    return messages
 
 
 def load_encoder(path: Path) -> Callable[..., str]:
@@ -176,14 +221,25 @@ def load_encoder(path: Path) -> Callable[..., str]:
 def render_prompt(encode_messages: Callable[..., str], task: dict[str, Any]) -> str:
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": render_question(task)},
-        {"role": "assistant", "content": assistant_prefix(task["k"]), "wo_eos": True},
+        *demonstration_messages(task["k"]),
+        {"role": "user", "content": render_question(task) + "\n" + answer_slot(task["k"])},
     ]
     rendered = encode_messages(messages, thinking_mode="chat")
-    prefix = assistant_prefix(task["k"])
-    if not rendered.endswith(prefix):
-        raise RuntimeError("DeepSeek encoder did not preserve the assistant prefix at prompt end")
+    if answer_slot(task["k"]) not in rendered:
+        raise RuntimeError("DeepSeek encoder did not preserve the target user-turn answer slot")
     return rendered
+
+
+def split_target_prompt(prompt: str, k: int) -> tuple[str, str, str, str]:
+    """Split a rendered prompt around target filler, Answer:, and assistant transition."""
+    filler_text = filler(k) + "\n" if k else ""
+    slot = filler_text + "Answer:"
+    start = prompt.rfind(slot)
+    if start < 0:
+        raise ValueError("rendered prompt lacks the target user-turn answer slot")
+    answer_start = start + len(filler_text)
+    answer_end = answer_start + len("Answer:")
+    return prompt[:start], filler_text, prompt[answer_start:answer_end], prompt[answer_end:]
 
 
 def parse_answer(text: str) -> int | None:
@@ -363,9 +419,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     prompts = [{**task, "rendered_prompt": render_prompt(encoder, task)} for task in tasks]
     args.output_dir.mkdir(parents=True, exist_ok=True)
     config = {
-        "schema_version": 1,
+        "schema_version": 2,
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
-        "repository_revision": fact_outputs.git_revision(ROOT),
+        "repository_revision": git_revision(ROOT),
         "mode": "prompt_only" if args.prompt_only else "generation",
         "model_id": str(args.model.resolve()),
         "encoder": str(args.encoder.resolve()),
@@ -374,7 +430,18 @@ def main(argv: Sequence[str] | None = None) -> int:
         "seed": args.seed,
         "addends_per_fact": args.addends_per_fact,
         "filler_lengths": args.filler_lengths,
-        "filler_construction": "space-separated periods in a forced assistant prefix",
+        "prompt_protocol": (
+            "five fixed user/assistant demonstrations; identical k fillers before Answer: "
+            "in every demonstration and target user turn"
+        ),
+        "demonstrations": [
+            {"question": question, "addend": addend, "answer": answer}
+            for question, addend, answer in ONE_FACT_DEMONSTRATIONS
+        ],
+        "filler_construction": (
+            "space-separated periods before Answer: in all five demonstration user turns "
+            "and the target user turn"
+        ),
         "system_prompt": SYSTEM_PROMPT,
         "decoding": {"temperature": 0, "max_new_tokens": args.max_new_tokens},
         "scoring": {
@@ -385,10 +452,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         },
         "strict_completion_pattern": ANSWER_RE.pattern,
     }
-    fact_protocol.atomic_write_json(args.output_dir / "run_config.json", config)
-    fact_protocol.atomic_write_json(args.output_dir / "prompts.json", prompts)
+    atomic_write_json(args.output_dir / "run_config.json", config)
+    atomic_write_json(args.output_dir / "prompts.json", prompts)
     if args.prompt_only:
-        fact_protocol.atomic_write_json(args.output_dir / "summary.json", {
+        atomic_write_json(args.output_dir / "summary.json", {
             "mode": "prompt_only", "selected_facts": len(facts), "prompt_count": len(prompts)
         })
         print(f"Constructed {len(prompts)} prompts in {args.output_dir}.")
@@ -427,8 +494,8 @@ def main(argv: Sequence[str] | None = None) -> int:
             f"rank={rank}",
             flush=True,
         )
-    fact_protocol.atomic_write_json(args.output_dir / "results.json", results)
-    fact_protocol.atomic_write_json(args.output_dir / "summary.json", summarize(results))
+    atomic_write_json(args.output_dir / "results.json", results)
+    atomic_write_json(args.output_dir / "summary.json", summarize(results))
     print(f"Wrote {len(results)} results to {args.output_dir}.")
     return 0
 

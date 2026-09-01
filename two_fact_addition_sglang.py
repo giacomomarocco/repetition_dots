@@ -12,16 +12,22 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Sequence
 
-import evaluate_facts as fact_protocol
-import evaluate_facts_hf as fact_outputs
 import one_fact_addition_sglang as shared
 
 
 ROOT = Path(__file__).resolve().parent
 RESUME_CONFIG_KEYS = (
     "model_id", "encoder", "endpoint", "source", "seed", "pairing",
-    "filler_lengths", "filler_construction", "system_prompt", "decoding",
+    "filler_lengths", "filler_construction", "prompt_protocol", "demonstrations",
+    "system_prompt", "decoding",
     "scoring", "strict_completion_pattern",
+)
+TWO_FACT_DEMONSTRATIONS = (
+    ("How many days are in a week?", "How many sides does a triangle have?", 10),
+    ("How many planets are in the Solar System?", "How many sides does a hexagon have?", 14),
+    ("How many months are in a year?", "How many legs does a spider have?", 20),
+    ("How many letters are in the English alphabet?", "How many fingers does a typical person have?", 36),
+    ("How many hours are in a day?", "How many cards are in a standard deck?", 76),
 )
 
 
@@ -104,23 +110,39 @@ def make_tasks(
 
 
 def render_question(task: dict[str, Any]) -> str:
+    return two_fact_question(task["fact_1_question"], task["fact_2_question"])
+
+
+def two_fact_question(question_1: str, question_2: str) -> str:
     return (
         "What is the sum of the numeric answers to the two fact questions below?\n"
-        f"Fact question 1: {task['fact_1_question']}\n"
-        f"Fact question 2: {task['fact_2_question']}"
+        f"Fact question 1: {question_1}\n"
+        f"Fact question 2: {question_2}"
     )
 
 
+def demonstration_messages(k: int) -> list[dict[str, str]]:
+    messages: list[dict[str, str]] = []
+    for question_1, question_2, answer in TWO_FACT_DEMONSTRATIONS:
+        messages.extend([
+            {
+                "role": "user",
+                "content": two_fact_question(question_1, question_2) + "\n" + shared.answer_slot(k),
+            },
+            {"role": "assistant", "content": str(answer)},
+        ])
+    return messages
+
+
 def render_prompt(encode_messages, task: dict[str, Any]) -> str:
-    prefix = shared.assistant_prefix(task["k"])
     messages = [
         {"role": "system", "content": shared.SYSTEM_PROMPT},
-        {"role": "user", "content": render_question(task)},
-        {"role": "assistant", "content": prefix, "wo_eos": True},
+        *demonstration_messages(task["k"]),
+        {"role": "user", "content": render_question(task) + "\n" + shared.answer_slot(task["k"])},
     ]
     rendered = encode_messages(messages, thinking_mode="chat")
-    if not rendered.endswith(prefix):
-        raise RuntimeError("DeepSeek encoder did not preserve the assistant prefix at prompt end")
+    if shared.answer_slot(task["k"]) not in rendered:
+        raise RuntimeError("DeepSeek encoder did not preserve the target user-turn answer slot")
     return rendered
 
 
@@ -182,9 +204,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         if not isinstance(previous_config, dict):
             raise ValueError(f"{config_path}: expected a JSON object")
     config = {
-        "schema_version": 1,
+        "schema_version": 2,
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
-        "repository_revision": fact_outputs.git_revision(ROOT),
+        "repository_revision": shared.git_revision(ROOT),
         "mode": "prompt_only" if args.prompt_only else "generation",
         "model_id": str(args.model.resolve()),
         "encoder": str(args.encoder.resolve()),
@@ -193,7 +215,18 @@ def main(argv: Sequence[str] | None = None) -> int:
         "seed": args.seed,
         "pairing": "seed-keyed ordering followed by disjoint adjacent pairs",
         "filler_lengths": args.filler_lengths,
-        "filler_construction": "space-separated periods in a forced assistant prefix",
+        "prompt_protocol": (
+            "five fixed user/assistant demonstrations; identical k fillers before Answer: "
+            "in every demonstration and target user turn"
+        ),
+        "demonstrations": [
+            {"question_1": q1, "question_2": q2, "answer": answer}
+            for q1, q2, answer in TWO_FACT_DEMONSTRATIONS
+        ],
+        "filler_construction": (
+            "space-separated periods before Answer: in all five demonstration user turns "
+            "and the target user turn"
+        ),
         "system_prompt": shared.SYSTEM_PROMPT,
         "decoding": {"temperature": 0, "max_new_tokens": args.max_new_tokens},
         "scoring": {
@@ -206,10 +239,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     progress_path = args.output_dir / "results_progress.jsonl"
     results = load_resume_results(progress_path, prompts, previous_config, config)
-    fact_protocol.atomic_write_json(config_path, config)
-    fact_protocol.atomic_write_json(args.output_dir / "prompts.json", prompts)
+    shared.atomic_write_json(config_path, config)
+    shared.atomic_write_json(args.output_dir / "prompts.json", prompts)
     if args.prompt_only:
-        fact_protocol.atomic_write_json(args.output_dir / "summary.json", {
+        shared.atomic_write_json(args.output_dir / "summary.json", {
             "mode": "prompt_only", "selected_pairs": len(pairs), "prompt_count": len(prompts)
         })
         print(f"Constructed {len(prompts)} prompts in {args.output_dir}.")
@@ -256,8 +289,8 @@ def main(argv: Sequence[str] | None = None) -> int:
                 f"rank={rank}",
                 flush=True,
             )
-    fact_protocol.atomic_write_json(args.output_dir / "results.json", results)
-    fact_protocol.atomic_write_json(args.output_dir / "summary.json", shared.summarize(results))
+    shared.atomic_write_json(args.output_dir / "results.json", results)
+    shared.atomic_write_json(args.output_dir / "summary.json", shared.summarize(results))
     print(f"Wrote {len(results)} results to {args.output_dir}.")
     return 0
 
