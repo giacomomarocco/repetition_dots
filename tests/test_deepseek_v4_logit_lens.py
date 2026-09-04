@@ -1,6 +1,6 @@
 import torch
 
-from deepseek_v4_logit_lens import (
+from filler.dsv4.lens import (
     DeepseekV4LensWeights,
     collapse_mhc,
     project_logits,

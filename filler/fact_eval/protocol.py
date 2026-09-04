@@ -19,10 +19,10 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
 import torch
 
-from run_qwen import DEFAULT_SYSTEM_PROMPT, load_model
+from filler.qwen import DEFAULT_SYSTEM_PROMPT, load_model
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_SOURCES = ROOT / "compose_facts"
 SOURCE_FILES = ("age_facts.json", "atomic_facts.json", "static_facts.json")
 TRIALS_PER_FACT = 5

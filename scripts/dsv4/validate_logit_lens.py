@@ -9,7 +9,7 @@ from pathlib import Path
 
 import torch
 
-from deepseek_v4_logit_lens import load_checkpoint_readout, project_logits
+from filler.dsv4.lens import load_checkpoint_readout, project_logits
 
 
 def parse_args() -> argparse.Namespace:

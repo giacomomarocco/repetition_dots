@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from probe_dsv4_logit_lens import arm_capture, capture_names, discover_capture
+from scripts.dsv4.probe_logit_lens import arm_capture, capture_names, discover_capture
 
 
 def _touch_capture(root: Path, pass_id: int, ranks=range(4)) -> None:

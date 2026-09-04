@@ -120,7 +120,7 @@ curl http://127.0.0.1:30002/generate \
 
 The follow-up analysis measured which integer-valued facts DeepSeek V4 Flash
 could answer under the same protocol used for the other local models.
-`evaluate_facts_sglang.py` sends raw prompts to SGLang's `/generate` endpoint.
+`filler/fact_eval/sglang.py` sends raw prompts to SGLang's `/generate` endpoint.
 It uses DeepSeek's bundled `encoding/encoding_dsv4.py` encoder in non-thinking
 `chat` mode because the checkpoint has no Hugging Face chat template.
 
@@ -136,7 +136,7 @@ It uses DeepSeek's bundled `encoding/encoding_dsv4.py` encoder in non-thinking
 After starting the server, the one-fact smoke test was:
 
 ```bash
-.venv-sglang/bin/python evaluate_facts_sglang.py \
+.venv-sglang/bin/python -m scripts.fact_eval.sglang \
   --max-facts 1 \
   --output-dir runs/deepseek-v4-flash/fact-smoke-1
 ```
@@ -145,7 +145,7 @@ All five Atatürk age-at-death paraphrases returned exactly `Answer: 57`. The
 full warm-server evaluation was then run with:
 
 ```bash
-.venv-sglang/bin/python evaluate_facts_sglang.py \
+.venv-sglang/bin/python -m scripts.fact_eval.sglang \
   --output-dir runs/deepseek-v4-flash/fact-knowledge
 ```
 
@@ -214,7 +214,7 @@ the Triton path.
 
 ## One-fact addition setup: 2026-08-31
 
-`one_fact_addition_sglang.py` adds a factual-only baseline-versus-filler test.
+`filler/addition/one_fact.py` adds a factual-only baseline-versus-filler test.
 It uses the already classified known-fact set, assigns each fact a deterministic
 two-digit addend, and asks for the full integer sum (not modulo 10). There is no
 numeric control. The baseline and filler records share a stable pair ID, fact,
@@ -242,13 +242,13 @@ a DeepSeek server is started in an approved allocation.
 To run the five-request smoke test against a warm server:
 
 ```bash
-.venv-sglang/bin/python one_fact_addition_sglang.py \
+.venv-sglang/bin/python -m scripts.addition.one_fact \
   --output-dir runs/deepseek-v4-flash/one-fact-addition-smoke
 ```
 
 ## Two-fact addition setup: 2026-08-31
 
-`two_fact_addition_sglang.py` mirrors the one-fact protocol while requiring two
+`filler/addition/two_fact.py` mirrors the one-fact protocol while requiring two
 retrieved quantities. It orders known facts by a seed-keyed hash, forms
 disjoint adjacent pairs, and asks for the full sum of the two numeric factual
 answers. Each pair shares its facts, target, prompt wording, decoding settings,
@@ -284,6 +284,6 @@ The run emitted expected local NVML/MUNGE warnings but exited successfully;
 no generation result has yet been collected from a warm server.
 
 ```bash
-.venv-sglang/bin/python two_fact_addition_sglang.py \
+.venv-sglang/bin/python -m scripts.addition.two_fact \
   --output-dir runs/deepseek-v4-flash/two-fact-addition-smoke
 ```

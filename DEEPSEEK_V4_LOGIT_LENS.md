@@ -6,7 +6,7 @@ The first server was launched without activation hooks or hidden-state return.
 It paid 757.7 seconds for expert preparation and then successfully served, but
 could not export intermediate mHC residuals because SGLang registers hooks at
 model construction and has no runtime HTTP operation for adding them. Existing
-`dsv4_factorial.py` already contained `NativeResidualHooks` and native mHC
+`filler/dsv4/factorial.py` already contained `NativeResidualHooks` and native mHC
 projection but was not discovered before launch. After explicit authorization,
 the server was stopped and idle allocation `57803794` was relinquished.
 
@@ -25,9 +25,9 @@ Prepared `run_deepseek_v4_logit_lens.sh`, which launches the A100 port with:
 - one-shot first-prefill capture on every TP rank, after which hooks are inert;
 - a trigger-file mtime mechanism for later one-shot captures without restart.
 
-`probe_dsv4_logit_lens.py` defines the deterministic first request and preserves
+`scripts/dsv4/probe_logit_lens.py` defines the deterministic first request and preserves
 the native token, top log probabilities, and returned final state.
-`validate_dsv4_logit_lens.py` requires all four TP captures and checks, in order:
+`scripts/dsv4/validate_logit_lens.py` requires all four TP captures and checks, in order:
 
 1. exact final residual agreement across TP ranks;
 2. exact agreement between layer-42 hook state and SGLang's returned pre-readout
@@ -131,7 +131,7 @@ readout is:
 3. untied vocabulary head (`head.weight`).
 
 Accordingly, an RMSNorm-plus-unembedding lens would be incorrect. The faithful
-projection is implemented in `deepseek_v4_logit_lens.py`. It loads only
+projection is implemented in `filler/dsv4/lens.py`. It loads only
 `hc_head_fn`, `hc_head_base`, `hc_head_scale`, `norm.weight`, and `head.weight`
 from checkpoint shard 45. Unit validation:
 
@@ -161,12 +161,12 @@ by a later session that has a warm DeepSeek worker.
 
 Added files:
 
-- `dsv4_factorial.py`: absolute-position bookkeeping, 2x2 panel construction
+- `filler/dsv4/factorial.py`: absolute-position bookkeeping, 2x2 panel construction
   with all four target rotations, exact native residual projection, exact
   numeric rank/logit/log-odds scoring, discovery-only site selection,
   activation hooks, factorial contrasts, the J-Lens eligibility gate, runtime
   precision metadata, and packed KV-record copying.
-- `prepare_dsv4_factorial.py`: deterministic, fact-disjoint 18x18 discovery and
+- `scripts/dsv4/prepare_factorial.py`: deterministic, fact-disjoint 18x18 discovery and
   26x26 confirmation manifests for both tasks (an approximately fivefold
   expansion over the original 8x8/12x12 pilot).
 - `tests/test_dsv4_factorial.py`: CPU tests for design rotation, repeated-sum
@@ -175,7 +175,7 @@ Added files:
 Generate a manifest without loading the model:
 
 ```bash
-.venv-sglang/bin/python prepare_dsv4_factorial.py \
+.venv-sglang/bin/python -m scripts.dsv4.prepare_factorial \
   --facts runs/deepseek-v4-flash/fact-knowledge/known_facts.json \
   --output runs/deepseek-v4-flash/factorial/design.json
 ```
@@ -249,7 +249,7 @@ confirmation sweep is recommended before broadening it.
 
 The knowledge-filtered input contains 262 facts (78 age, 99 atomic, 85 static),
 so the original 18/26-axis manifest was not an appropriate limit on independent
-one-fact panels. `prepare_dsv4_filler_panels.py` created the token-aware,
+one-fact panels. `scripts/dsv4/prepare_filler_panels.py` created the token-aware,
 fact-disjoint design at
 `runs/deepseek-v4-flash/factorial/filler-design-expanded.json`: 24 discovery
 panels (48 facts) and 60 confirmation panels (120 different facts), aligned and
@@ -291,10 +291,10 @@ validation or choose a capture after seeing similarity. Recovery steps:
 
 1. Snapshot rank-0 capture filenames before the validation prompt.
 2. Arm `CAPTURE_NEXT` with a unique nanosecond mtime, exactly as in
-   `capture_dsv4_factorial_grid.py`.
+   `scripts/dsv4/capture_factorial_grid.py`.
 3. Send the validation request, discover the exact single new rank-0 filename,
    and require that filename on ranks 1--3.
-4. Pass its numeric ID to `validate_dsv4_logit_lens.py --pass-id`.
+4. Pass its numeric ID to `python -m scripts.dsv4.validate_logit_lens --pass-id`.
 5. Add a regression test proving validation does not assume pass 0 when older
    captures or startup forwards exist.
 6. Only after exact final-state equivalence passes, run the already-rendered
@@ -304,18 +304,18 @@ validation or choose a capture after seeing similarity. Recovery steps:
 7. Preserve automatic completion/failure markers and allocation release.
 
 Relevant files are `run_dsv4_long_filler_unattended.sh`,
-`capture_dsv4_factorial_grid.py`, `analyze_dsv4_factorial_grid.py`, and
-`summarize_frozen_filler.py`. A replacement should request four A100 80-GB GPUs
+`scripts/dsv4/capture_factorial_grid.py`, `scripts/dsv4/analyze_factorial_grid.py`, and
+`scripts/dsv4/summarize_frozen_filler.py`. A replacement should request four A100 80-GB GPUs
 for four hours on account `m5258_g`.
 
 ### 2026-09-01: length-50/100 validation fix and unavailable allocation
 
 Corrected the unattended recovery so validation no longer assumes capture pass
-0. `probe_dsv4_logit_lens.py` now snapshots rank-0 captures, arms `CAPTURE_NEXT`
+0. `scripts/dsv4/probe_logit_lens.py` now snapshots rank-0 captures, arms `CAPTURE_NEXT`
 with a distinct nanosecond mtime, sends the deterministic validation request,
 requires exactly one new filename, verifies that filename on all four TP ranks,
 and writes its numeric pass ID. `run_dsv4_long_filler_unattended.sh` passes that
-explicit ID to `validate_dsv4_logit_lens.py`. It still fails closed before any
+explicit ID to `scripts/dsv4/validate_logit_lens.py`. It still fails closed before any
 experimental request if final-state equivalence fails.
 
 Added regression coverage with pre-existing startup captures and an incomplete
@@ -353,7 +353,7 @@ runs only after NERSC reports Scratch restored.
 
 ### 2026-09-01: browser-based plotting starter
 
-Added `addition_accuracy_plot.py` and `notebooks/addition_accuracy.ipynb` as a
+Added `filler/addition/accuracy_plot.py` and `notebooks/addition_accuracy.ipynb` as a
 minimal NERSC Jupyter workflow. The notebook plots exact-answer accuracy against
 filler lengths 0, 10, 20, 50, and 100 for the completed one-fact and two-fact
 addition experiments. Inputs are the existing `one-fact-addition-full-batched`
@@ -400,7 +400,7 @@ required inputs and output path pass bounded read/write checks.
 
 ### 2026-09-01: paired accuracy-change plot
 
-Extended `addition_accuracy_plot.py` and the notebook with a second plot that
+Extended `filler/addition/accuracy_plot.py` and the notebook with a second plot that
 pairs every filler-condition result with the same fact or fact pair at
 baseline. It reports the mean exact-accuracy change and a seeded 95% percentile
 bootstrap interval obtained by resampling the 262 facts or 130 pairs. The
@@ -451,3 +451,59 @@ responsible for inserting `<｜Assistant｜></think>` after each user turn. At
 of `. . . . .\nAnswer:<｜Assistant｜></think>`, no filler label, and generation
 starting immediately after the final native non-thinking transition. All 17
 addition tests passed.
+
+### 2026-09-03: five-shot one- and two-fact accuracy evaluation
+
+Objective: test whether forced dot filler increases exact-answer accuracy under
+the corrected five-shot protocol. Allocation `57906667` used four A100 80-GB
+GPUs on `nid008476` with the `m5258_g` account and interactive QOS. DeepSeek V4
+Flash was served by `run_deepseek_v4_a100.sh` with the `throughput` startup
+profile and the existing A100 port. The endpoint smoke test succeeded before
+evaluation. Focused evaluator tests passed (`19 passed`), and full prompt-only
+preflights produced the expected 1,310 one-fact and 1,300 two-fact prompts.
+
+Commands (both used greedy decoding, seed 42, and filler lengths 0, 10, 20, 50,
+and 100):
+
+```bash
+.venv-sglang/bin/python -m scripts.addition.one_fact \
+  --facts runs/deepseek-v4-flash/fact-knowledge/known_facts.json \
+  --max-facts 262 --filler-lengths 0 10 20 50 100 \
+  --output-dir runs/deepseek-v4-flash/one-fact-addition-5shot-full
+
+.venv-sglang/bin/python -m scripts.addition.two_fact \
+  --facts runs/deepseek-v4-flash/two-fact-addition-full-under-999/eligible_facts.json \
+  --max-pairs 260 --filler-lengths 0 10 20 50 100 \
+  --output-dir runs/deepseek-v4-flash/two-fact-addition-5shot-cyclic
+```
+
+All 2,610 results completed. Accuracy and paired changes from the no-filler
+condition were:
+
+| Task | Dots | Correct | Accuracy | Paired change | Paired bootstrap 95% CI | Exact McNemar p |
+|---|---:|---:|---:|---:|---:|---:|
+| One fact | 0 | 137/262 | 52.3% | — | — | — |
+| One fact | 10 | 194/262 | 74.0% | +21.8 pp | +15.6 to +27.9 pp | 1.70e-11 |
+| One fact | 20 | 182/262 | 69.5% | +17.2 pp | +11.1 to +23.3 pp | 1.59e-7 |
+| One fact | 50 | 206/262 | 78.6% | +26.3 pp | +20.2 to +32.4 pp | 2.77e-15 |
+| One fact | 100 | 214/262 | 81.7% | +29.4 pp | +22.9 to +35.9 pp | 6.61e-17 |
+| Two facts | 0 | 20/260 | 7.7% | — | — | — |
+| Two facts | 10 | 13/260 | 5.0% | -2.7 pp | -6.2 to +0.8 pp | 0.210 |
+| Two facts | 20 | 17/260 | 6.5% | -1.2 pp | -5.0 to +2.7 pp | 0.701 |
+| Two facts | 50 | 15/260 | 5.8% | -1.9 pp | -5.4 to +1.5 pp | 0.383 |
+| Two facts | 100 | 17/260 | 6.5% | -1.2 pp | -5.0 to +2.7 pp | 0.690 |
+
+The paired bootstrap used 200,000 resamples of facts or cyclic fact pairs with
+a fixed NumPy RNG seed per task and condition. McNemar p-values are two-sided
+exact binomial tests on discordant matched outcomes. One-fact gain/loss counts
+were 67/10, 60/15, 77/8, and 86/9 at 10, 20, 50, and 100 dots. Two-fact counts
+were 8/15, 12/15, 8/13, and 11/14. Thus filler robustly increased one-fact
+accuracy in this protocol, but there is no evidence it increased two-fact
+accuracy; all two-fact point estimates were lower than baseline. This is an
+accuracy result for forced dot filler repeated in all five demonstrations and
+the target turn, not a general result for arbitrary extra computation tokens.
+
+Durable outputs include `run_config.json`, `prompts.json`, fsynced
+`results_progress.jsonl`, `results.json`, `summary.json`, and `evaluation.log`
+in each output directory above. Server logs are in
+`runs/deepseek-v4-flash/server-57906667/server.log`.

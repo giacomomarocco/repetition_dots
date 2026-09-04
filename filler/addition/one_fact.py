@@ -8,6 +8,7 @@ import hashlib
 import importlib.util
 import json
 import math
+import os
 import re
 import subprocess
 import time
@@ -18,7 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Sequence
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MODEL = ROOT / "model" / "DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16"
 DEFAULT_ENCODER = ROOT / "model" / "DeepSeek-V4-Flash-0731" / "encoding" / "encoding_dsv4.py"
 DEFAULT_ENDPOINT = "http://127.0.0.1:30002/generate"
@@ -34,6 +35,12 @@ ONE_FACT_DEMONSTRATIONS = (
     ("How many legs does a spider have?", 35, 43),
     ("How many letters are in the English alphabet?", 46, 72),
     ("How many planets are in the Solar System?", 61, 69),
+)
+RESUME_CONFIG_KEYS = (
+    "model_id", "encoder", "endpoint", "source", "seed", "addends_per_fact",
+    "filler_lengths", "filler_construction", "prompt_protocol",
+    "demonstrations", "system_prompt", "decoding", "scoring",
+    "strict_completion_pattern",
 )
 
 
@@ -230,6 +237,46 @@ def render_prompt(encode_messages: Callable[..., str], task: dict[str, Any]) -> 
     return rendered
 
 
+def load_resume_results(
+    progress_path: Path,
+    prompts: Sequence[dict[str, Any]],
+    previous_config: dict[str, Any] | None,
+    current_config: dict[str, Any],
+) -> list[dict[str, Any]]:
+    """Load completed prompts only when the prior run is fully compatible."""
+    if not progress_path.exists():
+        return []
+    if previous_config is None:
+        raise ValueError(f"{progress_path} exists without run_config.json")
+    for key in RESUME_CONFIG_KEYS:
+        if previous_config.get(key) != current_config.get(key):
+            raise ValueError(f"cannot resume: run configuration changed at {key!r}")
+    expected = {row["prompt_id"]: row for row in prompts}
+    results: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    with progress_path.open(encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, 1):
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            if not isinstance(row, dict) or not isinstance(row.get("prompt_id"), str):
+                raise ValueError(f"{progress_path}:{line_number}: malformed result")
+            prompt_id = row["prompt_id"]
+            if prompt_id in seen:
+                raise ValueError(f"{progress_path}:{line_number}: duplicate {prompt_id}")
+            if prompt_id not in expected:
+                raise ValueError(f"{progress_path}:{line_number}: unexpected {prompt_id}")
+            prompt = expected[prompt_id]
+            for key in ("pair_id", "condition", "target"):
+                if row.get(key) != prompt[key]:
+                    raise ValueError(
+                        f"{progress_path}:{line_number}: {key} does not match prompt"
+                    )
+            seen.add(prompt_id)
+            results.append(row)
+    return results
+
+
 def split_target_prompt(prompt: str, k: int) -> tuple[str, str, str, str]:
     """Split a rendered prompt around target filler, Answer:, and assistant transition."""
     filler_text = filler(k) + "\n" if k else ""
@@ -418,6 +465,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     encoder = load_encoder(args.encoder)
     prompts = [{**task, "rendered_prompt": render_prompt(encoder, task)} for task in tasks]
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    config_path = args.output_dir / "run_config.json"
+    previous_config = None
+    if config_path.exists():
+        previous_config = json.loads(config_path.read_text())
+        if not isinstance(previous_config, dict):
+            raise ValueError(f"{config_path}: expected a JSON object")
     config = {
         "schema_version": 2,
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -452,7 +505,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         },
         "strict_completion_pattern": ANSWER_RE.pattern,
     }
-    atomic_write_json(args.output_dir / "run_config.json", config)
+    progress_path = args.output_dir / "results_progress.jsonl"
+    results = load_resume_results(progress_path, prompts, previous_config, config)
+    atomic_write_json(config_path, config)
     atomic_write_json(args.output_dir / "prompts.json", prompts)
     if args.prompt_only:
         atomic_write_json(args.output_dir / "summary.json", {
@@ -461,41 +516,66 @@ def main(argv: Sequence[str] | None = None) -> int:
         print(f"Constructed {len(prompts)} prompts in {args.output_dir}.")
         return 0
 
-    results = []
-    for index, row in enumerate(prompts, 1):
-        started = time.perf_counter()
-        target_token_id = validate_one_token_target(
-            args.endpoint, row["rendered_prompt"], row["target"], args.timeout
-        )
-        response, metadata = request_generation_with_limit(
-            args.endpoint,
-            row["rendered_prompt"],
-            args.timeout,
-            args.max_new_tokens,
-            target_token_id,
-            args.top_logprobs,
-        )
-        parsed = parse_answer(response)
-        score = extract_target_score(metadata, target_token_id, args.top_logprobs)
-        result = {
-            **row,
-            **score,
-            "response": response,
-            "parsed_answer": parsed,
-            "correct": parsed == row["target"],
-            "generation_seconds": time.perf_counter() - started,
-            "server_metadata": metadata,
-        }
-        results.append(result)
-        rank = score["target_top_rank"] or f">={score['target_rank_lower_bound']}"
+    completed = {row["prompt_id"] for row in results}
+    if completed:
+        print(f"Resuming with {len(completed)}/{len(prompts)} prompts complete.", flush=True)
+    interrupted = False
+    with progress_path.open("a", encoding="utf-8") as progress_handle:
+        try:
+            for index, row in enumerate(prompts, 1):
+                if row["prompt_id"] in completed:
+                    continue
+                started = time.perf_counter()
+                target_token_id = validate_one_token_target(
+                    args.endpoint, row["rendered_prompt"], row["target"], args.timeout
+                )
+                response, metadata = request_generation_with_limit(
+                    args.endpoint,
+                    row["rendered_prompt"],
+                    args.timeout,
+                    args.max_new_tokens,
+                    target_token_id,
+                    args.top_logprobs,
+                )
+                parsed = parse_answer(response)
+                score = extract_target_score(metadata, target_token_id, args.top_logprobs)
+                result = {
+                    **row,
+                    **score,
+                    "response": response,
+                    "parsed_answer": parsed,
+                    "correct": parsed == row["target"],
+                    "generation_seconds": time.perf_counter() - started,
+                    "server_metadata": metadata,
+                }
+                progress_handle.write(json.dumps(result, ensure_ascii=False) + "\n")
+                progress_handle.flush()
+                os.fsync(progress_handle.fileno())
+                results.append(result)
+                rank = score["target_top_rank"] or f">={score['target_rank_lower_bound']}"
+                print(
+                    f"[{index}/{len(prompts)}] {row['condition']} target={row['target']} "
+                    f"response={response!r} logp={score['target_log_probability']:.6f} "
+                    f"rank={rank}",
+                    flush=True,
+                )
+        except KeyboardInterrupt:
+            interrupted = True
+    atomic_write_json(args.output_dir / "results.json", results)
+    if results:
+        summary = summarize(results)
+    else:
+        summary = {"result_count": 0, "conditions": {}, "paired_changes_from_baseline": {}}
+    summary["complete"] = not interrupted and len(results) == len(prompts)
+    summary["prompt_count"] = len(prompts)
+    atomic_write_json(args.output_dir / "summary.json", summary)
+    if interrupted:
         print(
-            f"[{index}/{len(prompts)}] {row['condition']} target={row['target']} "
-            f"response={response!r} logp={score['target_log_probability']:.6f} "
-            f"rank={rank}",
+            f"Interrupted cleanly after {len(results)}/{len(prompts)} prompts; "
+            "rerun the same command to resume.",
             flush=True,
         )
-    atomic_write_json(args.output_dir / "results.json", results)
-    atomic_write_json(args.output_dir / "summary.json", summarize(results))
+        return 130
     print(f"Wrote {len(results)} results to {args.output_dir}.")
     return 0
 

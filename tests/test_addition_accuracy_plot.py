@@ -1,6 +1,6 @@
 import json
 
-from addition_accuracy_plot import (
+from filler.addition.accuracy_plot import (
     load_accuracy,
     load_paired_accuracy_changes,
     wilson_interval,

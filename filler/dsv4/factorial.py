@@ -18,7 +18,7 @@ from typing import Any, Callable, Iterable, Iterator, Mapping, Sequence
 
 import torch
 
-from deepseek_v4_logit_lens import DeepseekV4LensWeights, project_logits
+from filler.dsv4.lens import DeepseekV4LensWeights, project_logits
 
 
 @dataclass(frozen=True)

@@ -19,7 +19,7 @@ def hook_spec(output_dir: str | Path, *, num_layers: int = 43) -> list[dict[str,
             # SGLang uses fnmatch, where ``model.layers.*`` also matches every
             # descendant. Exact names are required for post-block residuals.
             "target_modules": [f"model.layers.{i}" for i in range(num_layers)],
-            "hook_factory": "dsv4_lens_hooks:make_layer_capture_hook",
+            "hook_factory": "filler.dsv4.hooks:make_layer_capture_hook",
             "config": {
                 "output_dir": str(output_dir),
                 "trigger_file": str(output_dir / "CAPTURE_NEXT"),

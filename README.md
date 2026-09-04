@@ -1,13 +1,31 @@
 # Local Qwen prompt experiments
 
+## Repository layout
+
+Reusable Python code lives in the `filler/` package, grouped into `addition`,
+`fact_eval`, and `dsv4` domains. Executable workflows live under `scripts/` in
+matching domain directories. Run commands from the repository root with module
+syntax so package imports are stable:
+
+```bash
+.venv-sglang/bin/python -m scripts.addition.one_fact --help
+.venv-sglang/bin/python -m scripts.fact_eval.sglang --help
+.venv-sglang/bin/python -m scripts.dsv4.prepare_factorial --help
+```
+
+Tests mirror the importable modules under `tests/`. Generated outputs belong in
+`runs/`; model assets and third-party inference ports remain in `model/` and
+`ports/`, respectively. See [`PROJECT_STRUCTURE.md`](PROJECT_STRUCTURE.md) for
+the complete mapping and maintenance conventions.
+
 DeepSeek V4 Flash serving and fact-knowledge evaluation on Perlmutter are
 documented in [`DEEPSEEK_V4_A100_AUDIT.md`](DEEPSEEK_V4_A100_AUDIT.md). It
 includes the four-A100 launch procedure, runtime fixes, official prompt
 encoding, reproducible evaluation commands, and completed 297-fact results.
 
 The native-mHC factorial Logit Lens and causal-transplant toolkit is in
-`dsv4_factorial.py`; its executable design generator is
-`prepare_dsv4_factorial.py`. Full warm-worker integration instructions,
+`filler/dsv4/factorial.py`; its executable design generator is
+`scripts/dsv4/prepare_factorial.py`. Full warm-worker integration instructions,
 precision requirements, and the experiment lab log are in
 [`DEEPSEEK_V4_LOGIT_LENS.md`](DEEPSEEK_V4_LOGIT_LENS.md).
 
@@ -16,7 +34,7 @@ The factual one-fact-addition smoke test compares a baseline against 10, 20,
 the sum modulo 10:
 
 ```bash
-.venv-sglang/bin/python one_fact_addition_sglang.py \
+.venv-sglang/bin/python -m scripts.addition.one_fact \
   --output-dir runs/deepseek-v4-flash/one-fact-addition-smoke
 ```
 
@@ -31,12 +49,18 @@ correctness, the target token's probability and log-probability, and its rank
 when it appears in the returned top 20 tokens. A target outside that list is
 reported with the lower bound `>=21`; its exact probability is still recorded.
 The summary reports paired probability and observed-rank changes from baseline.
+Completed one-fact rows are synchronously appended to
+`results_progress.jsonl`. Pressing Ctrl-C writes partial `results.json` and
+`summary.json` files and exits cleanly; rerunning the identical command resumes
+the remaining prompts after validating that the run configuration is unchanged.
 
-The matching two-fact test deterministically forms disjoint pairs from the
-same known-fact set and asks for the full sum of both numeric factual answers:
+The matching two-fact test deterministically orders the known-fact set and
+pairs every fact with its cyclic successor. This yields one pair per fact,
+with every fact used twice but never paired with itself, and asks for the full
+sum of both numeric factual answers:
 
 ```bash
-.venv-sglang/bin/python two_fact_addition_sglang.py \
+.venv-sglang/bin/python -m scripts.addition.two_fact \
   --output-dir runs/deepseek-v4-flash/two-fact-addition-smoke
 ```
 
@@ -44,9 +68,10 @@ It defaults to one pair and the same five filler conditions. Use `--max-pairs
 N` for a larger test, or add `--prompt-only` to construct and record prompts
 without contacting the server. During generation it uses the same one-token
 target validation and correct-answer probability, log-probability, top-20 rank,
-and paired summary reporting as the one-fact test. For the full seed-42 run,
-pass `--max-pairs 131`; this evaluates 131 pairs under five conditions, or 655
-generations. Completed rows are synchronously appended to
+and paired summary reporting as the one-fact test. For a full run over the 260
+facts in the existing under-999 eligible set, pass `--max-pairs 260`; this
+evaluates 260 pairs under five conditions, or 1,300 generations. Completed rows
+are synchronously appended to
 `results_progress.jsonl`, and rerunning the same command resumes compatible
 partial output.
 
@@ -65,7 +90,7 @@ thinking preamble and streams the answer as it is generated.
 Start a chat and load the model once:
 
 ```bash
-.venv/bin/python run_qwen.py
+.venv/bin/python -m scripts.run_qwen
 ```
 
 Useful commands inside the chat are:
@@ -89,13 +114,13 @@ You will be given a question. Answer immediately using the format ’Answer: [AN
 Start that mode with:
 
 ```bash
-.venv/bin/python run_qwen.py
+.venv/bin/python -m scripts.run_qwen
 ```
 
 No filler is added by default. Set its length with `--n-filler`:
 
 ```bash
-.venv/bin/python run_qwen.py --n-filler 10
+.venv/bin/python -m scripts.run_qwen --n-filler 10
 ```
 
 To compare filler lengths without reloading the model, start the runner once
@@ -146,7 +171,7 @@ Answer: 15
 Paste prompts into the interactive runner, or run a single prompt from zsh:
 
 ```bash
-.venv/bin/python run_qwen.py \
+.venv/bin/python -m scripts.run_qwen \
   --n-filler 10 \
   $'Fact 1: The red box contains 7 marbles.\nFact 2: The blue box contains 8 marbles.\nQuestion: How many marbles do the two boxes contain in total?'
 ```
@@ -203,7 +228,7 @@ answer; thinking mode remains disabled.
 
 ## Paired modulo-10 fact evaluation
 
-`modulo10_eval.py` implements the reproducible paired experiment over an
+`filler/addition/modulo10.py` implements the reproducible paired experiment over an
 already-filtered fact database. It does not filter facts, rerun knowledge
 checks, or use stored paraphrases and trials. Five complete records are
 selected by a seed-keyed hash of their stable IDs and held out as fixed
@@ -228,7 +253,7 @@ Construct and tokenize the complete default prompt set without loading model
 weights:
 
 ```bash
-.venv/bin/python modulo10_eval.py \
+.venv/bin/python -m scripts.addition.modulo10 \
   --facts known_facts.json \
   --output-dir runs/modulo10-prompts \
   --prompt-only
@@ -238,7 +263,7 @@ Inspect one evaluation fact across the two question types and all four filler
 conditions (eight prompts total):
 
 ```bash
-.venv/bin/python modulo10_eval.py \
+.venv/bin/python -m scripts.addition.modulo10 \
   --facts known_facts.json \
   --output-dir runs/modulo10-inspect \
   --prompt-only \
@@ -255,7 +280,7 @@ cannot be established from text alone. It does not load model weights.
 Run eight next-token evaluations for one stably sorted evaluation fact:
 
 ```bash
-.venv/bin/python modulo10_eval.py \
+.venv/bin/python -m scripts.addition.modulo10 \
   --facts known_facts.json \
   --output-dir runs/modulo10-smoke \
   --device mps \
@@ -265,7 +290,7 @@ Run eight next-token evaluations for one stably sorted evaluation fact:
 Run the full evaluation:
 
 ```bash
-.venv/bin/python modulo10_eval.py \
+.venv/bin/python -m scripts.addition.modulo10 \
   --facts known_facts.json \
   --output-dir runs/modulo10-full \
   --device mps \
@@ -340,7 +365,7 @@ PyTorch exposes optional Metal and fast-math switches that can be benchmarked:
 
 ```bash
 PYTORCH_MPS_PREFER_METAL=1 PYTORCH_MPS_FAST_MATH=1 \
-  .venv/bin/python run_qwen.py
+  .venv/bin/python -m scripts.run_qwen
 ```
 
 Fast math can slightly alter numerical results and may not materially improve

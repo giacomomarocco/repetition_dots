@@ -3,7 +3,7 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 
-from dsv4_lens_hooks import hook_spec, make_layer_capture_hook
+from filler.dsv4.hooks import hook_spec, make_layer_capture_hook
 from sglang.srt.model_executor.hook_manager import register_forward_hooks
 
 

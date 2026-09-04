@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import Any, Iterable, Sequence
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MODEL = "Qwen/Qwen3.5-4B"
 DEFAULT_SEED = 42
 DEFAULT_BOOTSTRAP_SAMPLES = 10_000

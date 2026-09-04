@@ -9,7 +9,7 @@ activation hooks, hidden-state flags, tensor dumps, and native readout logic.
 
 Do not warm an uninstrumented server for an activation-analysis task. For
 DeepSeek V4 Logit Lens or intervention work, inspect and use
-`dsv4_factorial.py` (`NativeResidualHooks` and native mHC projection), run its
+`filler/dsv4/factorial.py` (`NativeResidualHooks` and native mHC projection), run its
 import/unit checks, and define the final-layer equivalence test before launch.
 If a warmed process cannot expose required experiment state, report that
 immediately instead of preserving it solely because it is warm.
@@ -19,6 +19,9 @@ immediately instead of preserving it solely because it is warm.
 - `model/` contains locally downloaded model weights and their associated configuration and tokenizer files.
 - `ports/` contains third-party inference ports and pinned upstream source checkouts used by those ports.
 - `runs/` contains experiment outputs, checkpoints, logs, and run configuration manifests.
+- `filler/` is the importable Python package for reusable experiment logic.
+- `scripts/` contains thin, domain-grouped executable workflows; invoke them with
+  `python -m scripts.<domain>.<command>` from the repository root.
 
 Keep this section current whenever making high-level structural changes to the project, such as adding, removing, renaming, or repurposing top-level directories.
 
@@ -43,3 +46,9 @@ reproduce the work without relying on chat history. Include, as applicable:
 Keep entries concise but preserve the facts and reasoning that maintain project
 continuity. Link to large generated artifacts instead of copying them into the
 log. Never record credentials, tokens, private keys, OTPs, or other secrets.
+
+## Version control
+
+Organize completed work into small, focused commits with descriptive messages.
+Before committing, present the working-tree changes for user inspection and wait
+for approval; do not combine unrelated user changes into the same commit.

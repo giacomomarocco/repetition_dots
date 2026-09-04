@@ -1,5 +1,41 @@
 # Two-fact addition analysis
 
+## 2026-09-03 — Five-shot both-atomic subset
+
+Restricted `two-fact-addition-5shot-cyclic/results.json` to pairs for which both
+source facts have `kind: atomic` in the eligible-fact manifest. The cyclic
+design contains 39 directed both-atomic pairs per condition. Exact-answer
+accuracy was 6/39 (15.4%) at baseline, 3/39 (7.7%) at 10 dots, 6/39 (15.4%) at
+20 dots, and 4/39 (10.3%) at both 50 and 100 dots. Mean target log probability
+was -5.942, -6.682, -5.854, -7.719, and -7.383, respectively. Thus 20 dots
+tied baseline accuracy and produced only a small +0.088 mean-log-probability
+change; the other filler lengths were worse.
+
+This is not a controlled zero-shot/five-shot comparison: the completed
+zero-shot run placed filler in a forced assistant prefix after `</think>`, while
+the five-shot run placed it between each question and `Answer:` in all
+demonstrations and the target. After checking arXiv:2607.03502 and its released
+repository, the latter placement is closer to the paper: its scaffold is
+question, literal `Filler:` label plus filler, then `Answer:`, and its five
+few-shot examples also contain filler. Therefore the zero-shot run, not the
+five-shot run, has the location mismatch. The local five-shot run still omits
+the paper's literal `Filler:` label and condition-specific system message, uses
+a different model/checkpoint, and includes mixed fact types; it is not a close
+replication of the paper's behavioral experiment.
+
+## 2026-09-03 — Doubled five-shot rerun design
+
+Changed `filler/addition/two_fact.py` from disjoint adjacent pairing to cyclic
+successor pairing after the same seed-keyed ordering. On the existing 260-fact
+`two-fact-addition-full-under-999/eligible_facts.json`, this produces 260 pairs:
+each fact occurs once in each question position, no pair contains the same fact
+twice, and five filler conditions produce 1,300 prompts. A prompt-only preflight
+completed successfully; targets range from 13 through 654, with none above 999.
+The focused one- and two-fact test suites pass (18 tests). Use a fresh output
+directory because prior manifests encode the old disjoint-pairing protocol.
+The one-fact evaluator was also given matching per-result durable checkpointing,
+configuration-validated resume, and clean Ctrl-C partial-output handling.
+
 ## 2026-09-01 — Accuracy by fact-question type
 
 Objective: determine whether DeepSeek V4 Flash is more accurate when both

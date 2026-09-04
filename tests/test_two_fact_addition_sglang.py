@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import two_fact_addition_sglang as experiment
+from filler.addition import two_fact as experiment
 
 
 def fake_encoder(messages, thinking_mode):
@@ -23,11 +23,21 @@ class TwoFactAdditionTests(unittest.TestCase):
             {"fact_id": "facts.json:4", "question": "How many sides does a hexagon have?", "answer": 6},
         ]
 
-    def test_pairing_is_deterministic_disjoint_and_seeded(self):
+    def test_pairing_is_deterministic_cyclic_and_seeded(self):
         first = experiment.pair_facts(self.facts, 42)
         self.assertEqual(first, experiment.pair_facts(list(reversed(self.facts)), 42))
-        self.assertEqual(len({f["fact_id"] for pair in first for f in pair}), 4)
+        self.assertEqual(len(first), len(self.facts))
+        self.assertTrue(all(left["fact_id"] != right["fact_id"] for left, right in first))
+        occurrences = {
+            fact["fact_id"]: sum(fact["fact_id"] in (left["fact_id"], right["fact_id"])
+                                 for left, right in first)
+            for fact in self.facts
+        }
+        self.assertEqual(set(occurrences.values()), {2})
         self.assertNotEqual(first, experiment.pair_facts(self.facts, 43))
+
+    def test_pairing_requires_at_least_two_facts(self):
+        self.assertEqual(experiment.pair_facts(self.facts[:1], 42), [])
 
     def test_target_is_sum_of_both_factual_answers(self):
         pair = [(self.facts[0], self.facts[1])]

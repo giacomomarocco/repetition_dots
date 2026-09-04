@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import modulo10_eval as experiment
+from filler.addition import modulo10 as experiment
 
 
 class CharacterTokenizer:

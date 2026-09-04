@@ -7,8 +7,8 @@ import argparse
 import json
 from pathlib import Path
 
-from dsv4_factorial import crossed_panels, donor_roles, write_manifest
-from one_fact_addition_sglang import load_facts
+from filler.addition.one_fact import load_facts
+from filler.dsv4.factorial import crossed_panels, donor_roles, write_manifest
 
 
 def _axis(facts, n, offset=0):

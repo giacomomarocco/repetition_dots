@@ -7,7 +7,7 @@ from pathlib import Path
 
 # Avoid a Transformers async-loading crash on MPS and permit CPU fallback for
 # individual operations that Metal does not implement.
-os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parent / ".hf-cache"))
+os.environ.setdefault("HF_HOME", str(Path(__file__).resolve().parent.parent / ".hf-cache"))
 os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
 os.environ.setdefault("HF_DEACTIVATE_ASYNC_LOAD", "1")
 os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")

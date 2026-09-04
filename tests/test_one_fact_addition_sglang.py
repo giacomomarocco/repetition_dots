@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import math
+import json
+import tempfile
 import unittest
+from pathlib import Path
 
-import one_fact_addition_sglang as experiment
+from filler.addition import one_fact as experiment
 
 
 def fake_encoder(messages, thinking_mode):
@@ -106,6 +109,20 @@ class OneFactAdditionTests(unittest.TestCase):
         score = experiment.extract_target_score(metadata, 68, 2)
         self.assertIsNone(score["target_top_rank"])
         self.assertEqual(score["target_rank_lower_bound"], 3)
+
+    def test_progress_resume_validates_and_loads_completed_rows(self):
+        prompt = experiment.make_tasks([self.fact], 42, 1, [0])[0]
+        config = {key: key for key in experiment.RESUME_CONFIG_KEYS}
+        result = {**prompt, "target_log_probability": -1.0}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "results_progress.jsonl"
+            path.write_text(json.dumps(result) + "\n")
+            loaded = experiment.load_resume_results(path, [prompt], dict(config), config)
+            self.assertEqual(loaded, [result])
+            changed = dict(config)
+            changed["seed"] = "different"
+            with self.assertRaisesRegex(ValueError, "configuration changed"):
+                experiment.load_resume_results(path, [prompt], config, changed)
 
 
 if __name__ == "__main__":

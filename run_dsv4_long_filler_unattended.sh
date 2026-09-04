@@ -48,14 +48,14 @@ for attempt in $(seq 1 120); do
 done
 
 echo "Validating native final-layer equivalence"
-.venv-sglang/bin/python probe_dsv4_logit_lens.py \
+.venv-sglang/bin/python -m scripts.dsv4.probe_logit_lens \
   --output "${pipeline_root}/native_response.json" \
   --capture-root "${capture_root}" \
   --pass-id-output "${pipeline_root}/validation_pass.json"
 validation_pass_id="$(.venv-sglang/bin/python -c \
   'import json,sys; print(json.load(open(sys.argv[1]))["pass_id"])' \
   "${pipeline_root}/validation_pass.json")"
-.venv-sglang/bin/python validate_dsv4_logit_lens.py \
+.venv-sglang/bin/python -m scripts.dsv4.validate_logit_lens \
   --capture-root "${capture_root}" \
   --native-response "${pipeline_root}/native_response.json" \
   --checkpoint model/DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16 \
@@ -64,7 +64,7 @@ validation_pass_id="$(.venv-sglang/bin/python -c \
   --device cuda:0
 
 echo "Capturing every discovery filler token at length ${filler_length}"
-.venv-sglang/bin/python capture_dsv4_factorial_grid.py \
+.venv-sglang/bin/python -m scripts.dsv4.capture_factorial_grid \
   --rendered \
     "runs/deepseek-v4-flash/factorial/filler-discovery-rendered-k${filler_length}.json" \
   --model model/DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16 \
@@ -72,18 +72,18 @@ echo "Capturing every discovery filler token at length ${filler_length}"
   --output-root "${run_root}/filler-discovery-long"
 
 echo "Projecting long-filler discovery captures"
-.venv-sglang/bin/python analyze_dsv4_factorial_grid.py \
+.venv-sglang/bin/python -m scripts.dsv4.analyze_factorial_grid \
   --grid-root "${run_root}/filler-discovery-long" \
   --capture-root "${capture_root}" \
   --checkpoint model/DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16 \
   --output "${run_root}/filler-discovery-long/lens_rows.jsonl" \
   --device cuda:0
-.venv-sglang/bin/python summarize_frozen_filler.py \
+.venv-sglang/bin/python -m scripts.dsv4.summarize_frozen_filler \
   --rows "${run_root}/filler-discovery-long/lens_rows.jsonl" \
   --output "${run_root}/filler-discovery-long/summary.json"
 
 echo "Capturing preregistered confirmation sites at length ${filler_length}"
-.venv-sglang/bin/python capture_dsv4_factorial_grid.py \
+.venv-sglang/bin/python -m scripts.dsv4.capture_factorial_grid \
   --rendered \
     "runs/deepseek-v4-flash/factorial/filler-confirmation-rendered-k${filler_length}.json" \
   --model model/DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16 \
@@ -92,13 +92,13 @@ echo "Capturing preregistered confirmation sites at length ${filler_length}"
   --frozen-final-sites
 
 echo "Projecting and summarizing long-filler confirmation"
-.venv-sglang/bin/python analyze_dsv4_factorial_grid.py \
+.venv-sglang/bin/python -m scripts.dsv4.analyze_factorial_grid \
   --grid-root "${run_root}/filler-confirmation-long" \
   --capture-root "${capture_root}" \
   --checkpoint model/DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16 \
   --output "${run_root}/filler-confirmation-long/lens_rows.jsonl" \
   --device cuda:0
-.venv-sglang/bin/python summarize_frozen_filler.py \
+.venv-sglang/bin/python -m scripts.dsv4.summarize_frozen_filler \
   --rows "${run_root}/filler-confirmation-long/lens_rows.jsonl" \
   --output "${run_root}/filler-confirmation-long/summary.json"
 

@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-import evaluate_facts_sglang as experiment
+from filler.fact_eval import sglang as experiment
 
 
 class PromptTests(unittest.TestCase):

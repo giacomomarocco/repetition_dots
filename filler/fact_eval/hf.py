@@ -18,8 +18,8 @@ from typing import Any
 
 import torch
 
-import evaluate_facts as protocol
-from model_adapter import (
+from filler.fact_eval import protocol
+from filler.fact_eval.model_adapter import (
     configured_revision,
     load_model,
     load_tokenizer,
@@ -28,7 +28,7 @@ from model_adapter import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MODEL = ROOT / "models" / "Qwen3.6-27B"
 DEFAULT_CACHE = ROOT / ".hf-cache"
 

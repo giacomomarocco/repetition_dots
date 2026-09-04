@@ -1,7 +1,7 @@
 [project]
 name = "mech-int"
 version = "0.1.0"
-description = "Minimal local Qwen3.5-4B text generation on Apple silicon"
+description = "Filler-token mechanistic interpretability experiments"
 requires-python = ">=3.11,<3.14"
 dependencies = [
     "accelerate>=1.10,<2",
@@ -9,3 +9,5 @@ dependencies = [
     "transformers>=5.0,<6",
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -9,9 +9,9 @@ from unittest import mock
 
 import torch
 
-import evaluate_facts as legacy
-import evaluate_facts_hf as experiment
-import model_adapter
+from filler.fact_eval import hf as experiment
+from filler.fact_eval import model_adapter
+from filler.fact_eval import protocol as legacy
 
 
 class FakeTokenizer:

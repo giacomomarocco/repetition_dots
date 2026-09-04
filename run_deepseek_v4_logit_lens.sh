@@ -8,7 +8,7 @@ capture_root="${DSV4_LENS_CAPTURE_ROOT:-${workspace_dir}/runs/deepseek-v4-flash/
 mkdir -p "${capture_root}"
 
 hook_json="$("${workspace_dir}/.venv-sglang/bin/python" -c \
-  'import sys; from dsv4_lens_hooks import print_hook_spec; print_hook_spec(sys.argv[1])' \
+  'import sys; from filler.dsv4.hooks import print_hook_spec; print_hook_spec(sys.argv[1])' \
   "${capture_root}")"
 
 echo "Logit Lens captures: ${capture_root}" >&2

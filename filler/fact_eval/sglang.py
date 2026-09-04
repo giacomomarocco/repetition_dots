@@ -14,11 +14,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable
 
-import evaluate_facts as protocol
-import evaluate_facts_hf as outputs
+from filler.fact_eval import hf as outputs
+from filler.fact_eval import protocol
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MODEL = ROOT / "model" / "DeepSeek-V4-Flash-0731-MoE-MXFP4-BF16"
 DEFAULT_ENCODER = ROOT / "model" / "DeepSeek-V4-Flash-0731" / "encoding" / "encoding_dsv4.py"
 DEFAULT_ENDPOINT = "http://127.0.0.1:30002/generate"

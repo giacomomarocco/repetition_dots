@@ -12,10 +12,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Sequence
 
-import one_fact_addition_sglang as shared
+from filler.addition import one_fact as shared
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 RESUME_CONFIG_KEYS = (
     "model_id", "encoder", "endpoint", "source", "seed", "pairing",
     "filler_lengths", "filler_construction", "prompt_protocol", "demonstrations",
@@ -74,12 +74,19 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 
 def pair_facts(facts: Sequence[dict[str, Any]], seed: int) -> list[tuple[dict[str, Any], dict[str, Any]]]:
-    """Deterministically shuffle facts, then form disjoint pairs."""
+    """Deterministically order facts and pair each with its cyclic successor.
+
+    This produces one pair per fact.  Every fact occurs in two pairs (once in
+    each position), and no fact is paired with itself when at least two facts
+    are available.
+    """
     ordered = sorted(
         facts,
         key=lambda fact: (shared.digest(seed, "two-fact-order", fact["fact_id"]), fact["fact_id"]),
     )
-    return list(zip(ordered[::2], ordered[1::2]))
+    if len(ordered) < 2:
+        return []
+    return list(zip(ordered, ordered[1:] + ordered[:1]))
 
 
 def make_tasks(
@@ -213,7 +220,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         "endpoint": args.endpoint,
         "source": {"path": str(args.facts.resolve()), "sha256": source_sha, "selected_pairs": len(pairs)},
         "seed": args.seed,
-        "pairing": "seed-keyed ordering followed by disjoint adjacent pairs",
+        "pairing": (
+            "seed-keyed ordering; each fact paired with its cyclic successor, "
+            "yielding one pair per fact"
+        ),
         "filler_lengths": args.filler_lengths,
         "prompt_protocol": (
             "five fixed user/assistant demonstrations; identical k fillers before Answer: "

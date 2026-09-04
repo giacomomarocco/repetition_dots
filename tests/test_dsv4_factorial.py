@@ -1,8 +1,8 @@
 import pytest
 import torch
 
-from deepseek_v4_logit_lens import DeepseekV4LensWeights
-from dsv4_factorial import (
+from filler.dsv4.lens import DeepseekV4LensWeights
+from filler.dsv4.factorial import (
     candidate_sites, causal_effect, copy_cache_rows, crossed_panels, donor_roles,
     factorial_contrasts, locate_positions, score_numeric_targets, should_run_jlens,
 )
