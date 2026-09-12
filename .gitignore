@@ -10,3 +10,12 @@ __pycache__/
 runs/
 model/
 models/
+
+# Local agent instructions and session handoffs stay off GitHub.
+AGENTS.md
+AGENTS.override.md
+.agents/
+.codex/
+*CODEX*.md
+*codex*.md
+*_HANDOFF.md
