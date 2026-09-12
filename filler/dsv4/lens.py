@@ -93,6 +93,60 @@ def project_logits(
     return F.linear(normalized, weights.lm_head_weight).float()
 
 
+def project_selected_logits(
+    hidden_states: torch.Tensor,
+    weights: DeepseekV4LensWeights,
+    token_ids: torch.Tensor,
+) -> torch.Tensor:
+    """Project residuals only onto selected vocabulary rows.
+
+    This is mathematically identical to selecting columns from
+    :func:`project_logits`, but avoids materializing the complete vocabulary
+    when only a restricted class such as canonical integer tokens is needed.
+    """
+    collapsed = collapse_mhc(hidden_states, weights)
+    normalized = collapsed.float() * torch.rsqrt(
+        collapsed.float().square().mean(dim=-1, keepdim=True) + weights.norm_eps
+    )
+    normalized = (normalized * weights.norm_weight.float()).to(collapsed.dtype)
+    selected = weights.lm_head_weight.index_select(0, token_ids.to(weights.lm_head_weight.device))
+    return F.linear(normalized, selected).float()
+
+
+def project_sglang_logits(
+    hidden_states: torch.Tensor, weights: DeepseekV4LensWeights, *, tp_size: int = 4
+) -> torch.Tensor:
+    """Use SGLang's actual CUDA mHC/RMSNorm kernels and vocabulary partitions.
+
+    The Torch reference can cross a BF16 rounding boundary differently from
+    the fused serving kernels. Use this path for comparisons to native output.
+    It needs only readout weights and saved residuals, not a loaded model.
+    """
+    from sglang.srt.layers.mhc_head import fused_hc_head
+    from sgl_kernel import rmsnorm
+
+    if hidden_states.shape[-2:] == (weights.hc_mult, weights.hidden_size):
+        leading = hidden_states.shape[:-2]
+    elif hidden_states.shape[-1] == weights.hc_mult * weights.hidden_size:
+        leading = hidden_states.shape[:-1]
+    else:
+        raise ValueError("unexpected mHC residual shape")
+    streams = hidden_states.reshape(-1, weights.hc_mult, weights.hidden_size).contiguous()
+    collapsed = fused_hc_head(
+        streams, weights.hc_head_fn, weights.hc_head_scale, weights.hc_head_base,
+        norm_eps=weights.norm_eps, hc_eps=weights.hc_eps,
+    )
+    normalized = rmsnorm(collapsed, weights.norm_weight, weights.norm_eps)
+    # The serving run uses TP=4 vocabulary sharding. Match the per-rank GEMM
+    # shapes as well as the fused normalization/mHC arithmetic.
+    # Native generation prunes to one answer row before the head. Keep M=1
+    # for each lens row too, avoiding batch-dependent BF16 GEMM rounding.
+    shards = weights.lm_head_weight.tensor_split(tp_size, dim=0)
+    logits = torch.cat([torch.cat([F.linear(row[None], shard) for shard in shards], dim=-1)
+                        for row in normalized], dim=0)
+    return logits.reshape(*leading, weights.lm_head_weight.shape[0]).float()
+
+
 def topk_tokens(
     hidden_states: torch.Tensor, weights: DeepseekV4LensWeights, k: int = 10
 ) -> tuple[torch.Tensor, torch.Tensor]:

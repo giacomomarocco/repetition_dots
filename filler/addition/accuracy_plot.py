@@ -139,27 +139,50 @@ def load_paired_accuracy_changes(
 def plot_addition_accuracy(
     project_root: str | Path = ".",
     summaries: dict[str, Path] = DEFAULT_SUMMARIES,
+    *,
+    connect_points: bool = True,
+    baseline_band: bool = False,
 ):
-    """Return ``(figure, axes, plotted_data)`` for easy notebook iteration."""
+    """Return ``(figure, axes, plotted_data)`` for easy notebook iteration.
+
+    With ``baseline_band=True``, show the zero-filler Wilson interval as a
+    horizontal band instead of a point. Returned data still include baseline.
+    """
     project_root = Path(project_root)
     fig, ax = plt.subplots(figsize=(8, 5))
     plotted_data = {}
     for label, relative_path in summaries.items():
         points = load_accuracy(project_root / relative_path)
         plotted_data[label] = points
+        if baseline_band:
+            baseline = next(point for point in points if point["filler_length"] == 0)
+            ax.axhspan(baseline["ci_low"], baseline["ci_high"], color="0.6", zorder=0)
+            ax.text(
+                0.5, (baseline["ci_low"] + baseline["ci_high"]) / 2,
+                "Baseline", transform=ax.get_yaxis_transform(),
+                color="white", ha="center", va="top", zorder=3, fontsize = 14,
+            )
+            points = [point for point in points if point["filler_length"] != 0]
         x = [point["filler_length"] for point in points]
         y = [point["accuracy"] for point in points]
         yerr = [
             [point["accuracy"] - point["ci_low"] for point in points],
             [point["ci_high"] - point["accuracy"] for point in points],
         ]
-        ax.errorbar(x, y, yerr=yerr, marker="o", capsize=4, linewidth=2, label=label)
+        ax.errorbar(
+            x, y, yerr=yerr, marker="o", capsize=4, linewidth=2,
+            linestyle="-" if connect_points else "none", label=label,
+        )
 
     ax.set(xlabel="Filler length (dot tokens)", ylabel="Exact-answer accuracy")
-    ax.set_xticks(sorted({p["filler_length"] for points in plotted_data.values() for p in points}))
-    ax.set_ylim(0, 1)
-    ax.grid(alpha=0.25)
-    ax.legend(frameon=False)
+    ax.set_xticks(sorted({
+        p["filler_length"] for points in plotted_data.values() for p in points
+        if not baseline_band or p["filler_length"] != 0
+    }))
+    ax.set_xlim(0,110)
+    ax.set_ylim(0.3, 1)
+    # ax.grid(alpha=0.25)
+    # ax.legend(frameon=False)
     fig.tight_layout()
     return fig, ax, plotted_data
 

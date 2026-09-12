@@ -206,6 +206,42 @@ class NativeResidualHooks:
             self.close()
 
     @contextmanager
+    def transplant_layers(
+        self, layer_ids: Sequence[int], positions: Sequence[int],
+        donor: Mapping[int, Any], *, clean: Mapping[int, Any] | None = None,
+        recomputation: str = "full_downstream", answer_position: int | None = None,
+        source_positions: Sequence[int] | None = None,
+    ) -> Iterator[None]:
+        """Simultaneous post-block replacement in a serial full-prompt pass.
+
+        In answer-only mode each block restores all clean rows except the
+        intervention positions and the final prompt row predicting the answer.
+        Hooks run before the following block reads any residuals.
+        """
+        layers = set(layer_ids)
+        if not layers or not layers <= set(range(len(self.layers))):
+            raise ValueError("invalid simultaneous layer set")
+        if recomputation == "answer_only" and (clean is None or answer_position is None):
+            raise ValueError("answer_only requires clean states and final prompt position")
+        handles = []
+        try:
+            for lid, layer in enumerate(self.layers):
+                def hook(_module: Any, _args: Any, output: Any, lid: int = lid):
+                    hidden = output[0] if isinstance(output, (tuple, list)) else output
+                    changed = replace_residual_rows(
+                        hidden, positions=positions, donor=donor[lid] if lid in layers else None,
+                        clean=None if clean is None else clean[lid],
+                        recomputation=recomputation, answer_position=answer_position,
+                        source_positions=source_positions,
+                    )
+                    return residual_output(output, changed)
+                handles.append(layer.register_forward_hook(hook))
+            yield
+        finally:
+            for handle in handles:
+                handle.remove()
+
+    @contextmanager
     def transplant(self, layer_id: int, positions: Sequence[int], donor: Mapping[int, torch.Tensor]) -> Iterator[None]:
         wanted = tuple(positions)
         def hook(_module: Any, _args: Any, output: Any):
@@ -220,6 +256,63 @@ class NativeResidualHooks:
             yield
         finally:
             self.close()
+
+
+def residual_output(output: Any, hidden: torch.Tensor) -> Any:
+    """Preserve the decoder's output container and auxiliary values."""
+    if isinstance(output, tuple):
+        return (hidden, *output[1:])
+    if isinstance(output, list):
+        return [hidden, *output[1:]]
+    return hidden
+
+
+def replace_residual_rows(
+    hidden: torch.Tensor, *, positions: Sequence[int], donor: Any = None,
+    clean: Any = None, recomputation: str = "full_downstream",
+    answer_position: int | None = None,
+    source_positions: Sequence[int] | None = None,
+) -> torch.Tensor:
+    """Shared native/SGLang operation on complete [token, stream, hidden] rows."""
+    if hidden.ndim != 3:
+        raise ValueError("expected [tokens, hc_mult, hidden_size]")
+    if recomputation not in {"full_downstream", "answer_only"}:
+        raise ValueError("unknown recomputation mode")
+    wanted = tuple(positions)
+    if any(not isinstance(p, int) or isinstance(p, bool) for p in wanted) or len(set(wanted)) != len(wanted) or any(p < 0 or p >= len(hidden) for p in wanted):
+        raise ValueError("invalid absolute patch positions")
+    sources = wanted if source_positions is None else tuple(source_positions)
+    if len(sources) != len(wanted) or any(not isinstance(p, int) or isinstance(p, bool) or p < 0 or p >= len(hidden) for p in sources):
+        raise ValueError("invalid source positions; require one valid source per destination")
+    if recomputation == "answer_only":
+        if clean is None or answer_position != len(hidden) - 1 or answer_position in wanted:
+            raise ValueError("restoration requires clean states and the final prompt position")
+    if donor is None and recomputation == "full_downstream":
+        return hidden
+    changed = hidden.clone()
+    def row(source: Any, p: int) -> torch.Tensor:
+        value = source[p].to(device=hidden.device, dtype=hidden.dtype)
+        if value.shape != hidden[p].shape:
+            raise ValueError("capture row shape differs from complete mHC residual")
+        return value
+    if recomputation == "answer_only":
+        if isinstance(clean, torch.Tensor):
+            if clean.shape != hidden.shape:
+                raise ValueError("clean capture token alignment differs")
+            restored = clean.to(device=hidden.device, dtype=hidden.dtype).clone()
+            for p in (*wanted, answer_position):
+                restored[p].copy_(hidden[p])
+            changed = restored
+        else:
+            for p in range(len(hidden)):
+                if p not in wanted and p != answer_position:
+                    changed[p].copy_(row(clean, p))
+    if donor is not None:
+        if isinstance(donor, torch.Tensor) and donor.shape != hidden.shape:
+            raise ValueError("donor capture token alignment differs")
+        for p, source_position in zip(wanted, sources):
+            changed[p].copy_(row(donor, source_position))
+    return changed
 
 
 def runtime_metadata(model: Any, *, backend: str, kv_pool: Any | None = None) -> dict[str, Any]:

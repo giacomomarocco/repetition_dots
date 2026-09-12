@@ -8,7 +8,7 @@ The repository separates reusable experiment logic from executable workflows:
 filler/
   addition/    one-fact, two-fact, modulo-10, and accuracy-analysis logic
   fact_eval/   shared fact protocol plus Hugging Face and SGLang backends
-  dsv4/        DeepSeek V4 Logit Lens, factorial, and hook primitives
+  dsv4/        DeepSeek V4 Logit Lens, J-Lens, factorial, and hook primitives
   qwen.py      local Qwen model and prompt utilities
 scripts/
   addition/    thin addition command wrappers
@@ -18,7 +18,7 @@ tests/         tests of package and workflow behavior
 notebooks/     interactive analyses
 runs/          generated experiment outputs and checkpoints
 model/         local model weights and configuration
-ports/         pinned third-party inference ports
+ports/         pinned third-party inference and interpretability sources
 ```
 
 Each package directory has an `__init__.py` to make the package boundary

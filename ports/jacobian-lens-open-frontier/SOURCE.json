@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "e56c86083f776f6266200e5ab9d2f4f5d3a0e5362e34f761564e164162beeda1",
+  "files": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "b1a983627e1d0326879e63d1510e9ab20e4be92a5e349780382f830a18033690",
+    "jlens/__init__.py": "bd7bb6302565a712583b05b91d48c8638d9f5d2ace00e52db0db2fd300f7fe3a",
+    "jlens/_logging.py": "5943d28520b8fe0e1b2f8ba16d7802522a2370f11f213bc6bb694e09bcfc06ae",
+    "jlens/data/README.md": "10d36304f8bde26e2b09aa10c31ad1fd7a3c6ef2616ade1159d6d126c87da788",
+    "jlens/data/blackmail.json": "5669487c78043535450506cd3ec9aa7b0a07b8309783437c093dc165ce79b30a",
+    "jlens/examples.py": "17270d800ffa169b72c1ab50940ae9a22cadf8a7a2449d897fa2a74b56569d6d",
+    "jlens/fitting.py": "0c0afd1cf55d19b76bff28362c4bcd58b6e005ef048f43da1064b589b001cbc1",
+    "jlens/fp8_autograd.py": "539d8477da543a1ae06274a8d3f4b5c570e9cb38bb7270eac5fe06ea7483d825",
+    "jlens/hf.py": "a4c0a85d9e52386cb73fb5c43bf3f27b47ff1bf920b871397abb6da2cd49daec",
+    "jlens/hooks.py": "0e0cc4842e96f948c6f67a3a9f59dbfa3000010e36911f89991c99a7a5da3f02",
+    "jlens/intervene.py": "132a223fb04e0df748cabd3751d86c0d5694262f47544c23975c8e9622366fea",
+    "jlens/lens.py": "7d00976e317a17e04cb87fd153aceaf91bfc936c382dd086a8af7fac7acfbf77",
+    "jlens/protocol.py": "dbfc5ec6571086ff35baccf7e1f3d55002e1b380163da520771d85697ee018ce",
+    "jlens/vis.py": "3d3b442c3d4686a632043cd8390c9923a243b3940726baeadd8e854e7dacc9b6",
+    "pyproject.toml": "5ef558a49f5608e0e94d227ec3b1d896e0d38b32e5d692ac1e5f989861841c26"
+  },
+  "repository": "xiangchensong/jacobian-lens-open-frontier",
+  "revision": "b8b840caaa246ad04d354b4650848f30519184b6"
+}

@@ -38,6 +38,7 @@ ONE_FACT_DEMONSTRATIONS = (
 )
 RESUME_CONFIG_KEYS = (
     "model_id", "encoder", "endpoint", "source", "seed", "addends_per_fact",
+    "prompt_variant",
     "filler_lengths", "filler_construction", "prompt_protocol",
     "demonstrations", "system_prompt", "decoding", "scoring",
     "strict_completion_pattern",
@@ -75,6 +76,12 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--addends-per-fact", type=int, default=1)
+    parser.add_argument(
+        "--prompt-variant",
+        choices=("local", "local-headsup"),
+        default="local",
+        help="prompt scaffold to render; headsup states the upcoming dot count",
+    )
     parser.add_argument(
         "--filler-lengths",
         type=int,
@@ -225,9 +232,28 @@ def load_encoder(path: Path) -> Callable[..., str]:
     return module.encode_messages
 
 
-def render_prompt(encode_messages: Callable[..., str], task: dict[str, Any]) -> str:
+def local_headsup_system_prompt(k: int) -> str:
+    if k == 0:
+        return SYSTEM_PROMPT
+    return SYSTEM_PROMPT + (
+        f" After the question, there will be {k} dots to give you extra space "
+        "to process the problem before answering."
+    )
+
+
+def render_prompt(
+    encode_messages: Callable[..., str], task: dict[str, Any], prompt_variant: str = "local"
+) -> str:
+    if prompt_variant not in ("local", "local-headsup"):
+        raise ValueError(f"unknown prompt variant: {prompt_variant!r}")
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {
+            "role": "system",
+            "content": (
+                local_headsup_system_prompt(task["k"])
+                if prompt_variant == "local-headsup" else SYSTEM_PROMPT
+            ),
+        },
         *demonstration_messages(task["k"]),
         {"role": "user", "content": render_question(task) + "\n" + answer_slot(task["k"])},
     ]
@@ -463,7 +489,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         facts = facts[: args.max_facts]
     tasks = make_tasks(facts, args.seed, args.addends_per_fact, args.filler_lengths)
     encoder = load_encoder(args.encoder)
-    prompts = [{**task, "rendered_prompt": render_prompt(encoder, task)} for task in tasks]
+    prompts = [
+        {**task, "rendered_prompt": render_prompt(encoder, task, args.prompt_variant)}
+        for task in tasks
+    ]
     args.output_dir.mkdir(parents=True, exist_ok=True)
     config_path = args.output_dir / "run_config.json"
     previous_config = None
@@ -482,8 +511,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         "source": {"path": str(args.facts.resolve()), "sha256": source_sha, "selected_facts": len(facts)},
         "seed": args.seed,
         "addends_per_fact": args.addends_per_fact,
+        "prompt_variant": args.prompt_variant,
         "filler_lengths": args.filler_lengths,
         "prompt_protocol": (
+            "five fixed user/assistant demonstrations plus a nonzero-condition "
+            "system-message heads-up stating the exact upcoming dot count; "
+            if args.prompt_variant == "local-headsup" else
             "five fixed user/assistant demonstrations; identical k fillers before Answer: "
             "in every demonstration and target user turn"
         ),
@@ -495,7 +528,10 @@ def main(argv: Sequence[str] | None = None) -> int:
             "space-separated periods before Answer: in all five demonstration user turns "
             "and the target user turn"
         ),
-        "system_prompt": SYSTEM_PROMPT,
+        "system_prompt": (
+            SYSTEM_PROMPT if args.prompt_variant == "local" else
+            {str(k): local_headsup_system_prompt(k) for k in args.filler_lengths}
+        ),
         "decoding": {"temperature": 0, "max_new_tokens": args.max_new_tokens},
         "scoring": {
             "position": "first generated token after the Answer: prefix",

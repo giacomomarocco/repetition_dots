@@ -67,6 +67,21 @@ class OneFactAdditionTests(unittest.TestCase):
         self.assertTrue(all("Filler:" not in content for content in user_turns))
         self.assertIn("No explanation, no words, no reasoning, just the number.", captured[0]["content"])
 
+    def test_local_headsup_names_exact_nonzero_filler_count(self):
+        captured = []
+        def encoder(messages, thinking_mode):
+            captured.extend(messages)
+            return fake_encoder(messages, thinking_mode)
+        filled = experiment.make_tasks([self.fact], 42, 1, [10])[0]
+        experiment.render_prompt(encoder, filled, "local-headsup")
+        self.assertIn("there will be 10 dots", captured[0]["content"])
+        self.assertTrue(captured[-1]["content"].endswith(". . . . . . . . . .\nAnswer:"))
+
+        captured.clear()
+        baseline = experiment.make_tasks([self.fact], 42, 1, [0])[0]
+        experiment.render_prompt(encoder, baseline, "local-headsup")
+        self.assertEqual(captured[0]["content"], experiment.SYSTEM_PROMPT)
+
     def test_question_contains_fact_but_not_answer(self):
         task = experiment.make_tasks([self.fact], 42, 1, [0])[0]
         question = experiment.render_question(task)

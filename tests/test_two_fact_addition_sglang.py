@@ -39,6 +39,15 @@ class TwoFactAdditionTests(unittest.TestCase):
     def test_pairing_requires_at_least_two_facts(self):
         self.assertEqual(experiment.pair_facts(self.facts[:1], 42), [])
 
+    def test_pairing_can_generate_more_pairs_than_facts_without_duplicates(self):
+        pairs = experiment.pair_facts(self.facts, 42, 10)
+        ids = [(left["fact_id"], right["fact_id"]) for left, right in pairs]
+        self.assertEqual(len(ids), 10)
+        self.assertEqual(len(set(ids)), 10)
+        self.assertTrue(all(left != right for left, right in ids))
+        with self.assertRaisesRegex(ValueError, "maximum is 12"):
+            experiment.pair_facts(self.facts, 42, 13)
+
     def test_target_is_sum_of_both_factual_answers(self):
         pair = [(self.facts[0], self.facts[1])]
         tasks = experiment.make_tasks(pair, [0, 10])
@@ -73,9 +82,77 @@ class TwoFactAdditionTests(unittest.TestCase):
         self.assertTrue(all(content.endswith(". . . . .\nAnswer:") for content in user_turns))
         self.assertTrue(all("Filler:" not in content for content in user_turns))
 
+    def test_upstream_prompt_matches_labeled_filler_scaffold(self):
+        atomic_facts = [
+            {"fact_id": "a", "question": "What is the atomic number of Thorium?", "answer": 90},
+            {"fact_id": "b", "question": "What is the atomic number of Tellurium?", "answer": 52},
+        ]
+        captured = []
+        def encoder(messages, thinking_mode):
+            captured.extend(messages)
+            return fake_encoder(messages, thinking_mode)
+        task = experiment.make_tasks([(atomic_facts[0], atomic_facts[1])], [10])[0]
+        experiment.render_prompt(encoder, task, "upstream")
+        self.assertIn("some filler tokens (a sequence of dots)", captured[0]["content"])
+        user_turns = [message["content"] for message in captured if message["role"] == "user"]
+        self.assertEqual(len(user_turns), 6)
+        self.assertEqual(
+            user_turns[-1],
+            "Question: What is the atomic number of Thorium plus the atomic number of Tellurium?"
+            "\n\nFiller: . . . . . . . . . .\n\nAnswer:",
+        )
+        self.assertTrue(all("\n\nFiller: " in turn for turn in user_turns))
+        self.assertEqual(
+            [message["content"] for message in captured if message["role"] == "assistant"],
+            ["12", "43", "95", "136", "166"],
+        )
+
+    def test_upstream_baseline_omits_filler_label_and_extra_system_instruction(self):
+        atomic_facts = [
+            {"fact_id": "a", "question": "What is the atomic number of Thorium?", "answer": 90},
+            {"fact_id": "b", "question": "What is the atomic number of Tellurium?", "answer": 52},
+        ]
+        captured = []
+        def encoder(messages, thinking_mode):
+            captured.extend(messages)
+            return fake_encoder(messages, thinking_mode)
+        task = experiment.make_tasks([(atomic_facts[0], atomic_facts[1])], [0])[0]
+        experiment.render_prompt(encoder, task, "upstream")
+        self.assertNotIn("filler tokens", captured[0]["content"])
+        self.assertTrue(all(
+            "Filler:" not in message["content"]
+            for message in captured if message["role"] == "user"
+        ))
+
+    def test_local_headsup_changes_only_nonzero_system_message(self):
+        task_0, task_10 = experiment.make_tasks([(self.facts[0], self.facts[1])], [0, 10])
+
+        def capture(task, variant):
+            messages = []
+            def encoder(rows, thinking_mode):
+                messages.extend(rows)
+                return fake_encoder(rows, thinking_mode)
+            experiment.render_prompt(encoder, task, variant)
+            return messages
+
+        local_0 = capture(task_0, "local")
+        headsup_0 = capture(task_0, "local-headsup")
+        local_10 = capture(task_10, "local")
+        headsup_10 = capture(task_10, "local-headsup")
+        self.assertEqual(headsup_0, local_0)
+        self.assertEqual(headsup_10[1:], local_10[1:])
+        self.assertEqual(
+            headsup_10[0]["content"],
+            local_10[0]["content"]
+            + " After the question, there will be 10 dots to give you extra space "
+            "to process the problem before answering.",
+        )
+        self.assertNotIn("Filler:", "".join(row["content"] for row in headsup_10))
+
     def test_scoring_options_match_one_fact_defaults(self):
         args = experiment.parse_args([])
         self.assertEqual(args.top_logprobs, 20)
+        self.assertIsNone(args.fact_kind)
         with self.assertRaises(SystemExit):
             experiment.parse_args(["--top-logprobs", "0"])
 
